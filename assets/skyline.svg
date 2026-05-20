@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 50 1572 260" preserveAspectRatio="xMaxYMax meet" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+  
+  <path opacity="0.35" d="M0 220 L80 198 L150 210 L240 175 L320 195 L420 160 L510 178 L600 145 L680 165 L770 138 L860 158 L950 130 L1040 152 L1130 128 L1220 148 L1310 130 L1400 152 L1490 138 L1600 158 L1600 320 L0 320 Z"></path>
+
+  
+  <line x1="0" y1="298" x2="1600" y2="298" opacity="0.55"></line>
+  <line x1="40" y1="306" x2="180" y2="306" opacity="0.3"></line>
+  <line x1="280" y1="306" x2="420" y2="306" opacity="0.3"></line>
+  <line x1="540" y1="306" x2="720" y2="306" opacity="0.3"></line>
+  <line x1="900" y1="306" x2="1080" y2="306" opacity="0.3"></line>
+  <line x1="1200" y1="306" x2="1380" y2="306" opacity="0.3"></line>
+
+  
+  <g opacity="0.7">
+    <path d="M310 290 Q340 286 380 290 L375 297 L315 297 Z"></path>
+    <line x1="345" y1="290" x2="345" y2="252"></line>
+    <path d="M345 252 L375 285 L345 285 Z"></path>
+    <path d="M345 258 L320 282 L345 282 Z"></path>
+  </g>
+
+  
+
+  
+  <g>
+    <rect x="20" y="240" width="22" height="58"></rect>
+    <rect x="46" y="232" width="18" height="66"></rect>
+    <rect x="68" y="220" width="26" height="78"></rect>
+    <rect x="98" y="244" width="20" height="54"></rect>
+    <rect x="122" y="228" width="22" height="70"></rect>
+    <rect x="148" y="248" width="16" height="50"></rect>
+    <rect x="168" y="216" width="24" height="82"></rect>
+    <rect x="196" y="240" width="18" height="58"></rect>
+  </g>
+
+  
+  <g>
+    <rect x="220" y="200" width="28" height="98"></rect>
+    <rect x="252" y="180" width="32" height="118"></rect>
+    <rect x="288" y="195" width="26" height="103"></rect>
+
+    
+    <path d="M320 88 L368 88 L380 120 L380 298 L308 298 L308 120 Z"></path>
+    
+    <line x1="344" y1="88" x2="344" y2="58"></line>
+    
+    <line x1="316" y1="106" x2="372" y2="106"></line>
+    <line x1="316" y1="138" x2="372" y2="138"></line>
+    <line x1="316" y1="170" x2="372" y2="170"></line>
+    <line x1="316" y1="202" x2="372" y2="202"></line>
+    <line x1="316" y1="234" x2="372" y2="234"></line>
+    <line x1="316" y1="266" x2="372" y2="266"></line>
+  </g>
+
+  
+  <g>
+    <path d="M392 175 L432 175 L440 200 L440 298 L384 298 L384 200 Z"></path>
+    <line x1="412" y1="175" x2="412" y2="155"></line>
+    <line x1="388" y1="218" x2="436" y2="218"></line>
+    <line x1="388" y1="248" x2="436" y2="248"></line>
+    <line x1="388" y1="278" x2="436" y2="278"></line>
+  </g>
+
+  
+  <g>
+    <rect x="452" y="195" width="22" height="103"></rect>
+    <rect x="478" y="210" width="18" height="88"></rect>
+    <rect x="500" y="220" width="22" height="78"></rect>
+  </g>
+
+  
+  <g>
+    <rect x="528" y="140" width="46" height="158"></rect>
+    <line x1="528" y1="170" x2="574" y2="170"></line>
+    <line x1="528" y1="200" x2="574" y2="200"></line>
+    <line x1="528" y1="230" x2="574" y2="230"></line>
+    <line x1="528" y1="260" x2="574" y2="260"></line>
+  </g>
+
+  
+  <g>
+    <rect x="582" y="180" width="42" height="118"></rect>
+    <line x1="582" y1="200" x2="624" y2="200"></line>
+    <line x1="582" y1="218" x2="624" y2="218"></line>
+    <line x1="582" y1="240" x2="624" y2="240"></line>
+    <line x1="582" y1="262" x2="624" y2="262"></line>
+    
+    <line x1="592" y1="180" x2="592" y2="148"></line>
+    <line x1="614" y1="180" x2="614" y2="148"></line>
+  </g>
+
+  
+  <g>
+    <rect x="630" y="200" width="28" height="98"></rect>
+    <line x1="630" y1="220" x2="658" y2="220"></line>
+    <line x1="630" y1="240" x2="658" y2="240"></line>
+    <line x1="630" y1="260" x2="658" y2="260"></line>
+  </g>
+
+  
+  <g>
+    <path d="M680 298 L680 130 L710 80 L740 130 L740 298 Z"></path>
+    <line x1="680" y1="130" x2="740" y2="130"></line>
+    <line x1="680" y1="170" x2="740" y2="170"></line>
+    <line x1="680" y1="210" x2="740" y2="210"></line>
+    <line x1="680" y1="250" x2="740" y2="250"></line>
+    
+    <line x1="680" y1="298" x2="740" y2="130"></line>
+    <line x1="740" y1="298" x2="680" y2="130"></line>
+    
+    <line x1="710" y1="80" x2="710" y2="50"></line>
+  </g>
+
+  
+  <g>
+    <rect x="752" y="170" width="26" height="128"></rect>
+    <line x1="752" y1="200" x2="778" y2="200"></line>
+    <line x1="752" y1="230" x2="778" y2="230"></line>
+    <line x1="752" y1="260" x2="778" y2="260"></line>
+
+    
+    <path d="M788 175 L788 298 L818 298 L818 175 Z"></path>
+    <path d="M788 175 Q788 168 793 168 L799 168 Q804 168 804 175"></path>
+    <path d="M804 175 Q804 168 809 168 L815 168 Q818 168 818 175"></path>
+    <line x1="788" y1="200" x2="818" y2="200"></line>
+    <line x1="788" y1="230" x2="818" y2="230"></line>
+    <line x1="788" y1="260" x2="818" y2="260"></line>
+  </g>
+
+  
+  <g>
+    <path d="M832 298 L832 250 Q860 220 900 220 Q940 220 968 250 L968 298 Z"></path>
+    <path d="M848 298 L848 258"></path>
+    <path d="M880 298 L880 232"></path>
+    <path d="M920 298 L920 232"></path>
+    <path d="M952 298 L952 258"></path>
+  </g>
+
+  
+  <g>
+    <path d="M980 298 L980 110 L1006 92 L1032 110 L1032 298 Z"></path>
+    <line x1="1006" y1="92" x2="1006" y2="62"></line>
+    <line x1="980" y1="140" x2="1032" y2="140"></line>
+    <line x1="980" y1="170" x2="1032" y2="170"></line>
+    <line x1="980" y1="200" x2="1032" y2="200"></line>
+    <line x1="980" y1="230" x2="1032" y2="230"></line>
+    <line x1="980" y1="260" x2="1032" y2="260"></line>
+  </g>
+
+  
+  <g>
+    <rect x="1044" y="180" width="22" height="118"></rect>
+    <line x1="1044" y1="210" x2="1066" y2="210"></line>
+    <line x1="1044" y1="240" x2="1066" y2="240"></line>
+    <line x1="1044" y1="270" x2="1066" y2="270"></line>
+
+    <rect x="1070" y="200" width="18" height="98"></rect>
+    <rect x="1092" y="160" width="24" height="138"></rect>
+    <line x1="1092" y1="190" x2="1116" y2="190"></line>
+    <line x1="1092" y1="220" x2="1116" y2="220"></line>
+    <line x1="1092" y1="250" x2="1116" y2="250"></line>
+
+    <rect x="1120" y="185" width="20" height="113"></rect>
+    <rect x="1144" y="220" width="16" height="78"></rect>
+    <rect x="1164" y="195" width="22" height="103"></rect>
+    <rect x="1190" y="215" width="18" height="83"></rect>
+    <rect x="1212" y="170" width="24" height="128"></rect>
+    <line x1="1212" y1="200" x2="1236" y2="200"></line>
+    <line x1="1212" y1="230" x2="1236" y2="230"></line>
+    <line x1="1212" y1="260" x2="1236" y2="260"></line>
+
+    <rect x="1240" y="210" width="18" height="88"></rect>
+    <rect x="1262" y="190" width="22" height="108"></rect>
+    <rect x="1288" y="225" width="16" height="73"></rect>
+
+    
+    <path d="M1308 298 L1308 145 L1338 145 L1338 298 Z"></path>
+    <line x1="1308" y1="170" x2="1338" y2="170"></line>
+    <line x1="1308" y1="200" x2="1338" y2="200"></line>
+    <line x1="1308" y1="230" x2="1338" y2="230"></line>
+    <line x1="1308" y1="260" x2="1338" y2="260"></line>
+    <line x1="1323" y1="145" x2="1323" y2="125"></line>
+
+    <rect x="1346" y="195" width="20" height="103"></rect>
+    <rect x="1370" y="225" width="16" height="73"></rect>
+    <rect x="1390" y="205" width="20" height="93"></rect>
+    <rect x="1414" y="180" width="22" height="118"></rect>
+    <line x1="1414" y1="208" x2="1436" y2="208"></line>
+    <line x1="1414" y1="238" x2="1436" y2="238"></line>
+    <line x1="1414" y1="268" x2="1436" y2="268"></line>
+
+    <rect x="1440" y="220" width="16" height="78"></rect>
+    <rect x="1460" y="200" width="20" height="98"></rect>
+    <rect x="1484" y="235" width="14" height="63"></rect>
+    <rect x="1502" y="215" width="18" height="83"></rect>
+    <rect x="1524" y="190" width="22" height="108"></rect>
+    <rect x="1550" y="225" width="16" height="73"></rect>
+    <rect x="1570" y="210" width="20" height="88"></rect>
+  </g>
+
+  
+  <g opacity="0.5">
+    <circle cx="180" cy="50" r="1"></circle>
+    <circle cx="450" cy="35" r="1"></circle>
+    <circle cx="900" cy="60" r="1"></circle>
+    <circle cx="1280" cy="40" r="1"></circle>
+    <circle cx="1500" cy="70" r="1"></circle>
+  </g>
+</svg>

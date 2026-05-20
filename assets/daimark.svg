@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+  
+  <g stroke="currentColor" stroke-width="1.2" fill="none">
+    <circle cx="60" cy="60" r="54" opacity="0.35"></circle>
+    <circle cx="60" cy="60" r="46"></circle>
+  </g>
+
+  
+  <g stroke="currentColor" stroke-width="1" opacity="0.6">
+    <line x1="60" y1="14" x2="100.85" y2="83"></line>
+    <line x1="100.85" y1="83" x2="19.15" y2="83"></line>
+    <line x1="19.15" y1="83" x2="60" y2="14"></line>
+  </g>
+  <g fill="currentColor">
+    <circle cx="60" cy="14" r="3.2"></circle>
+    <circle cx="100.85" cy="83" r="3.2"></circle>
+    <circle cx="19.15" cy="83" r="3.2"></circle>
+  </g>
+
+  
+  <g fill="currentColor" font-family="&#39;Inter&#39;, system-ui, sans-serif" font-weight="700" font-size="22" letter-spacing="0.04em">
+    <text x="60" y="58" text-anchor="middle">DAI</text>
+  </g>
+  
+  <g fill="currentColor" font-family="ui-monospace, &#39;JetBrains Mono&#39;, monospace" font-size="9" letter-spacing="0.18em" opacity="0.75">
+    <text x="60" y="76" text-anchor="middle">· 2026 ·</text>
+  </g>
+
+  
+  <g stroke="currentColor" stroke-width="0.8" opacity="0.4">
+    <line x1="60" y1="14" x2="60" y2="20"></line>
+    <line x1="60" y1="100" x2="60" y2="106"></line>
+    <line x1="14" y1="60" x2="20" y2="60"></line>
+    <line x1="100" y1="60" x2="106" y2="60"></line>
+  </g>
+</svg>

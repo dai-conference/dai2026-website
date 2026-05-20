@@ -1,14 +1,445 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/dai/2026/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dai</title>
-    <script type="module" crossorigin src="/dai/2026/assets/index-DxNDsifY.js"></script>
-    <link rel="stylesheet" crossorigin href="/dai/2026/assets/index-CV_u2_RI.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DAI 2026, the 8th International Conference on Distributed Artificial Intelligence, hosted in Hong Kong from November 29 to December 2, 2026.">
+  <title>DAI 2026 · The 8th International Conference on Distributed Artificial Intelligence</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to main content</a>
+
+  <!-- ====================================================================
+       Top bar
+       ==================================================================== -->
+  <header class="topbar" role="banner">
+    <div class="container topbar-inner">
+      <a class="topbar-brand" href="index.html" aria-label="DAI 2026 home"><img class="logo-img" src="assets/logo-compact.webp" alt="DAI 2026 · Hong Kong" width="520" height="187" decoding="async"><span class="divider" aria-hidden="true"></span><span class="wm"><strong>8th International Conference on Distributed AI</strong><small>Hong Kong · Nov 29 – Dec 2, 2026</small></span></a>
+
+      <nav class="topbar-nav" aria-label="Conference">
+        <a class="is-current" href="index.html">Home</a>
+        <div class="nav-item has-menu">
+          <a href="authors.html" aria-haspopup="true">Authors</a>
+          <div class="nav-menu" role="menu" aria-label="Authors">
+            <a href="authors.html" role="menuitem">Call for Papers</a>
+            <a href="research-track.html" role="menuitem">Research Track</a>
+            <a href="ai-paper-track.html" role="menuitem">AI Paper Track</a>
+            <a href="industry-track.html" role="menuitem">Industry Track</a>
+            <a href="sister-conference-track.html" role="menuitem">Sister Conference Track</a>
+            <a href="author-guide.html" role="menuitem">Author Guide</a>
+          </div>
+        </div>
+        <a href="dates.html">Dates</a>
+        <a href="program.html">Program</a>
+        <a href="attending.html">Attending</a>
+        <a href="organizing.html">Organizing</a>
+        <a href="sponsors.html">Sponsors</a>
+      </nav>
+
+      <div class="topbar-meta">
+        <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle theme">
+          <span class="dot" aria-hidden="true"></span>
+          <span data-theme-label>Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       Hero
+       ==================================================================== -->
+  <section class="hero" aria-label="Conference summary">
+    <div class="hero-contour" aria-hidden="true">
+      <div class="svg-inline" data-svg-inline="assets/contour.svg" data-svg-fit="fill"></div>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-top">
+        <div class="crumbs">
+          <span class="pill">Call for papers open</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="hero-eyebrow">The 8th International Conference on Distributed Artificial Intelligence</p>
+        <h1 class="hero-title">DAI <span class="yr">2026</span></h1>
+
+        <div class="theme-skyline" aria-hidden="true">
+          <div class="svg-inline" data-svg-inline="assets/skyline.svg"></div>
+        </div>
+
+        <p class="hero-theme">
+          <span class="theme-label">Theme</span>
+          <em>Agentic AI Goes Live</em> — Science, Systems, and Societies.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="authors.html">Calls <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="program.html">View program</a>
+          <a class="btn btn-link" href="attending.html">Venue</a>
+        </div>
+      </div>
+
+      <div class="hero-meta">
+        <div>
+          <span class="label">Dates</span>
+          <span class="value"><time datetime="2026-11-29" class="mono">29 Nov – 02 Dec 2026</time></span>
+          <span class="sub">4 days · Workshops · Main program · Discussion</span>
+        </div>
+        <div>
+          <span class="label">Venue</span>
+          <span class="value">City University of Hong Kong</span>
+          <span class="sub">Kowloon, Hong Kong</span>
+        </div>
+        <div>
+          <span class="label">Next deadline</span>
+          <span class="value"><time datetime="2026-06-30" class="mono">30 June 2026</time></span>
+          <span class="sub">Workshop proposals · 23:59 AoE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Main
+       ==================================================================== -->
+  <main>
+    <div class="container page-layout">
+
+      <aside class="sidebar" aria-label="Conference quick information">
+        <section class="side-section deadline-card">
+          <span class="label">Next deadline</span>
+          <strong>Workshop proposals</strong>
+          <span class="date"><time datetime="2026-06-30">30 June 2026</time></span>
+          <span class="countdown" id="countdown">— d remaining · 23:59 AoE</span>
+        </section>
+
+        <section class="side-section">
+          <h3>Recent updates</h3>
+          <ol class="news-list">
+            <li>
+              <time datetime="2026-05-20">20 May 2026</time>
+              <a href="authors.html">DAI 2026 call for contributions is open.</a>
+            </li>
+            <li>
+              <time datetime="2026-05-20">20 May 2026</time>
+              <a href="authors.html">Author guide and submission policies published.</a>
+            </li>
+            <li>
+              <time datetime="2026-05-20">20 May 2026</time>
+              <a href="dates.html">Submission and notification dates published.</a>
+            </li>
+            <li>
+              <time datetime="2026-05-20">20 May 2026</time>
+              <a href="organizing.html">Initial organizing committee roster announced.</a>
+            </li>
+          </ol>
+        </section>
+
+        <section class="side-section">
+          <h3>Quick links</h3>
+          <ul class="quick-links">
+            <li><a href="authors.html">Call for papers</a></li>
+            <li><a href="dates.html">Important dates</a></li>
+            <li><a href="program.html">Program preview</a></li>
+            <li><a href="attending.html">Venue</a></li>
+            <li><a href="organizing.html">Organizing</a></li>
+            <li><a href="sponsors.html">Sponsorship</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <article class="content" id="content">
+
+        <!-- WELCOME ------------------------------------------------------- -->
+        <section class="welcome">
+          <div>
+            <p class="kicker">Welcome</p>
+            <p class="lede">
+              DAI 2026 invites the international distributed AI community to
+              <strong>Hong Kong</strong> for four days of research exchange on the
+              science, systems, and societies of agentic AI. The program centres on
+              four submission tracks and seven topic areas spanning agent
+              infrastructure, learning, coordination, markets, embodied systems,
+              and AI for science.
+            </p>
+          </div>
+        </section>
+
+        <!-- AUTHORS / CFP ------------------------------------------------- -->
+        <section id="authors">
+          <div class="section-head">
+            <p class="kicker">For Authors · Call for papers</p>
+            <h2>Calls for contributions</h2>
+            <p class="lede">
+              DAI 2026 welcomes research papers, AI-assisted scientific work,
+              industry experience reports, and selected presentations from sister
+              conferences across distributed and agentic AI.
+            </p>
+          </div>
+
+          <div class="tracks tracks-4">
+            <article>
+              <h3><a href="research-track.html">Research Track</a></h3>
+              <p>Original research on the theory, methods, systems, evaluation, and applications of distributed AI, autonomous agents, multi-agent systems, and agentic AI.</p>
+              <div class="track-tags">
+                <span class="track-tag">8 pages</span>
+                <span class="track-tag">double blind</span>
+                <span class="track-tag">3 Aug</span>
+              </div>
+            </article>
+            <article>
+              <h3><a href="industry-track.html">Industry Track</a></h3>
+              <p>Experience papers, case studies, system descriptions, benchmark reports, and demo proposals from teams deploying distributed and agentic AI in real settings.</p>
+              <div class="track-tags">
+                <span class="track-tag">4 pages</span>
+                <span class="track-tag">deployment</span>
+                <span class="track-tag">single blind</span>
+              </div>
+            </article>
+            <article>
+              <h3><a href="ai-paper-track.html">AI Paper Track</a></h3>
+              <p>An experimental venue for studying AI agents as participants in research, including fully autonomous and human-AI collaborative scientific workflows.</p>
+              <div class="track-tags">
+                <span class="track-tag">autonomy disclosure</span>
+                <span class="track-tag">awards</span>
+                <span class="track-tag">10 Aug</span>
+              </div>
+            </article>
+            <article>
+              <h3><a href="sister-conference-track.html">Sister Conference Track</a></h3>
+              <p>Non-archival presentations of relevant work already accepted by AAMAS, AAAI, IJCAI, EC, KDD, ICLR, ICML, NeurIPS, and related venues.</p>
+              <div class="track-tags">
+                <span class="track-tag">rolling</span>
+                <span class="track-tag">opens 1 Jul</span>
+                <span class="track-tag">non archival</span>
+              </div>
+            </article>
+          </div>
+
+        </section>
+
+        <!-- DATES --------------------------------------------------------- -->
+        <section id="dates">
+          <div class="section-head">
+            <p class="kicker">Important dates</p>
+            <h2>Submission timeline</h2>
+            <p class="lede">
+              All deadlines are 23:59 Anywhere on Earth unless otherwise noted.
+              No rebuttal period is planned.
+            </p>
+          </div>
+
+          <table class="datetable">
+            <thead>
+              <tr>
+                <th scope="col">Milestone</th>
+                <th scope="col">Date</th>
+                <th scope="col">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="is-next">
+                <td>Workshop proposal submission</td>
+                <td><time datetime="2026-06-30">30 Jun 2026</time></td>
+                <td>Open workshop proposal deadline</td>
+              </tr>
+              <tr>
+                <td>Sister Conference Presentation Track opens</td>
+                <td><time datetime="2026-07-01">01 Jul 2026</time></td>
+                <td>Rolling until capacity is reached</td>
+              </tr>
+              <tr>
+                <td>Workshop notification</td>
+                <td><time datetime="2026-07-15">15 Jul 2026</time></td>
+                <td>Organiser notification</td>
+              </tr>
+              <tr>
+                <td>Abstract registration</td>
+                <td><time datetime="2026-07-27">27 Jul 2026</time></td>
+                <td>Required for full paper submission</td>
+              </tr>
+              <tr>
+                <td>Research / Industry submission</td>
+                <td><time datetime="2026-08-03">03 Aug 2026</time></td>
+                <td>Full paper and industry deadlines</td>
+              </tr>
+              <tr>
+                <td>AI Paper Track submission</td>
+                <td><time datetime="2026-08-10">10 Aug 2026</time></td>
+                <td>AI contribution disclosure required</td>
+              </tr>
+              <tr>
+                <td>Notifications</td>
+                <td><time datetime="2026-09-16">16 Sep 2026</time></td>
+                <td>Research and AI Paper Track decisions</td>
+              </tr>
+              <tr>
+                <td>Camera ready</td>
+                <td><time datetime="2026-10-16">16 Oct 2026</time></td>
+                <td>Final manuscript deadline</td>
+              </tr>
+              <tr class="is-conference">
+                <td>Conference dates</td>
+                <td><time datetime="2026-11-29">29 Nov – 02 Dec 2026</time></td>
+                <td>Hong Kong · 4 days</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="datetable-foot">All times Anywhere on Earth (AoE, UTC−12)</p>
+        </section>
+
+        <!-- PROGRAM ------------------------------------------------------- -->
+        <section id="program">
+          <div class="section-head">
+            <p class="kicker">Program</p>
+            <h2>Program at a glance</h2>
+            <p class="lede">
+              Four days. One day of community-led sessions, two days of main
+              program, one day of focused discussion and community meetings.
+            </p>
+          </div>
+
+          <div class="program program-3">
+            <div>
+              <span class="day">Day 01</span>
+              <span class="dnum">29</span>
+              <h3>Workshops &amp; Tutorials</h3>
+              <p>Community-led workshops and practical tutorials introducing methods, datasets, and emerging problem areas.</p>
+              <span class="date">Sun · 29 Nov</span>
+            </div>
+            <div>
+              <span class="day">Days 02 – 03</span>
+              <span class="dnum">30–01</span>
+              <h3>Main Conference</h3>
+              <p>Paper sessions, invited talks, posters, and panels across the seven topic areas and the AI Paper Track. Keynote, banquet, and awards on Day 03.</p>
+              <span class="date">Mon – Tue · 30 Nov – 01 Dec</span>
+            </div>
+            <div>
+              <span class="day">Day 04</span>
+              <span class="dnum">02</span>
+              <h3>Discussion &amp; Closing</h3>
+              <p>Focused exchange, town halls, community meetings, and closing remarks.</p>
+              <span class="date">Wed · 02 Dec</span>
+            </div>
+          </div>
+
+          <div style="margin-top:28px;"><a class="linkrow" href="program.html">Detailed program</a></div>
+        </section>
+
+        <!-- VENUE / HONG KONG -------------------------------------------- -->
+        <section id="attending">
+          <div class="section-head">
+            <p class="kicker">Attending</p>
+            <h2>Hosted at City University of Hong Kong</h2>
+          </div>
+
+          <figure class="venue-figure">
+            <img src="assets/cityu-campus.svg" alt="Editorial illustration of the City University of Hong Kong venue and Hong Kong skyline" loading="lazy" decoding="async">
+            <figcaption>City University of Hong Kong · Kowloon Tong · Hong Kong SAR</figcaption>
+          </figure>
+        </section>
+
+        <!-- SPONSORS ------------------------------------------------------ -->
+        <section id="sponsors">
+          <div class="section-head">
+            <p class="kicker">Call for sponsorship</p>
+            <h2>Support DAI 2026 in Hong Kong</h2>
+            <p class="lede">
+              DAI 2026 invites research labs, companies, foundations, and
+              community partners to support student participation, workshops,
+              tutorials, awards, and public-facing exchange around distributed
+              and agentic AI. A sponsorship prospectus is in preparation; early
+              expressions of interest are welcome through the organizing team.
+            </p>
+          </div>
+
+          <div style="margin-top:28px;"><a class="linkrow" href="sponsors.html">Sponsorship information</a></div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="mark" src="assets/logo-compact.webp" alt="DAI 2026" width="520" height="187" loading="lazy" decoding="async">
+          <span class="name">DAI 2026</span>
+          <span class="desc">The 8th International Conference on Distributed Artificial Intelligence — Hong Kong, 29 Nov – 02 Dec 2026.</span>
+        </div>
+        <div>
+          <h4>Program</h4>
+          <ul>
+            <li><a href="authors.html">Call for papers</a></li>
+            <li><a href="dates.html">Important dates</a></li>
+            <li><a href="program.html">Program</a></li>
+          </ul>
+        </div>
+        <div><h4>Attending</h4><ul><li><a href="attending.html">Venue</a></li></ul></div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="organizing.html">Organizing committee</a></li>
+            <li><a href="sponsors.html">Sponsorship</a></li>
+            <li><a href="organizing.html">Contact</a></li>
+            <li><a href="#top">Back to top ↑</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="legal">
+        <span>© 2026 DAI Steering Committee</span>
+        <span>Hosted by City University of Hong Kong</span>
+        <span>Updated 20 May 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       Inline script: theme toggle + deadline countdown + Tweaks integration
+       ==================================================================== -->
+  <script>
+    // EDITMODE persistence
+    const DEFAULTS = /*EDITMODE-BEGIN*/{
+      "theme":  "light",
+      "accent": "navy",
+      "showHKContour": true
+    }/*EDITMODE-END*/;
+
+    // Apply persisted theme
+    document.documentElement.dataset.theme  = DEFAULTS.theme;
+    // default navy (no override)
+
+    // Theme toggle button
+    const btn = document.getElementById('themeToggle');
+    const lbl = btn.querySelector('[data-theme-label]');
+    const sync = () => { lbl.textContent = (document.documentElement.dataset.theme === 'dark') ? 'Dark' : 'Light'; };
+    sync();
+    btn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      sync();
+      // persist via host edit mode if active
+      window.parent && window.parent.postMessage({type: '__edit_mode_set_keys', edits: {theme: next}}, '*');
+    });
+
+    // Countdown
+    const cd = document.getElementById('countdown');
+    if (cd) {
+      const target = new Date('2026-07-01T11:59:59Z'); // 23:59 AoE on 30 June = UTC noon on 1 July
+      const now    = new Date();
+      const days   = Math.max(0, Math.ceil((target - now) / (1000*60*60*24)));
+      cd.textContent = days + ' days remaining · 23:59 AoE';
+    }
+  </script>
+
+  <script src="svg-inline.js"></script>
+</body>
 </html>

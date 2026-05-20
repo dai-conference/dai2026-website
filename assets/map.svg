@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+  
+
+  
+  <path d="M40,40 Q120,30 200,50 Q260,65 310,55 Q380,42 460,60 Q520,75 580,70 Q650,62 700,80 L700,180 Q670,200 620,205 Q570,210 540,235 Q510,260 480,255 Q450,250 430,235 Q410,220 390,225 L390,260 Q400,275 380,290 L370,290 L360,275 Q355,260 340,255 Q320,250 305,265 L305,290 Q310,310 290,320 L280,320 Q270,315 270,300 L268,275 Q262,255 240,255 Q200,255 180,235 Q160,215 130,215 Q90,215 70,200 Q50,185 40,160 Z" opacity="0.7"></path>
+
+  
+  <path d="M305,260 L305,355 Q305,365 315,365 L385,365 Q395,365 395,355 L395,260" opacity="0.7"></path>
+
+  
+  <path d="M40,395 Q200,380 305,385 L395,385 Q500,388 700,395" opacity="0.5" stroke-dasharray="3 3"></path>
+
+  
+  <path d="M120,420 Q180,400 240,410 Q300,415 360,408 Q420,402 480,415 Q540,425 600,418 Q650,412 680,425 Q695,438 685,455 Q650,475 600,475 Q540,475 480,470 Q420,465 360,470 Q300,475 240,470 Q190,465 150,455 Q115,445 120,420 Z" opacity="0.8"></path>
+
+  
+  <path d="M40,355 Q80,345 130,355 Q170,365 200,360 Q230,355 245,375 Q260,395 240,420 Q210,440 170,438 Q120,435 80,420 Q40,400 40,375 Z" opacity="0.7"></path>
+
+  
+  <path d="M280,495 Q310,485 330,495 Q345,505 335,515 Q315,520 290,512 Q275,505 280,495 Z" opacity="0.6"></path>
+
+  
+  <ellipse cx="195" cy="470" rx="14" ry="7" opacity="0.6"></ellipse>
+
+  
+  <circle cx="540" cy="500" r="3" opacity="0.5"></circle>
+  <circle cx="580" cy="495" r="2" opacity="0.5"></circle>
+  <circle cx="620" cy="488" r="2.5" opacity="0.5"></circle>
+
+  
+  <g stroke-width="1.4">
+    <circle cx="350" cy="290" r="5" fill="currentColor"></circle>
+    <circle cx="350" cy="290" r="11"></circle>
+    <line x1="350" y1="305" x2="350" y2="330"></line>
+  </g>
+
+  
+  <g stroke="none" fill="currentColor" font-family="ui-monospace, &#39;JetBrains Mono&#39;, monospace" font-size="11" letter-spacing="0.1em" opacity="0.85">
+    <text x="360" y="334" text-anchor="start">CITY UNIVERSITY OF HONG KONG</text>
+    <text x="360" y="348" text-anchor="start" opacity="0.6">KOWLOON · HONG KONG</text>
+
+    <text x="60" y="100" opacity="0.55">NEW TERRITORIES</text>
+    <text x="430" y="455" opacity="0.55">HONG KONG ISLAND</text>
+    <text x="80" y="385" opacity="0.55">LANTAU</text>
+    <text x="40" y="390" opacity="0.4" font-size="9">22.3193° N</text>
+    <text x="40" y="402" opacity="0.4" font-size="9">114.1694° E</text>
+  </g>
+
+  
+  <g transform="translate(680,80)" stroke-width="1">
+    <line x1="0" y1="-22" x2="0" y2="22"></line>
+    <polygon points="0,-22 -5,-12 5,-12" fill="currentColor" stroke="none"></polygon>
+    <text x="0" y="36" text-anchor="middle" fill="currentColor" stroke="none" font-family="ui-monospace, monospace" font-size="10" opacity="0.7">N</text>
+  </g>
+
+  
+  <g transform="translate(560,470)" stroke-width="1">
+    <line x1="0" y1="0" x2="100" y2="0"></line>
+    <line x1="0" y1="-3" x2="0" y2="3"></line>
+    <line x1="50" y1="-3" x2="50" y2="3"></line>
+    <line x1="100" y1="-3" x2="100" y2="3"></line>
+    <text x="0" y="14" fill="currentColor" stroke="none" font-family="ui-monospace, monospace" font-size="9" opacity="0.6">0</text>
+    <text x="50" y="14" text-anchor="middle" fill="currentColor" stroke="none" font-family="ui-monospace, monospace" font-size="9" opacity="0.6">5</text>
+    <text x="100" y="14" text-anchor="end" fill="currentColor" stroke="none" font-family="ui-monospace, monospace" font-size="9" opacity="0.6">10 KM</text>
+  </g>
+</svg>

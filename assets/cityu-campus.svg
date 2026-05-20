@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">City University of Hong Kong venue illustration</title>
+  <desc id="desc">An editorial illustration of the Hong Kong skyline, transit lines, and a campus venue block for DAI 2026.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f7f1"/>
+      <stop offset="0.52" stop-color="#eef1ef"/>
+      <stop offset="1" stop-color="#dce4ea"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1d3557" stop-opacity=".08"/>
+      <stop offset=".5" stop-color="#1d3557" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#c8202d" stop-opacity=".12"/>
+    </linearGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0v38" fill="none" stroke="#1d3557" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#1d3557" flood-opacity=".14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#sky)"/>
+  <rect width="1200" height="720" fill="url(#grid)"/>
+
+  <g fill="none" stroke="#1d3557" stroke-opacity=".16" stroke-width="1.4">
+    <path d="M-40 155c150 22 210-50 360-28s250 85 410 48 260-96 510-28"/>
+    <path d="M-40 205c135 28 225-30 342-16s196 68 337 42 252-75 600-18"/>
+    <path d="M-40 260c165 28 260-42 420-18s270 72 438 25 235-72 422-26"/>
+  </g>
+
+  <g transform="translate(0 120)" fill="#1d3557">
+    <rect x="95" y="284" width="42" height="116" rx="2" opacity=".50"/>
+    <rect x="154" y="238" width="66" height="162" rx="2" opacity=".60"/>
+    <rect x="238" y="185" width="54" height="215" rx="2" opacity=".72"/>
+    <rect x="314" y="262" width="78" height="138" rx="2" opacity=".54"/>
+    <rect x="424" y="145" width="76" height="255" rx="2" opacity=".82"/>
+    <path d="M548 400V210h72l12 190z" opacity=".64"/>
+    <rect x="664" y="248" width="54" height="152" rx="2" opacity=".52"/>
+    <rect x="746" y="172" width="84" height="228" rx="2" opacity=".74"/>
+    <rect x="870" y="224" width="52" height="176" rx="2" opacity=".58"/>
+    <path d="M964 400V138c34 8 52 38 52 78v184z" opacity=".78"/>
+    <rect x="1048" y="278" width="62" height="122" rx="2" opacity=".48"/>
+  </g>
+
+  <path d="M0 522c130-22 234-18 360 0s236 16 356-4 264-22 484 8v194H0z" fill="url(#water)"/>
+
+  <g transform="translate(92 428)" fill="none" stroke="#1d3557" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+    <path d="M10 160C142 88 268 122 394 84c105-32 210-94 330-72"/>
+    <path d="M498 40l226-28 24 150-226 28z" fill="#f6f6f3"/>
+    <path d="M542 82l52-8 8 52-52 8zM632 68l52-8 8 52-52 8" stroke-width="5"/>
+    <path d="M60 160h742"/>
+    <path d="M260 110l36 36 52-86 48 78 34-42 28 52" stroke="#c8202d"/>
+  </g>
+
+  <g transform="translate(824 410)" filter="url(#soft)">
+    <rect x="0" y="0" width="250" height="182" rx="8" fill="#fbfbf9" stroke="#1d3557" stroke-opacity=".25"/>
+    <rect x="18" y="22" width="214" height="26" rx="2" fill="#1d3557" opacity=".88"/>
+    <rect x="18" y="68" width="76" height="92" rx="2" fill="#c8202d" opacity=".86"/>
+    <rect x="112" y="68" width="120" height="14" rx="2" fill="#1d3557" opacity=".28"/>
+    <rect x="112" y="96" width="120" height="14" rx="2" fill="#1d3557" opacity=".22"/>
+    <rect x="112" y="124" width="86" height="14" rx="2" fill="#1d3557" opacity=".18"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" fill="#1d3557">
+    <text x="78" y="86" font-size="18" letter-spacing="6" font-weight="600">CITY UNIVERSITY OF HONG KONG</text>
+    <text x="78" y="122" font-size="42" font-weight="700">DAI 2026 venue</text>
+    <text x="78" y="158" font-size="18" fill="#4b5563">Kowloon Tong · Hong Kong SAR</text>
+  </g>
+</svg>
