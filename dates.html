@@ -13,12 +13,14 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="topbar-brand" href="index.html" aria-label="DAI 2026 home"><img class="logo-img" src="assets/logo-compact.webp" alt="DAI 2026 · Hong Kong" width="520" height="187" decoding="async"><span class="divider" aria-hidden="true"></span><span class="wm"><strong>8th International Conference on Distributed AI</strong><small>Hong Kong · Nov 29 – Dec 2, 2026</small></span></a>
-      <nav class="topbar-nav" aria-label="Conference">
+      <nav class="topbar-nav" id="siteNav" aria-label="Conference">
         <a href="index.html">Home</a>
         <div class="nav-item has-menu">
-          <a href="authors.html" aria-haspopup="true">Authors</a>
-          <div class="nav-menu" role="menu" aria-label="Authors">
+          <a href="authors.html" aria-haspopup="true">Calls</a>
+          <div class="nav-menu" role="menu" aria-label="Calls">
             <a href="authors.html" role="menuitem">Call for Papers</a>
+            <a href="call-for-workshops.html" role="menuitem">Call for Workshops</a>
+            <a href="call-for-tutorials.html" role="menuitem">Call for Tutorials</a>
             <a href="research-track.html" role="menuitem">Research Track</a>
             <a href="ai-paper-track.html" role="menuitem">AI Paper Track</a>
             <a href="industry-track.html" role="menuitem">Industry Track</a>
@@ -29,7 +31,7 @@
         <a class="is-current" href="dates.html">Dates</a>
         <a href="program.html">Program</a><a href="attending.html">Attending</a><a href="organizing.html">Organizing</a><a href="sponsors.html">Sponsors</a>
       </nav>
-      <div class="topbar-meta"><button class="theme-toggle" type="button" id="themeToggle"><span class="dot"></span><span data-theme-label>Light</span></button></div>
+      <div class="topbar-meta"><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav"><span class="nav-toggle-lines" aria-hidden="true"></span><span data-nav-label>Menu</span></button><button class="theme-toggle" type="button" id="themeToggle"><span class="dot"></span><span data-theme-label>Light</span></button></div>
     </div>
   </header>
 
@@ -67,77 +69,77 @@
             <tr class="is-next">
               <td>Workshop proposal submission</td>
               <td><time datetime="2026-06-30">30 Jun 2026</time></td>
-              <td>Open workshop proposal deadline</td>
+              <td><a href="call-for-workshops.html">Call for Workshops</a></td>
             </tr>
             <tr>
               <td>Sister Conference Presentation Track opens</td>
               <td><time datetime="2026-07-01">01 Jul 2026</time></td>
-              <td>Rolling selection until capacity is reached</td>
+              <td><a href="sister-conference-track.html">Sister Conference Track</a></td>
             </tr>
             <tr>
               <td>Workshop notification</td>
               <td><time datetime="2026-07-15">15 Jul 2026</time></td>
-              <td>Organiser notification of accepted workshops</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>Abstract registration</td>
               <td><time datetime="2026-07-27">27 Jul 2026</time></td>
-              <td>Required for Research, AI Paper, and Industry submissions</td>
+              <td><a href="authors.html">Call for Papers</a></td>
             </tr>
             <tr>
               <td>Research Track submission</td>
               <td><time datetime="2026-08-03">03 Aug 2026</time></td>
-              <td>Full papers · up to 8 pages excluding references</td>
+              <td><a href="research-track.html">Research Track</a></td>
             </tr>
             <tr>
               <td>Industry Track submission</td>
               <td><time datetime="2026-08-03">03 Aug 2026</time></td>
-              <td>Technical reports, case studies, benchmarks, and demos · up to 4 pages</td>
+              <td><a href="industry-track.html">Industry Track</a></td>
             </tr>
             <tr>
               <td>Review period begins</td>
               <td><time datetime="2026-08-06">06 Aug 2026</time></td>
-              <td>Reviewer assignment runs 04–06 Aug</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>AI Paper Track submission</td>
               <td><time datetime="2026-08-10">10 Aug 2026</time></td>
-              <td>AI contribution and autonomy disclosure required</td>
+              <td><a href="ai-paper-track.html">AI Paper Track</a></td>
             </tr>
             <tr>
               <td>Keynotes announced</td>
               <td><time datetime="2026-09-01">01 Sep 2026</time></td>
-              <td>Invited speaker program announcement</td>
+              <td><a href="program.html">Program</a></td>
             </tr>
             <tr>
               <td>Research Track notification</td>
               <td><time datetime="2026-09-16">16 Sep 2026</time></td>
-              <td>Acceptance notifications · no rebuttal period</td>
+              <td><a href="research-track.html">Research Track</a></td>
             </tr>
             <tr>
               <td>AI Paper Track notification</td>
               <td><time datetime="2026-09-16">16 Sep 2026</time></td>
-              <td>Acceptance and award-eligibility notifications</td>
+              <td><a href="ai-paper-track.html">AI Paper Track</a></td>
             </tr>
             <tr>
               <td>Camera ready</td>
               <td><time datetime="2026-10-16">16 Oct 2026</time></td>
-              <td>Final manuscript and proceedings metadata</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>Early registration closes</td>
               <td><time datetime="2026-11-01">01 Nov 2026</time></td>
-              <td>Early registration deadline</td>
+              <td>-</td>
             </tr>
             <tr>
               <td>Late registration closes</td>
               <td><time datetime="2026-11-20">20 Nov 2026</time></td>
-              <td>Late registration deadline</td>
+              <td>-</td>
             </tr>
             <tr class="is-conference">
               <td>Conference dates</td>
               <td><time datetime="2026-11-29">29 Nov – 02 Dec 2026</time></td>
-              <td>Hong Kong · 4 days</td>
+              <td><a href="program.html">Program</a></td>
             </tr>
           </tbody>
         </table>
@@ -179,6 +181,7 @@
       });
     }
   </script>
+  <script src="nav.js"></script>
   <script src="svg-inline.js"></script>
 </body>
 </html>

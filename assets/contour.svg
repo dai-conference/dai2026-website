@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none" stroke="currentColor" stroke-width="0.6" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none" stroke="#3C4990" stroke-width="0.6" aria-hidden="true">
   
   <g opacity="0.55">
     <path d="M120,420 Q220,260 420,250 Q620,240 760,320 Q900,400 880,540 Q860,680 700,720 Q540,760 360,700 Q180,640 140,540 Q100,440 120,420 Z"></path>

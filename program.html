@@ -13,12 +13,14 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="topbar-brand" href="index.html" aria-label="DAI 2026 home"><img class="logo-img" src="assets/logo-compact.webp" alt="DAI 2026 · Hong Kong" width="520" height="187" decoding="async"><span class="divider" aria-hidden="true"></span><span class="wm"><strong>8th International Conference on Distributed AI</strong><small>Hong Kong · Nov 29 – Dec 2, 2026</small></span></a>
-      <nav class="topbar-nav" aria-label="Conference">
+      <nav class="topbar-nav" id="siteNav" aria-label="Conference">
         <a href="index.html">Home</a>
         <div class="nav-item has-menu">
-          <a href="authors.html" aria-haspopup="true">Authors</a>
-          <div class="nav-menu" role="menu" aria-label="Authors">
+          <a href="authors.html" aria-haspopup="true">Calls</a>
+          <div class="nav-menu" role="menu" aria-label="Calls">
             <a href="authors.html" role="menuitem">Call for Papers</a>
+            <a href="call-for-workshops.html" role="menuitem">Call for Workshops</a>
+            <a href="call-for-tutorials.html" role="menuitem">Call for Tutorials</a>
             <a href="research-track.html" role="menuitem">Research Track</a>
             <a href="ai-paper-track.html" role="menuitem">AI Paper Track</a>
             <a href="industry-track.html" role="menuitem">Industry Track</a>
@@ -30,7 +32,7 @@
         <a class="is-current" href="program.html">Program</a>
         <a href="attending.html">Attending</a><a href="organizing.html">Organizing</a><a href="sponsors.html">Sponsors</a>
       </nav>
-      <div class="topbar-meta"><button class="theme-toggle" type="button" id="themeToggle"><span class="dot"></span><span data-theme-label>Light</span></button></div>
+      <div class="topbar-meta"><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav"><span class="nav-toggle-lines" aria-hidden="true"></span><span data-nav-label>Menu</span></button><button class="theme-toggle" type="button" id="themeToggle"><span class="dot"></span><span data-theme-label>Light</span></button></div>
     </div>
   </header>
 
@@ -85,6 +87,7 @@
       });
     }
   </script>
+  <script src="nav.js"></script>
   <script src="svg-inline.js"></script>
 </body>
 </html>
