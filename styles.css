@@ -360,8 +360,7 @@ p { margin: 0; }
   pointer-events: none;
   transition: opacity var(--motion-fast), transform var(--motion-fast), visibility var(--motion-fast);
 }
-.nav-menu a,
-.nav-menu .disabled-link {
+.nav-menu a {
   display: block;
   padding: 9px 10px;
   border-radius: 6px;
@@ -374,14 +373,6 @@ p { margin: 0; }
 .nav-menu a:hover {
   color: var(--heading);
   background: var(--highlight-soft);
-}
-.disabled-link {
-  color: var(--text-muted);
-  cursor: default;
-  pointer-events: none;
-}
-.nav-menu .disabled-link {
-  opacity: 0.62;
 }
 .nav-item:hover .nav-menu,
 .nav-item:focus-within .nav-menu {
@@ -1054,8 +1045,7 @@ p { margin: 0; }
   letter-spacing: 0;
   text-wrap: balance;
 }
-.tracks h3 a,
-.tracks h3 .track-link {
+.tracks h3 a {
   display: inline-grid;
   grid-template-columns: 34px minmax(0, 1fr);
   align-items: center;
@@ -1193,7 +1183,7 @@ p { margin: 0; }
 .datetable tr.is-conference td time { color: var(--heading); }
 .datetable tr.is-conference td:last-child { color: var(--heading); }
 .datetable tr.is-conference td:first-child { color: var(--heading); font-weight: 700; }
-.datetable tr.is-past td { color: var(--text-muted); }
+.datetable tr.is-past td { background: transparent; color: var(--text-muted); }
 .datetable tr.is-past td time { color: var(--text-muted); text-decoration: line-through; text-decoration-color: var(--border-strong); }
 .datetable tr.is-past td:first-child { color: var(--text-muted); }
 
@@ -1999,8 +1989,7 @@ p { margin: 0; }
     display: none;
   }
   .topbar.is-nav-open .nav-menu { display: grid; }
-  .nav-menu a,
-  .nav-menu .disabled-link {
+  .nav-menu a {
     padding: 7px 0;
     border-radius: 0;
     white-space: normal;
