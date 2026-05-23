@@ -1176,6 +1176,17 @@ p { margin: 0; }
 .datetable tr.is-highlight td {
   background: var(--accent);
 }
+.datetable tr.is-next.is-highlight td {
+  background: var(--highlight-soft);
+  color: var(--text);
+}
+.datetable tr.is-next.is-highlight td time,
+.datetable tr.is-next.is-highlight td:first-child {
+  color: var(--text);
+}
+.datetable tr.is-next.is-highlight td:last-child {
+  color: var(--text-secondary);
+}
 .datetable tr.is-conference td {
   background: var(--accent-tint);
   color: var(--heading);

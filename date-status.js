@@ -1,6 +1,6 @@
 (function () {
   const DAY_MS = 24 * 60 * 60 * 1000;
-  const STATUS_CLASSES = ['is-next', 'is-past', 'is-highlight'];
+  const STATUS_CLASSES = ['is-next', 'is-past'];
 
   function parseDateParts(value) {
     const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value || '');
