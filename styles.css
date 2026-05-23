@@ -1614,6 +1614,17 @@ p { margin: 0; }
   text-wrap: balance;
 }
 
+.topic-subhead {
+  margin: 14px 0 8px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.topic-block h3 + .topic-subhead {
+  margin-top: 0;
+}
+
 .topic-block ul {
   margin-top: 0;
   gap: 8px;
