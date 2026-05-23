@@ -117,7 +117,7 @@
           <span class="label">Next deadline</span>
           <strong>Workshop proposals</strong>
           <span class="date"><time datetime="2026-06-30">30 June 2026</time></span>
-          <span class="countdown" id="countdown" data-deadline="2026-07-01T11:59:59Z">Calculating · 23:59 AoE</span>
+          <span class="countdown" id="countdown">Calculating · 23:59 AoE</span>
         </section>
 
         <section class="side-section">
@@ -268,7 +268,7 @@
                 <td><time datetime="2026-06-12">12 Jun 2026</time></td>
                 <td>OpenReview opens</td>
               </tr>
-              <tr class="is-next">
+              <tr>
                 <td>Workshop proposal submission</td>
                 <td><time datetime="2026-06-30">30 Jun 2026</time></td>
                 <td>Open workshop proposal deadline</td>
@@ -283,17 +283,17 @@
                 <td><time datetime="2026-07-15">15 Jul 2026</time></td>
                 <td>Organiser notification</td>
               </tr>
-              <tr class="is-highlight">
+              <tr>
                 <td>Abstract registration</td>
                 <td><time datetime="2026-07-27">27 Jul 2026</time></td>
                 <td>Required for full paper submission</td>
               </tr>
-              <tr class="is-highlight">
+              <tr>
                 <td>Research / Industry submission</td>
                 <td><time datetime="2026-08-03">03 Aug 2026</time></td>
                 <td>Full paper deadlines</td>
               </tr>
-              <tr class="is-highlight">
+              <tr>
                 <td>AI Paper Track submission</td>
                 <td><time datetime="2026-08-10">10 Aug 2026</time></td>
                 <td>AI contribution disclosure required</td>
@@ -310,7 +310,7 @@
               </tr>
               <tr class="is-conference">
                 <td>Conference dates</td>
-                <td><time datetime="2026-11-29">29 Nov – 02 Dec 2026</time></td>
+                <td><time datetime="2026-11-29" data-end-date="2026-12-02">29 Nov – 02 Dec 2026</time></td>
                 <td>Hong Kong · 4 days</td>
               </tr>
             </tbody>
@@ -457,29 +457,10 @@
       window.parent && window.parent.postMessage({type: '__edit_mode_set_keys', edits: {theme: next}}, '*');
     });
 
-    // Deadline countdown. AoE is UTC-12, so 30 June 23:59 AoE is 1 July 11:59 UTC.
-    const cd = document.getElementById('countdown');
-    if (cd) {
-      const target = new Date(cd.dataset.deadline);
-      const updateCountdown = () => {
-        const diff = target - new Date();
-        if (Number.isNaN(target.getTime())) {
-          cd.textContent = '23:59 AoE';
-          return;
-        }
-        if (diff <= 0) {
-          cd.textContent = 'Closed · 23:59 AoE';
-          return;
-        }
-        const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
-        cd.textContent = `${days} ${days === 1 ? 'day' : 'days'} remaining · 23:59 AoE`;
-      };
-      updateCountdown();
-      setInterval(updateCountdown, 60 * 60 * 1000);
-    }
   </script>
 
   <script src="nav.js?v=20260521-1"></script>
+  <script src="date-status.js"></script>
   <script src="svg-inline.js"></script>
 </body>
 </html>
