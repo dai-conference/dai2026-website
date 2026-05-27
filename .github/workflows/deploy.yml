@@ -30,3 +30,14 @@ jobs:
             .gitignore
             README.md
             AGENTS.md
+
+      - name: Publish root robots.txt
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_PORT || '22' }}
+          source: "robots.txt"
+          target: "/www/wwwroot/www.adai.ai"
+          strip_components: 0

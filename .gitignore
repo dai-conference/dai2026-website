@@ -1,1 +1,9 @@
 .DS_Store
+
+# CFP poster drafts, exports, and generated helper assets
+cfp-poster-*.html
+cfp-poster-*.png
+cfp-poster-*.pdf
+render-cfp-poster*.js
+assets/cfp-site-qr.svg
+assets/logo-compact-transparent.png
