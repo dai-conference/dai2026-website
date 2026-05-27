@@ -20,16 +20,10 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT || '22' }}
-          source: "."
+          source: "*.html,*.css,*.js,*.jsx,assets,robots.txt,sitemap.xml"
           target: "/www/wwwroot/www.adai.ai/dai/2026"
           strip_components: 0
           rm: true
-          exclude: |
-            .git/
-            .github/
-            .gitignore
-            README.md
-            AGENTS.md
 
       - name: Publish root robots.txt
         uses: appleboy/scp-action@v0.1.7
