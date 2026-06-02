@@ -16,6 +16,7 @@ The site is intentionally plain HTML, CSS, and a small amount of JavaScript. The
 - `sponsors.html` - call for sponsorship.
 - `styles.css` - shared design system and responsive layout.
 - `svg-inline.js` - inlines decorative SVG assets so they inherit the site colors.
+- `robots.txt`, `sitemap.xml`, `llms.txt` - search and AI-discovery files. The deploy workflow publishes these both under `/dai/2026/` and at the domain root where applicable.
 - `assets/` - logos, SVGs, venue image, and optimized headshots.
 
 ## Preview
@@ -59,4 +60,3 @@ git push origin main
 ```
 
 If remote `main` has changed, fetch first, inspect the history, and avoid force pushing unless the project owner explicitly asks for it.
-

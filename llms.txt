@@ -1,0 +1,59 @@
+# DAI 2026
+
+> DAI 2026 is the 8th International Conference on Distributed Artificial Intelligence, hosted at City University of Hong Kong in Kowloon, Hong Kong, from November 29 to December 2, 2026.
+
+DAI 2026 is the official conference website for calls, deadlines, venue information, organizing committee information, sponsorship information, and program updates. The conference focuses on distributed artificial intelligence, distributed AI, multi-agent systems, autonomous agents, agentic AI, distributed learning, computational game theory, AI for science, and deployed AI systems.
+
+Canonical site: https://www.adai.ai/dai/2026/
+
+Organizer: DAI Steering Committee.
+
+Venue: City University of Hong Kong, Kowloon, Hong Kong.
+
+Dates: 2026-11-29 to 2026-12-02.
+
+## Core Pages
+
+- [DAI 2026 homepage](https://www.adai.ai/dai/2026/): Official overview of the 8th International Conference on Distributed Artificial Intelligence, including dates, venue, calls, program overview, and sponsorship information.
+- [Important Dates](https://www.adai.ai/dai/2026/dates.html): Submission, notification, camera-ready, registration, and conference dates.
+- [Program](https://www.adai.ai/dai/2026/program.html): Program-at-a-glance for workshops, tutorials, paper sessions, invited talks, posters, and discussions.
+- [Venue](https://www.adai.ai/dai/2026/attending.html): Venue information for City University of Hong Kong.
+- [Organizing Committee](https://www.adai.ai/dai/2026/organizing.html): General co-chairs, program committee leadership, local arrangements, publicity, sponsorship, and contacts.
+
+## Calls and Author Information
+
+- [Calls](https://www.adai.ai/dai/2026/authors.html): Entry point for all calls for contributions.
+- [Research Track CFP](https://www.adai.ai/dai/2026/research-track.html): Full research papers on distributed AI, autonomous agents, multi-agent systems, agentic AI, theory, methods, systems, evaluation, and applications.
+- [Industry Track CFP](https://www.adai.ai/dai/2026/industry-track.html): Industry papers on deployed distributed AI systems, case studies, benchmarks, demos, tools, and real-world agentic AI applications.
+- [Sister Conference Track](https://www.adai.ai/dai/2026/sister-conference-track.html): Non-archival presentations of relevant work accepted at related conferences.
+- [Call for Workshops](https://www.adai.ai/dai/2026/call-for-workshops.html): Workshop proposal call for emerging distributed and agentic AI topics.
+- [Call for Tutorials](https://www.adai.ai/dai/2026/call-for-tutorials.html): Tutorial proposal call for methods, systems, tools, and applications relevant to the DAI community.
+- [Author Guide](https://www.adai.ai/dai/2026/author-guide.html): Submission format, review expectations, publication policies, and responsible AI disclosure guidance.
+
+## Important Facts
+
+- Official name: DAI 2026, The 8th International Conference on Distributed Artificial Intelligence.
+- Short name: DAI 2026.
+- Location: Hong Kong.
+- Venue: City University of Hong Kong.
+- Conference dates: November 29 to December 2, 2026.
+- Workshop proposal deadline: June 30, 2026.
+- Abstract registration deadline: July 27, 2026.
+- Research Track and Industry Track submission deadline: August 3, 2026.
+- AI Paper Track submission deadline: August 10, 2026.
+- Notification date: September 16, 2026.
+- Camera-ready deadline: October 16, 2026.
+- General co-chairs: Minming Li, Francesca Rossi, and Michael Wellman.
+- Program committee co-chairs: Ian Gemp, Mengchen Zhao, and Ying Wen.
+
+## Machine-Readable Files
+
+- [XML sitemap](https://www.adai.ai/sitemap.xml): Root sitemap for DAI 2026 pages.
+- [DAI 2026 sitemap](https://www.adai.ai/dai/2026/sitemap.xml): Subpath sitemap for DAI 2026 pages.
+- [robots.txt](https://www.adai.ai/robots.txt): Crawl policy and sitemap discovery.
+
+## Optional
+
+- [DAI parent site](https://www.adai.ai/): Parent website for the International Conference on Distributed Artificial Intelligence series.
+- [News](https://www.adai.ai/dai/2026/news.html): DAI 2026 news and updates.
+- [Sponsorship](https://www.adai.ai/dai/2026/sponsors.html): Sponsorship and support information.
