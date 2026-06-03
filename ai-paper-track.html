@@ -60,7 +60,7 @@
         <span>Full Paper <span>Up to 8 Pages</span></span>
         <span>Submission <span>10 Aug 2026</span></span>
         <span>ARM Bundle <span>Required</span></span>
-        <span>Review <span>AI-Assisted</span></span>
+        <span>Review <span>Double-Blind + AI-Assisted</span></span>
       </div>
     </div>
   </section>
@@ -86,7 +86,6 @@
             <li><a href="#awards">Awards</a></li>
             <li><a href="#record">Public Record</a></li>
             <li><a href="#policies">Key Policies</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </aside>
@@ -102,8 +101,8 @@
             <div><span class="label">Page Limit</span><strong>Up to 8 Pages</strong><small>References excluded</small></div>
             <div><span class="label">ARM Bundle</span><strong>Required</strong><small>Trace, execution, skill, knowledge graph</small></div>
             <div><span class="label">Language</span><strong>English</strong></div>
-            <div><span class="label">Review Mode</span><strong>AI-Assisted</strong><small>Human-governed final decisions</small></div>
-            <div><span class="label">Proceedings</span><strong>Non-Proceedings</strong><small>Public-record policy TBD</small></div>
+            <div><span class="label">Review Mode</span><strong>Double-Blind + AI-Assisted</strong><small>Human-governed final decisions</small></div>
+            <div><span class="label">Proceedings</span><strong>Non-Proceedings</strong><small>Public-record policy</small></div>
             <div><span class="label">Submission Site</span><strong>TBD</strong></div>
             <div><span class="label">Last Updated</span><strong>03 Jun 2026</strong></div>
           </div>
@@ -138,7 +137,7 @@
             <tbody>
               <tr>
                 <td>ARM Bundle Starter Kit</td>
-                <td><time datetime="2026-07-01">01 Jul 2026</time></td>
+                <td><time datetime="2026-06-12">12 Jun 2026</time></td>
                 <td>Developer documentation and validator</td>
               </tr>
               <tr>
@@ -154,7 +153,7 @@
               <tr>
                 <td>Open Review and Response Period</td>
                 <td>3-7 days during review</td>
-                <td>TBD</td>
+                <td></td>
               </tr>
               <tr>
                 <td>Notification</td>
@@ -164,7 +163,7 @@
               <tr>
                 <td>Final Public Version and Materials</td>
                 <td><time datetime="2026-10-16">16 Oct 2026</time></td>
-                <td>TBD</td>
+                <td></td>
               </tr>
               <tr>
                 <td>Early Registration Deadline</td>
@@ -216,7 +215,7 @@
             <p class="kicker">Call · 04</p>
             <h2>Submission Format and Requirements</h2>
           </div>
-          <p>AI Paper Track submissions must be written in English and submitted as PDFs through OpenReview. Submissions should follow the official DAI 2026 style files and formatting instructions. The LaTeX template is <strong>TBD</strong>.</p>
+          <p>AI Paper Track submissions must be written in English and submitted as PDFs through OpenReview. Authors should prepare manuscripts using the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">ACM LaTeX template</a>. Two-column submissions using the ACM <code>sigconf</code> option are acceptable.</p>
           <p>Submissions should be full papers of up to 8 pages, excluding references. Papers may include appendices after the bibliography. Material essential to evaluating the paper should appear in the main body.</p>
           <p>Each AI Paper Track submission must include an <strong>Agent Ready Manuscript (ARM) Bundle</strong> as supplementary material. The ARM Bundle makes the AI-led or AI-assisted research process inspectable and, wherever feasible, re-executable. Reviewers verify a submission primarily by re-running its Execution artifacts and cross-checking them against the manuscript's claims; the Trace is treated as supporting evidence, not as proof in itself, because a narrative log alone cannot establish that a result was actually produced as described.</p>
           <p><strong>Bundle structure.</strong> Submit the ARM Bundle as a single archive (<code>.zip</code> or <code>.tar.gz</code>) with a top-level manifest and one directory per modality:</p>
@@ -262,7 +261,7 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
           <p><strong>Redaction.</strong> Privacy-, security-, legal-, proprietary-, or safety-sensitive material may be redacted. Each redaction must be listed in the manifest with a short reason, and authors must provide enough surrounding evidence for reviewers to evaluate the claimed autonomy, scientific validity, and reproducibility despite the redaction.</p>
           <p><strong>Completeness check.</strong> The ARM Bundle starter kit (released June 2026) includes a validator that checks a bundle for the required manifest fields, directory layout, resolvable citation identifiers, and a runnable <code>entry_point</code>. Authors should run the validator before submission; bundles that fail required checks may be desk-rejected.</p>
           <p>For AI Paper Track submissions, the AI agent system must be listed as the sole first author. Human contributors may be listed as advisors or co-authors, subject to final OpenReview and public-record metadata constraints. At least one accountable human contact must be responsible for submission, correspondence, compliance, research integrity, and presentation logistics.</p>
-          <p>Concurrent submission to other conferences or journals is permitted for the AI Paper Track during review. Authors remain responsible for complying with the publication, disclosure, withdrawal, copyright, and archival policies of all venues involved. Final public-record and presentation policies are <strong>TBD</strong>.</p>
+          <p>Concurrent submission to other conferences or journals is permitted for the AI Paper Track during review. Authors remain responsible for complying with the publication, disclosure, withdrawal, copyright, and archival policies of all venues involved.</p>
         </section>
 
         <section id="disclosure">
@@ -270,7 +269,7 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <p class="kicker">Call · 05</p>
             <h2>AI Research Autonomy Disclosure</h2>
           </div>
-          <p>Each submission must complete an AI Research Autonomy Disclosure checklist. The final disclosure format is <strong>TBD</strong>, but authors should expect to describe:</p>
+          <p>Each submission must complete an AI Research Autonomy Disclosure checklist. The checklist will be released when the submission system opens; authors should expect to describe:</p>
           <ul>
             <li>Submission category: AI for AI or AI for X; Fully Autonomous or Human-in-the-loop</li>
             <li>AI systems, base models, agents, tools, and versions used</li>
@@ -283,7 +282,7 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <li>Validation steps for citations, claims, data handling, experiments, originality, and licensing, where appropriate</li>
             <li>Whether the submission seeks eligibility for AI Paper Track awards</li>
           </ul>
-          <p>Authors remain fully responsible for the correctness, originality, integrity, citations, claims, experiments, and writing of their submissions. Final authorship, metadata, disclosure, and public-record policy is <strong>TBD</strong>.</p>
+          <p>Authors remain fully responsible for the correctness, originality, integrity, citations, claims, experiments, and writing of their submissions.</p>
         </section>
 
         <section id="review">
@@ -291,7 +290,7 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <p class="kicker">Call · 06</p>
             <h2>Review Process</h2>
           </div>
-          <p>The AI Paper Track will use a multi-stage AI-assisted, open, and human-governed review process. The final review workflow and OpenReview configuration are <strong>TBD</strong>.</p>
+          <p>The AI Paper Track will use a multi-stage AI-assisted, open, and human-governed review process.</p>
           <ul>
             <li>Stage 1: submissions and ARM Bundles will be parsed by automated review systems that extract text, figures, claims, evidence, citations, code, experiment artifacts, and trace information.</li>
             <li>Stage 2: submissions will be reviewed by multiple automated or AI-assisted review components, subject to final technical integration and review-governance arrangements.</li>
@@ -315,7 +314,7 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <li><strong>Centaur Award:</strong> for the strongest human-AI collaborative paper, recognizing research in which human direction and AI agency are combined especially effectively.</li>
             <li><strong>Scientific Breakthrough Award:</strong> for a paper that produces genuine new knowledge, selected by vote of a human expert jury.</li>
           </ul>
-          <p>Award eligibility rules, autonomy thresholds, required evidence, judging process, and any additional artifact, ARM Bundle, trace, red-team response, or demonstration requirements are <strong>TBD</strong>.</p>
+          <p>More details about award eligibility rules, autonomy thresholds, required evidence, judging process, and any additional artifact, ARM Bundle, trace, red-team response, or demonstration requirements will be updated in the future.</p>
         </section>
 
         <section id="record">
@@ -343,20 +342,6 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <li>Prompt injection, hidden instructions to reviewers or automated review tools, reviewer manipulation, plagiarism, fabricated results, fabricated citations, and collusion are prohibited.</li>
             <li>Submissions should discuss ethical, legal, and societal considerations whenever they are relevant to the work.</li>
             <li>Submissions involving human subjects, sensitive or proprietary data, privacy or security risks, autonomous decision-making, multi-agent collusion or deception, scientific automation, safety-critical deployment, or high-impact domains must include an appropriate discussion of risks, safeguards, consent, approval processes, and legal or institutional compliance.</li>
-          </ul>
-        </section>
-
-        <section id="contact">
-          <div class="section-head">
-            <p class="kicker">Call · 10</p>
-            <h2>Further Information</h2>
-          </div>
-          <ul>
-            <li>Author Guide: <strong>TBD</strong></li>
-            <li>Reviewer Guide: <strong>TBD</strong></li>
-            <li>OpenReview submission site: <strong>TBD</strong></li>
-            <li>Conference website: <strong>TBD</strong></li>
-            <li>Contact: <strong>TBD</strong></li>
           </ul>
         </section>
       </article>
