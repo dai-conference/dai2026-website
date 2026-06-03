@@ -1904,6 +1904,12 @@ p { margin: 0; }
   font-weight: 600;
 }
 .page-header .header-meta span { color: var(--text); }
+.page-header .header-meta a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color var(--motion-fast);
+}
+.page-header .header-meta a:hover { color: var(--accent-strong); }
 .page-header-contour {
   position: absolute;
   top: 0; right: -10%;
