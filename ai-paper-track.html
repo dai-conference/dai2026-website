@@ -105,7 +105,7 @@
             <div><span class="label">Review Mode</span><strong>AI-Assisted</strong><small>Human-governed final decisions</small></div>
             <div><span class="label">Proceedings</span><strong>Non-Proceedings</strong><small>Public-record policy TBD</small></div>
             <div><span class="label">Submission Site</span><strong>TBD</strong></div>
-            <div><span class="label">Last Updated</span><strong>30 May 2026</strong></div>
+            <div><span class="label">Last Updated</span><strong>03 Jun 2026</strong></div>
           </div>
         </section>
 
@@ -137,6 +137,11 @@
             </thead>
             <tbody>
               <tr>
+                <td>ARM Bundle Starter Kit</td>
+                <td><time datetime="2026-07-01">01 Jul 2026</time></td>
+                <td>Developer documentation and validator</td>
+              </tr>
+              <tr>
                 <td>AI Paper Track Submission Deadline</td>
                 <td><time datetime="2026-08-10">10 Aug 2026</time></td>
                 <td>Full paper and ARM Bundle due</td>
@@ -144,7 +149,7 @@
               <tr>
                 <td>Automated and Human Review Period</td>
                 <td><time datetime="2026-08-11" data-end-date="2026-09-16">11 Aug - 16 Sep 2026</time></td>
-                <td>TBD</td>
+                <td>Automated and human-governed review</td>
               </tr>
               <tr>
                 <td>Open Review and Response Period</td>
@@ -213,14 +218,49 @@
           </div>
           <p>AI Paper Track submissions must be written in English and submitted as PDFs through OpenReview. Submissions should follow the official DAI 2026 style files and formatting instructions. The LaTeX template is <strong>TBD</strong>.</p>
           <p>Submissions should be full papers of up to 8 pages, excluding references. Papers may include appendices after the bibliography. Material essential to evaluating the paper should appear in the main body.</p>
-          <p>Each submission must include an <strong>Agent Ready Manuscript (ARM) Bundle</strong> as supplementary material. The ARM Bundle is intended to make the AI-generated or AI-assisted research process inspectable and, where possible, reproducible. The required bundle format is <strong>TBD</strong>, but authors should expect to provide:</p>
+          <p>Each AI Paper Track submission must include an <strong>Agent Ready Manuscript (ARM) Bundle</strong> as supplementary material. The ARM Bundle makes the AI-led or AI-assisted research process inspectable and, wherever feasible, re-executable. Reviewers verify a submission primarily by re-running its Execution artifacts and cross-checking them against the manuscript's claims; the Trace is treated as supporting evidence, not as proof in itself, because a narrative log alone cannot establish that a result was actually produced as described.</p>
+          <p><strong>Bundle structure.</strong> Submit the ARM Bundle as a single archive (<code>.zip</code> or <code>.tar.gz</code>) with a top-level manifest and one directory per modality:</p>
+          <pre><code>arm-bundle/
+  manifest.yaml         # required - index + metadata for the whole bundle
+  trace/                # required
+  execution/            # required
+  skill/                # required
+  knowledge_graph/      # required (see first-edition note)
+  README.md             # required - human entry point: how to verify in &lt;= 10 steps</code></pre>
+          <p><strong>Manifest (<code>manifest.yaml</code>).</strong> A machine-readable index so automated review can locate and check each part. Minimum fields:</p>
+          <pre><code>title: &lt;paper title&gt;
+category: ai_for_ai | ai_for_x            # research-domain axis
+autonomy_mode: fully_autonomous | human_in_the_loop
+agent_system:
+  name: &lt;agent / framework name&gt;
+  base_models: [&lt;model&gt;@&lt;version&gt;, ...]
+  tools: [&lt;tool&gt;@&lt;version&gt;, ...]
+contents:
+  trace: present | partial | redacted
+  execution: present | partial | redacted
+  skill: present | partial | redacted
+  knowledge_graph: present | partial | redacted
+reproducibility_level: R0 | R1 | R2 | R3  # see below
+entry_point: &lt;command or script that reproduces the headline result&gt;
+claims_index: &lt;path to a file mapping each headline claim to its supporting artifact&gt;
+redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
+          <p><strong>Modality requirements.</strong></p>
           <ul>
-            <li><strong>Trace:</strong> the reasoning path, planning steps, tool calls, intermediate hypotheses, failed attempts, and major decision points used by the agent system.</li>
-            <li><strong>Execution:</strong> reproducible code, scripts, notebooks, environment specifications, data-processing steps, evaluation commands, and experiment outputs needed to verify the reported results.</li>
-            <li><strong>Skill:</strong> reusable agent skills, task modules, prompts, workflows, system instructions, model/tool configurations, and orchestration logic used during the research process.</li>
-            <li><strong>Knowledge Graph:</strong> structured representation of key entities, claims, citations, datasets, methods, assumptions, dependencies, and relationships used or produced by the agent system.</li>
+            <li><strong>Trace (required):</strong> the agent's reasoning path: planning steps, tool calls, intermediate hypotheses, failed attempts, and major decision points, in chronological order. Provide it as structured records, such as JSONL with timestamps and a stable step id, rather than free prose where possible. The Trace should let a reviewer follow how the result was reached; it is corroborating evidence, not the primary proof of correctness.</li>
+            <li><strong>Execution (required):</strong> a reproducible execution package: code, scripts or notebooks, an environment specification (<code>requirements.txt</code>, <code>environment.yml</code>, or a container image), data or a documented way to obtain it, evaluation commands, and the experiment outputs needed to verify the reported results. The <code>entry_point</code> named in the manifest must reproduce the submission's headline result from a clean environment, or the README must state precisely why it cannot and what partial verification is possible. Execution is the primary verification anchor for this track.</li>
+            <li><strong>Skill (required):</strong> the reusable agent skills, task modules, prompts, system instructions, model and tool configurations, and orchestration logic used during the research. Provide enough that the workflow could be re-instantiated, not merely read.</li>
+            <li><strong>Knowledge Graph (required; see first-edition note):</strong> a structured representation of the key entities, claims, citations, datasets, methods, assumptions, dependencies, and relationships used or produced by the agent. Each headline claim in the manuscript should map to a node, and each citation node must carry a resolvable identifier, such as a DOI, arXiv id, or URL, so reviewers can check whether cited work exists and supports the claim. A starter schema is provided in the ARM Bundle starter kit.</li>
           </ul>
-          <p>The ARM Bundle is mandatory for all AI Paper Track submissions. Privacy, security, legal, proprietary, and safety-sensitive material may be redacted, but authors must explain any redactions and provide enough evidence for reviewers to evaluate the claimed autonomy, scientific validity, and reproducibility of the work.</p>
+          <p><strong>Reproducibility levels.</strong> Authors declare a <code>reproducibility_level</code> so reviewers can triage verification effort. This level, not the narrative Trace, governs how strongly a result or autonomy claim can be credited, and award eligibility for Fully-Autonomous submissions may require independent re-execution:</p>
+          <ul>
+            <li><strong>R0 - Re-executable from scratch:</strong> a clean-environment run of <code>entry_point</code> reproduces the headline result deterministically, or within a stated tolerance.</li>
+            <li><strong>R1 - Re-executable with provided artifacts:</strong> results reproduce by replaying supplied intermediate artifacts or checkpoints; full from-scratch reproduction is impractical because of cost, scale, or third-party resources, and this is documented.</li>
+            <li><strong>R2 - Partially re-executable:</strong> core components run; some steps cannot be reproduced and the gaps are explained.</li>
+            <li><strong>R3 - Inspectable only:</strong> no re-execution is possible, for example because of proprietary instruments or human-subject data; verification relies on inspection of artifacts and disclosure.</li>
+          </ul>
+          <p>Misdeclaring a level, for example labelling an R3 submission as R0, is treated as a transparency violation, not as a stronger result.</p>
+          <p><strong>Redaction.</strong> Privacy-, security-, legal-, proprietary-, or safety-sensitive material may be redacted. Each redaction must be listed in the manifest with a short reason, and authors must provide enough surrounding evidence for reviewers to evaluate the claimed autonomy, scientific validity, and reproducibility despite the redaction.</p>
+          <p><strong>Completeness check.</strong> The ARM Bundle starter kit (released June 2026) includes a validator that checks a bundle for the required manifest fields, directory layout, resolvable citation identifiers, and a runnable <code>entry_point</code>. Authors should run the validator before submission; bundles that fail required checks may be desk-rejected.</p>
           <p>For AI Paper Track submissions, the AI agent system must be listed as the sole first author. Human contributors may be listed as advisors or co-authors, subject to final OpenReview and public-record metadata constraints. At least one accountable human contact must be responsible for submission, correspondence, compliance, research integrity, and presentation logistics.</p>
           <p>Concurrent submission to other conferences or journals is permitted for the AI Paper Track during review. Authors remain responsible for complying with the publication, disclosure, withdrawal, copyright, and archival policies of all venues involved. Final public-record and presentation policies are <strong>TBD</strong>.</p>
         </section>
@@ -332,7 +372,7 @@
         <div><h4>Attending</h4><ul><li><a href="attending.html">Venue</a></li></ul></div>
         <div><h4>About</h4><ul><li><a href="organizing.html">Organizing Committee</a></li><li><a href="sponsors.html">Sponsorship</a></li><li><a href="organizing.html">Contact</a></li><li><a href="#top">Back to Top</a></li></ul></div>
       </div>
-      <div class="legal"><span>© 2026 DAI Steering Committee</span><span>Hosted by City University of Hong Kong</span><span>Updated 30 May 2026</span></div>
+      <div class="legal"><span>© 2026 DAI Steering Committee</span><span>Hosted by City University of Hong Kong</span><span>Updated 03 Jun 2026</span></div>
     </div>
   </footer>
 

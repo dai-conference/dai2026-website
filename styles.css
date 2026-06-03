@@ -1560,6 +1560,32 @@ p { margin: 0; }
   padding: 1px 5px;
 }
 
+.call-prose pre {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 18px 0 0;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--panel-radius);
+  background: #f7f8fa;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.65;
+  white-space: pre;
+}
+
+.call-prose pre code {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .call-prose ul {
   list-style: none;
   margin: 18px 0 0;
