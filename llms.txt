@@ -35,7 +35,7 @@ Dates: 2026-11-29 to 2026-12-02.
 - Location: Hong Kong.
 - Venue: City University of Hong Kong.
 - Conference dates: November 29 to December 2, 2026.
-- Workshop proposal deadline: June 30, 2026.
+- Workshop and tutorial proposal deadline: July 30, 2026.
 - Abstract registration deadline: July 27, 2026.
 - Research Track and Industry Track submission deadline: August 3, 2026.
 - AI Paper Track submission deadline: August 10, 2026.
