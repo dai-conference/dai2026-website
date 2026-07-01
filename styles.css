@@ -1663,6 +1663,20 @@ p { margin: 0; }
   margin-top: 14px;
 }
 
+.call-prose h3 {
+  max-width: 82ch;
+  margin: 30px 0 10px;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 750;
+}
+
+.call-prose h3 + p,
+.call-prose h3 + ul {
+  margin-top: 10px;
+}
+
 .call-prose a:not(.btn) {
   color: var(--heading);
   font-weight: 700;
@@ -1736,6 +1750,40 @@ p { margin: 0; }
   width: 8px;
   height: 1px;
   background: var(--accent);
+}
+
+.call-prose table.review-dimensions {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 0 26px;
+  border-collapse: collapse;
+  border-top: 1px solid var(--border-strong);
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.call-prose table.review-dimensions th,
+.call-prose table.review-dimensions td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  text-align: left;
+}
+
+.call-prose table.review-dimensions th {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 650;
+}
+
+.call-prose table.review-dimensions td:first-child {
+  width: 32%;
+  color: var(--text);
+  font-weight: 700;
 }
 
 .call-summary {
