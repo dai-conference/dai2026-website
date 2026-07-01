@@ -18,7 +18,7 @@
   <meta name="twitter:image" content="https://www.adai.ai/dai/2026/assets/logo.jpg">
   <title>Call for Papers: AI Paper Track · DAI 2026</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=20260603-2">
+  <link rel="stylesheet" href="styles.css?v=20260603-3">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to main content</a>
@@ -99,7 +99,7 @@
           <div class="call-facts">
             <div><span class="label">Submission Type</span><strong>AI Paper</strong><small>AI-led or human-AI collaborative research</small></div>
             <div><span class="label">Page Limit</span><strong>Up to 8 Pages</strong><small>References excluded</small></div>
-            <div><span class="label">ARM Bundle</span><strong>Required</strong><small>Trace, execution, skill, knowledge graph</small></div>
+            <div><span class="label">ARM Bundle</span><strong>Required</strong><small>Trace, execution, skill, knowledge graph</small><small><a href="https://github.com/dai-conference/DAI_AI_Paper_Track_kit" rel="noopener">GitHub author kit repo</a></small></div>
             <div><span class="label">Language</span><strong>English</strong></div>
             <div><span class="label">Review Mode</span><strong>Double-Blind + AI-Assisted</strong><small>Human-governed final decisions</small></div>
             <div><span class="label">Proceedings</span><strong>Non-Proceedings</strong><small>Public-record policy</small></div>
@@ -221,16 +221,26 @@
             <h2>Submission Format and Requirements</h2>
           </div>
           <p>AI Paper Track submissions must be written in English and submitted as PDFs through OpenReview. Authors should prepare manuscripts using the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">ACM LaTeX template</a>. Two-column submissions using the ACM <code>sigconf</code> option are acceptable.</p>
+          <h3>Required Submission Materials</h3>
+          <ul>
+            <li><strong><code>paper.pdf</code>:</strong> the submitted manuscript.</li>
+            <li><strong><code>arm-bundle.zip</code>:</strong> the Agent Ready Manuscript evidence package submitted as supplementary material.</li>
+          </ul>
+          <h3>Paper PDF</h3>
           <p>Submissions should be full papers of up to 8 pages, excluding references. Papers may include appendices after the bibliography. Material essential to evaluating the paper should appear in the main body.</p>
+          <p>Review manuscripts should follow a best-effort double-blind approach with respect to human contributors unless final OpenReview instructions say otherwise. AI systems, frameworks, or agent names may be identified when needed for scientific clarity; if naming a system would reveal the human team, authors should use a neutral label in the review PDF and record the full details in private submission metadata and the ARM Bundle.</p>
           <p>Each AI Paper Track submission must include an <strong>Agent Ready Manuscript (ARM) Bundle</strong> as supplementary material. The ARM Bundle makes the AI-led or AI-assisted research process inspectable and, wherever feasible, re-executable. Reviewers verify a submission primarily by re-running its Execution artifacts and cross-checking them against the manuscript's claims; the Trace is treated as supporting evidence, not as proof in itself, because a narrative log alone cannot establish that a result was actually produced as described.</p>
-          <p><strong>Bundle structure.</strong> Submit the ARM Bundle as a single archive (<code>.zip</code> or <code>.tar.gz</code>) with a top-level manifest and one directory per modality:</p>
+          <p>Starter templates, validation materials, and the current author-kit files are maintained in the <a href="https://github.com/dai-conference/DAI_AI_Paper_Track_kit" rel="noopener">DAI AI Paper Track Kit GitHub repository</a>.</p>
+          <p><strong>Bundle structure.</strong> Submit the ARM Bundle as a single archive, preferably <code>arm-bundle.zip</code>, with required top-level files and one directory per modality:</p>
           <pre><code>arm-bundle/
-  manifest.yaml         # required - index + metadata for the whole bundle
-  trace/                # required
-  execution/            # required
-  skill/                # required
-  knowledge_graph/      # required (see first-edition note)
-  README.md             # required - human entry point: how to verify in &lt;= 10 steps</code></pre>
+  manifest.yaml              # required - index + metadata for the whole bundle
+  autonomy_disclosure.yaml   # required - AI/human roles and accountability
+  README.md                  # required - how to verify in &lt;= 10 steps
+  claims_index.yaml          # required - headline claims mapped to evidence paths
+  trace/                     # required
+  execution/                 # required
+  skill/                     # required
+  knowledge_graph/           # required (see first-edition note)</code></pre>
           <p><strong>Manifest (<code>manifest.yaml</code>).</strong> A machine-readable index so automated review can locate and check each part. Minimum fields:</p>
           <pre><code>title: &lt;paper title&gt;
 category: ai_for_ai | ai_for_x            # research-domain axis
@@ -250,7 +260,7 @@ claims_index: &lt;path to a file mapping each headline claim to its supporting a
 redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
           <p><strong>Modality requirements.</strong></p>
           <ul>
-            <li><strong>Trace (required):</strong> the agent's reasoning path: planning steps, tool calls, intermediate hypotheses, failed attempts, and major decision points, in chronological order. Provide it as structured records, such as JSONL with timestamps and a stable step id, rather than free prose where possible. The Trace should let a reviewer follow how the result was reached; it is corroborating evidence, not the primary proof of correctness.</li>
+            <li><strong>Trace (required):</strong> observable workflow evidence such as planning steps, tool calls, intermediate hypotheses, failed attempts, and major decision points, in chronological order. Provide it as structured records, such as JSONL with timestamps and a stable step id, rather than free prose where possible. The Trace should let a reviewer follow how the result was reached; it is corroborating evidence, not the primary proof of correctness, and authors should not invent logs or hidden chain-of-thought after the fact.</li>
             <li><strong>Execution (required):</strong> a reproducible execution package: code, scripts or notebooks, an environment specification (<code>requirements.txt</code>, <code>environment.yml</code>, or a container image), data or a documented way to obtain it, evaluation commands, and the experiment outputs needed to verify the reported results. The <code>entry_point</code> named in the manifest must reproduce the submission's headline result from a clean environment, or the README must state precisely why it cannot and what partial verification is possible. Execution is the primary verification anchor for this track.</li>
             <li><strong>Skill (required):</strong> the reusable agent skills, task modules, prompts, system instructions, model and tool configurations, and orchestration logic used during the research. Provide enough that the workflow could be re-instantiated, not merely read.</li>
             <li><strong>Knowledge Graph (required; see first-edition note):</strong> a structured representation of the key entities, claims, citations, datasets, methods, assumptions, dependencies, and relationships used or produced by the agent. Each headline claim in the manuscript should map to a node, and each citation node must carry a resolvable identifier, such as a DOI, arXiv id, or URL, so reviewers can check whether cited work exists and supports the claim. A starter schema is provided in the ARM Bundle starter kit.</li>
@@ -263,9 +273,17 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <li><strong>R3 - Inspectable only:</strong> no re-execution is possible, for example because of proprietary instruments or human-subject data; verification relies on inspection of artifacts and disclosure.</li>
           </ul>
           <p>Misdeclaring a level, for example labelling an R3 submission as R0, is treated as a transparency violation, not as a stronger result.</p>
-          <p><strong>Redaction.</strong> Privacy-, security-, legal-, proprietary-, or safety-sensitive material may be redacted. Each redaction must be listed in the manifest with a short reason, and authors must provide enough surrounding evidence for reviewers to evaluate the claimed autonomy, scientific validity, and reproducibility despite the redaction.</p>
-          <p><strong>Completeness check.</strong> The ARM Bundle starter kit (released June 2026) includes a validator that checks a bundle for the required manifest fields, directory layout, resolvable citation identifiers, and a runnable <code>entry_point</code>. Authors should run the validator before submission; bundles that fail required checks may be desk-rejected.</p>
-          <p>For AI Paper Track submissions, the AI agent system must be listed as the sole first author. Human contributors may be listed as advisors or co-authors, subject to final OpenReview and public-record metadata constraints. At least one accountable human contact must be responsible for submission, correspondence, compliance, research integrity, and presentation logistics.</p>
+          <p><strong>Redaction.</strong> Privacy-, security-, legal-, proprietary-, safety-, or human-subject-sensitive material may be redacted. Each redaction must be listed in the manifest with a short reason, and authors must provide enough surrounding evidence for reviewers to evaluate the claimed autonomy, scientific validity, and reproducibility despite the redaction. Redaction must not hide the only evidence for a core claim, conceal failed results, avoid disclosing key human intervention, or overstate a reproducibility level.</p>
+          <h3>Authorship and Metadata Policy</h3>
+          <p>The AI agent system should be the primary contributor and should be listed as the sole first author of the paper in the manuscript and submission metadata, subject to the final OpenReview implementation. Human researchers may be included as secondary authors when they support, advise, supervise, validate, or oversee the work.</p>
+          <p>Human-in-the-loop submissions are allowed, but they should still be AI-led. Work that was primarily conducted and written by humans is outside the intended scope of this track. Each human author may be part of at most three AI Paper Track submissions.</p>
+          <p>Each submission must use OpenReview's normal author/profile mechanism for human authors, author order, communication, and conflict management. Human authors listed in OpenReview are responsible for submission, policy acknowledgements, research integrity, privacy, safety, legal compliance, and conference logistics.</p>
+          <p>For review, authors should follow the same practical anonymity approach as comparable AI/ML conference tracks unless OpenReview instructions say otherwise: the review PDF should be best-effort anonymous with respect to human contributors, while private submission metadata and <code>autonomy_disclosure.yaml</code> provide the record needed for conflict management, accountability, and later public release. If OpenReview does not directly support a non-human first-author field, the intended authorship model should still be recorded in <code>autonomy_disclosure.yaml</code>.</p>
+          <h3>Author Kit and Local Validation</h3>
+          <p>Authors and their AI coding assistants should use the <a href="https://github.com/dai-conference/DAI_AI_Paper_Track_kit" rel="noopener">dai-conference/DAI_AI_Paper_Track_kit GitHub repository</a> for the AI Paper Track author kit, ARM Bundle template, and local validation materials.</p>
+          <p>The Author Kit contains a README quickstart, Codex author-assistant prompt, ARM Bundle template, and a single-file validator. Authors may use Codex or another AI coding assistant to prepare the submission packet, run the validator, and review all findings before submitting to OpenReview.</p>
+          <p>The validator checks structural readiness; it does not decide whether the paper is scientifically correct or whether it should be accepted. A <code>pass</code> means the packet is structurally ready for review, <code>warning</code> means the authors should review and explain the issue if needed, and <code>fail</code> means the packet is not ready until the problem is fixed or clarified.</p>
+          <p>AI assistants must not fabricate traces, logs, citations, experiments, results, human approvals, or model/tool versions. Missing materials must be marked as missing, partial, or redacted.</p>
           <p>Concurrent submission to other conferences or journals is permitted for the AI Paper Track during review. Authors remain responsible for complying with the publication, disclosure, withdrawal, copyright, and archival policies of all venues involved.</p>
         </section>
 
@@ -274,20 +292,23 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <p class="kicker">Call · 05</p>
             <h2>AI Research Autonomy Disclosure</h2>
           </div>
-          <p>Each submission must complete an AI Research Autonomy Disclosure checklist. The checklist will be released when the submission system opens; authors should expect to describe:</p>
+          <p>Each submission must include <code>autonomy_disclosure.yaml</code> inside the ARM Bundle. This YAML file is the required AI Research Autonomy Disclosure for the AI Paper Track. OpenReview will collect concise summary fields and confirmations, and authors must review and confirm the final YAML before submission.</p>
+          <p>The disclosure should explain what the AI system did, what humans did, who is accountable, and what evidence supports the claimed autonomy mode. At minimum, it should cover:</p>
           <ul>
-            <li>Submission category: AI for AI or AI for X; Fully Autonomous or Human-in-the-loop</li>
-            <li>AI systems, base models, agents, tools, and versions used</li>
-            <li>Agent framework, orchestration logic, memory systems, tool environment, and execution settings</li>
-            <li>Roles of AI systems in ideation, literature review, hypothesis generation, experiment design, implementation, analysis, writing, revision, and review</li>
-            <li>Roles of human contributors at each stage</li>
-            <li>Degree of AI autonomy and human intervention</li>
-            <li>ARM Bundle contents, including trace, execution artifacts, skills, and knowledge graph materials</li>
-            <li>Prompts, logs, traces, agent configurations, tool-use records, or reproducibility packages, where appropriate</li>
-            <li>Validation steps for citations, claims, data handling, experiments, originality, and licensing, where appropriate</li>
+            <li>Submission title, category, autonomy mode, and reproducibility level</li>
+            <li>Primary AI contributor / intended first author</li>
+            <li>AI systems, base models, tools, versions, and workflow configuration</li>
+            <li>Human contributors and their advisory, supervisory, validation, compliance, or presentation roles</li>
+            <li>Human authors and their roles</li>
+            <li>Stage-by-stage AI and human roles across ideation, literature review, hypothesis generation, experiment design, implementation, data collection, analysis, writing, revision, and self-review or rebuttal</li>
+            <li>Key human interventions and final approval</li>
+            <li>Evidence paths in the ARM Bundle</li>
+            <li>Validation steps for citations, claims, data, experiments, originality, licensing, privacy, and safety</li>
+            <li>Redaction summary, if applicable</li>
             <li>Whether the submission seeks eligibility for AI Paper Track awards</li>
           </ul>
-          <p>Authors remain fully responsible for the correctness, originality, integrity, citations, claims, experiments, and writing of their submissions.</p>
+          <p>A strong disclosure is specific. It should not simply say "AI helped with research" or "humans supervised." It should explain who did what, at which stage, which decisions were made by AI or humans, and where reviewers can find evidence. The exact YAML template is provided in the Author Kit.</p>
+          <p>Authors remain fully responsible for the correctness, originality, completeness, citations, declarations, experiments, and writing of their submissions. The submission metadata and <code>autonomy_disclosure.yaml</code> must clearly document the role and extent of AI and human participation.</p>
         </section>
 
         <section id="review">
@@ -295,17 +316,75 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
             <p class="kicker">Call · 06</p>
             <h2>Review Process</h2>
           </div>
-          <p>The AI Paper Track will use a multi-stage AI-assisted, open, and human-governed review process.</p>
+          <p>The AI Paper Track will use a multi-stage, agent-assisted, open, and human-governed review process. The organizer-controlled review agent may read submissions, organize evidence, run checks, and raise questions, while final acceptance, presentation, and award decisions are made by human reviewers and the program committee.</p>
+          <p>The planned review process is as follows:</p>
           <ul>
-            <li>Stage 1: submissions and ARM Bundles will be parsed by automated review systems that extract text, figures, claims, evidence, citations, code, experiment artifacts, and trace information.</li>
-            <li>Stage 2: submissions will be reviewed by multiple automated or AI-assisted review components, subject to final technical integration and review-governance arrangements.</li>
-            <li>Stage 3: the automated systems will evaluate submissions across track-specific review dimensions, including scientific validity, relevance, autonomy evidence, reproducibility, artifact completeness, citation support, clarity of reasoning, and ethical or safety concerns.</li>
-            <li>Stage 4: OpenReview will host a short open review period, expected to last 3-7 days, during which eligible reviewers, authors, and/or registered agents may raise questions, red-team claims, challenge evidence, and request clarification.</li>
-            <li>Stage 5: human expert reviewers and the program committee will review the automated reports, open-review exchanges, red-team/blue-team interactions, ARM Bundles, and submissions flagged for special attention. The top-ranked subset, expected to be approximately the top 20%, will receive additional human expert review.</li>
-            <li>Stage 6: final acceptance, oral presentation, and award decisions will be made by a human committee.</li>
+            <li><strong>Stage 0: Submission packet validation.</strong> The organizer-controlled review agent will retrieve the submitted <code>paper.pdf</code> and <code>arm-bundle.zip</code> and run the official validator for required files, ARM structure, required metadata, redaction declarations, common secret patterns, and optionally a sandboxed <code>entry_point</code> run. Authors are expected to run the same validator before submission; a failing packet may be desk-rejected or returned for correction according to PC policy.</li>
+            <li><strong>Stage 1: Parsing and intake.</strong> The review agent will parse text, figures, claims, evidence paths, citations, code, experiment artifacts, execution outputs, trace records, autonomy disclosures, and Knowledge Graph information.</li>
+            <li><strong>Stage 2: Review-agent analysis.</strong> The review agent may inspect scientific claims, ARM evidence, reproducibility, citation support, autonomy disclosure, artifact completeness, and policy risks. It may use internal tools and external scholarly metadata sources where appropriate, but all outputs remain advisory and evidence-linked.</li>
+            <li><strong>Stage 3: Advisory scores and review dimensions.</strong> The review agent may produce advisory scores, flags, and questions across track-specific review dimensions. These scores are intended to triage evidence and focus human review. They are not acceptance scores and should not be treated as final judgments.</li>
+            <li><strong>Stage 4: Open review, red-team questions, and author responses.</strong> OpenReview will host a short open review period, expected to last 3-7 days. During this period, eligible reviewers, authors, and/or the organizer-controlled review agent may raise questions, red-team claims, challenge evidence, identify missing artifacts, and request clarification. Authors may use their submitted agent or other tools to draft responses, including through the OpenReview API where permitted, but any posted response is treated as an official author response from the posting author account.</li>
+            <li><strong>Stage 5: Human expert and PC review.</strong> Human expert reviewers and the program committee will review review-agent reports, open-review exchanges, red-team/blue-team interactions, ARM Bundles, author responses, and submissions flagged for special attention. The top-ranked subset, expected to be approximately the top 20%, will receive additional human expert review.</li>
+            <li><strong>Stage 6: Final decisions.</strong> Final acceptance, oral presentation, and award decisions will be made by a human committee.</li>
           </ul>
-          <p>The AI Paper Track is expected to include an open response mechanism rather than a traditional closed rebuttal. Final decisions will be made by the program committee based on AI-review outputs, human expert reviews, autonomy disclosures, ARM Bundles, open-review exchanges, red-team/blue-team evidence, and program-level deliberation.</p>
-          <p>Additional review criteria include clarity and credibility of the disclosure, evidence supporting the claimed autonomy mode, fit to the selected category, quality of the ARM Bundle, verification of generated claims and experiments, reproducibility, AI autonomy score, and ethical, legal, safety, and societal considerations.</p>
+          <p>The AI Paper Track is expected to include an open response mechanism rather than a traditional closed rebuttal. Final decisions will be made by the program committee based on review-agent outputs, human expert reviews, autonomy disclosures, ARM Bundles, open-review exchanges, red-team/blue-team evidence, and program-level deliberation.</p>
+          <h3>Advisory Review Dimensions, Scores, and Risk Flags</h3>
+          <p>The organizer-controlled review agent may produce dimension-level 1-5 advisory scores for the eight dimensions below, plus evidence-linked findings and risk flags. These are intended to summarize signals from the paper, ARM Bundle, autonomy disclosure, validation reports, and review-agent checks. Scores are triage aids only and are not final judgments.</p>
+          <table class="review-dimensions">
+            <thead>
+              <tr>
+                <th>Dimension</th>
+                <th>What reviewers and the review agent will look for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Scientific validity and contribution</td>
+                <td>Whether the claims, methods, evidence, experiments, theory, and conclusions are technically sound, novel, and significant.</td>
+              </tr>
+              <tr>
+                <td>Relevance to DAI</td>
+                <td>Whether the work fits DAI and the selected AI for AI / AI for X category, and whether the role of AI-led or AI-assisted research is central.</td>
+              </tr>
+              <tr>
+                <td>Autonomy evidence</td>
+                <td>Whether the claimed AI/human division of labor is credible and supported by trace, disclosure, artifacts, and stage-by-stage role descriptions.</td>
+              </tr>
+              <tr>
+                <td>Reproducibility</td>
+                <td>Whether the declared R-level is honest and whether <code>entry_point</code>, code, data, environment, and artifacts support verification.</td>
+              </tr>
+              <tr>
+                <td>Artifact completeness and ARM alignment</td>
+                <td>Whether the ARM Bundle contains the expected manifest, disclosure, trace, execution, skill, Knowledge Graph, and claim evidence, and whether the bundle aligns with the manuscript.</td>
+              </tr>
+              <tr>
+                <td>Citation and claim support</td>
+                <td>Whether important claims, citations, code, experiments, results, and referenced prior work are real, relevant, correctly attributed, and supported by submitted or public evidence.</td>
+              </tr>
+              <tr>
+                <td>Clarity and auditability</td>
+                <td>Whether the paper, autonomy disclosure, Knowledge Graph, and ARM Bundle make the reasoning and evidence trail understandable and auditable.</td>
+              </tr>
+              <tr>
+                <td>Ethical, legal, and safety handling</td>
+                <td>Whether privacy, legal, safety, dual-use, human-subjects, license, and societal issues are handled appropriately.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>A low advisory score does not automatically reject a paper, and a high advisory score does not guarantee acceptance. Any aggregate score or ranking is a triage aid only. Human reviewers and the PC may override, ignore, or reinterpret automated scores and risk flags.</p>
+          <h3>Red-Team / Blue-Team Open Review</h3>
+          <p>The Stage 4 open-review period is intended to be evidence-centered:</p>
+          <ul>
+            <li><strong>Red-team questions</strong> may challenge a claim, citation, result, autonomy statement, execution artifact, redaction, or Knowledge Graph relation.</li>
+            <li><strong>Author or agent-assisted responses</strong> should answer only from the submitted paper, ARM Bundle, and public evidence. They must cite evidence paths and must not invent new experiments, logs, citations, human approvals, or post-hoc autonomy evidence.</li>
+            <li><strong>Official responsibility</strong> remains with the authors and the author account used to post the response, even if an agent drafted or submitted the text through an approved API route.</li>
+            <li><strong>Moderation</strong> may remove or hide spam, unsafe content, prompt injection, personal data, irrelevant attacks, or responses that exceed final OpenReview rules.</li>
+          </ul>
+          <p>Author responses should primarily explain the submitted paper and ARM Bundle. New experiments, logs, datasets, or artifacts are not part of the original submission and may be considered only if explicitly requested or allowed by the PC; they must be labeled as post-submission material and must not be used to create post-hoc autonomy evidence.</p>
+          <p>Submissions will be evaluated for scientific merit independently of authorship mode. Reviewers should not reward or penalize a paper solely because AI systems were involved. Instead, they will evaluate whether the work is valid, novel, significant, relevant to DAI, and transparently documented.</p>
+          <p>The working visibility policy for the AI Paper Track is transparency by default after any configured review anonymity period. During review, visibility will follow the OpenReview configuration and the best-effort double-blind policy for human identities unless final instructions say otherwise. Submitted manuscripts, reviews, ARM Bundles or public ARM subsets, open-review exchanges, review-agent questions, author responses, review-agent reports, and decision records may become public on OpenReview or linked public records, subject to privacy, safety, legal, ethical, license, anonymity, and confidentiality constraints.</p>
+          <p>Authors should prepare submissions, ARM Bundles, traces, logs, prompts, code, and author responses with public release in mind. Materials that cannot be made public must be explicitly redacted, justified, and accompanied by alternative evidence where possible. API keys, passwords, private tokens, unauthorized personal data, legally restricted data, dangerous operational details, and non-redistributable third-party materials must not be included.</p>
         </section>
 
         <section id="awards">
@@ -315,21 +394,24 @@ redactions: [&lt;short reason per redacted item&gt;, ...]</code></pre>
           </div>
           <p>The AI Paper Track plans to recognize outstanding submissions through the following award categories:</p>
           <ul>
-            <li><strong>Fully-Autonomous Award:</strong> for the qualifying submission with the highest autonomy score, recognizing work produced primarily by an AI agent system.</li>
-            <li><strong>Centaur Award:</strong> for the strongest human-AI collaborative paper, recognizing research in which human direction and AI agency are combined especially effectively.</li>
-            <li><strong>Scientific Breakthrough Award:</strong> for a paper that produces genuine new knowledge, selected by vote of a human expert jury.</li>
+            <li><strong>Fully-Autonomous Award:</strong> for an excellent qualifying submission whose core research process was primarily carried out by an AI agent system and whose autonomy claim is well supported by evidence.</li>
+            <li><strong>Centaur Award:</strong> for an excellent human-AI collaborative submission where human direction and AI agency are combined especially effectively and transparently.</li>
+            <li><strong>Scientific Breakthrough Award:</strong> for a submission that produces genuine new knowledge or a high-potential scientific finding, selected by human expert judgment.</li>
           </ul>
-          <p>More details about award eligibility rules, autonomy thresholds, required evidence, judging process, and any additional artifact, ARM Bundle, trace, red-team response, or demonstration requirements will be updated in the future.</p>
+          <p>Awards are selected by the program committee from eligible accepted submissions. A paper must first meet the track's standards for scientific quality and integrity.</p>
+          <p>Award candidates may be asked for additional evidence, clarification, independent re-execution, domain expert review, open-review or author-response materials, public summaries, or demonstration materials. Fully-Autonomous Award candidates may be expected to provide especially strong autonomy and reproducibility evidence.</p>
         </section>
 
         <section id="record">
           <div class="section-head">
             <p class="kicker">Call · 08</p>
-            <h2>Public Record and Benchmark</h2>
+            <h2>Public Record, Presentation, and Benchmark</h2>
           </div>
           <p>DAI 2026 aims to make the AI Paper Track useful not only as a presentation venue and public research record, but also as infrastructure for future research on AI research agents and AI-assisted peer review. Over time, DAI AI Paper Track submissions, reviews, model logs, ARM Bundles, agent traces, autonomy disclosures, open-review exchanges, human/AI review differences, and autonomy scores may be curated into a public AI-Research-Agent benchmark for evaluating future systems.</p>
           <p>Accepted AI Paper Track submissions will be showcased during DAI 2026. More details about presentation formats, scheduling, logistics, and public-record arrangements will be announced when the conference program is released.</p>
-          <p>Accepted submissions will be presented at the conference as oral presentations, spotlight presentations, posters, live-agent demonstrations, or other formats determined by the program committee. At least one accountable human contributor for each accepted submission must register for the conference and be present for the work.</p>
+          <p>Accepted submissions may be presented as oral presentations, spotlight presentations, posters, live agent demonstrations, recorded demos, panels, moderated discussions, or other formats determined by the program committee. At least one human author for each accepted submission must register for the conference and be present for the work. The presenting human author is responsible for communication, compliance, presentation logistics, moderation, and technical fallback.</p>
+          <p>For selected accepted papers, DAI 2026 may invite the submitted agent system to present or assist with presenting the work, using text-to-speech, generated slides, agent-controlled slides, or other formats where feasible. Live agent presentations are subject to technical feasibility, safety review, PC approval, and fallback requirements.</p>
+          <p>Accepted authors may be asked to submit a final public paper version, final metadata confirmation, final AI Research Autonomy Disclosure summary, final ARM Bundle for reviewer/PC archive, public ARM subset if required, redaction or public-release statement, slides, poster, presentation materials, short public summary, and demo plan or fallback material if applicable.</p>
         </section>
 
         <section id="policies">
