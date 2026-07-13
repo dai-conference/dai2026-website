@@ -27,7 +27,6 @@ Dates: 2026-11-29 to 2026-12-02.
 - [Industry Track CFP](https://www.adai.ai/dai/2026/industry-track.html): Industry papers on deployed distributed AI systems, case studies, benchmarks, demos, tools, and real-world agentic AI applications.
 - [Sister Conference Track](https://www.adai.ai/dai/2026/sister-conference-track.html): Non-archival presentations of relevant work accepted at related conferences.
 - [Call for Workshops and Tutorials](https://www.adai.ai/dai/2026/call-for-workshops.html): Combined workshop and tutorial proposal call.
-- [Author Guide](https://www.adai.ai/dai/2026/author-guide.html): Submission format, review expectations, publication policies, and responsible AI disclosure guidance.
 
 ## Important Facts
 
