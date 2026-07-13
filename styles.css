@@ -1661,6 +1661,25 @@ p { margin: 0; }
   font-weight: 650;
 }
 
+.side-interest-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.side-interest-form .interest-qr {
+  align-self: start;
+}
+
+.side-interest-form .interest-qr img {
+  width: 156px;
+  height: 156px;
+}
+
+.side-interest-form .btn {
+  align-self: start;
+}
+
 /* call detail pages */
 .call-layout {
   display: grid;
