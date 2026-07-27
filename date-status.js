@@ -107,6 +107,8 @@
     const dateLabel = getDeadlineLabel(primary);
 
     document.querySelectorAll('.deadline-card').forEach((card) => {
+      if (card.hasAttribute('data-fixed-deadline')) return;
+
       const heading = card.querySelector('strong');
       const dateSlot = card.querySelector('.date');
       const time = dateSlot && dateSlot.querySelector('time');
@@ -142,7 +144,16 @@
       headerNext.textContent = `${title} ${compactDateLabel(primary)}`;
     }
 
-    updateCountdown(document.querySelectorAll('#countdown, [data-next-countdown], .deadline-card .countdown'), primary, now);
+    const dynamicCountdowns = Array.from(
+      document.querySelectorAll('#countdown, [data-next-countdown], .deadline-card .countdown')
+    ).filter((target) => !target.closest('.deadline-card[data-fixed-deadline]'));
+    updateCountdown(dynamicCountdowns, primary, now);
+
+    document.querySelectorAll('.deadline-card[data-fixed-deadline]').forEach((card) => {
+      const deadline = aoeDeadline(card.dataset.fixedDeadline);
+      if (!deadline) return;
+      updateCountdown(card.querySelectorAll('.countdown'), { deadline }, now);
+    });
   }
 
   function updateDateTables() {
