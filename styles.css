@@ -40,6 +40,10 @@
   --highlight-strong: #3c4990;
   --highlight-soft:   rgba(60, 73, 144, 0.12);
 
+  /* DAI red — urgent notices and deadline emphasis */
+  --urgent:          #c8202d;
+  --urgent-border:   rgba(200, 32, 45, 0.38);
+
   /* Status (warm-side) */
   --ok:             #4f8a5a;
   --warn:           #c98a2c;
@@ -117,6 +121,9 @@
   --highlight:        #e64755;
   --highlight-strong: #f37380;
   --highlight-soft:   rgba(230, 71, 85, 0.16);
+
+  --urgent:          #ea5a66;
+  --urgent-border:   rgba(234, 90, 102, 0.48);
 
   --ok:             #74c388;
   --warn:           #e1b25b;
@@ -1621,6 +1628,26 @@ p { margin: 0; }
   gap: 6px;
 }
 .callout strong { color: var(--text); font-weight: 700; }
+
+.submission-update {
+  border-color: var(--urgent-border);
+  border-left-color: var(--urgent);
+  padding: clamp(22px, 3vw, 30px);
+  gap: 10px;
+}
+.submission-update .kicker {
+  color: var(--urgent);
+}
+.submission-update h2 {
+  max-width: 26ch;
+  font-size: clamp(24px, 2.7vw, 34px);
+  color: var(--urgent);
+}
+.submission-update p:last-child {
+  max-width: 72ch;
+  font-size: 16px;
+  line-height: 1.65;
+}
 
 .interest-form-callout {
   display: grid;
