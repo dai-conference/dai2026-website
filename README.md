@@ -11,7 +11,7 @@ The site is intentionally plain HTML, CSS, and a small amount of JavaScript. The
 - `research-track.html`, `industry-track.html`, `ai-paper-track.html`, `sister-conference-track.html` - author subpages.
 - `dates.html` - important dates.
 - `program.html` - program overview and navigation hub.
-- `keynotes.html` - confirmed keynote speakers.
+- `keynotes.html` - keynote speakers.
 - `attending.html` - venue page.
 - `organizing.html` - organizing committee.
 - `sponsors.html` - call for sponsorship.
