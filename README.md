@@ -14,6 +14,8 @@ The site is intentionally plain HTML, CSS, and a small amount of JavaScript. The
 - `keynotes.html` - keynote speakers.
 - `attending.html` - venue page.
 - `organizing.html` - organizing committee.
+- `program-committee.html` - area chairs and reviewers.
+- `committee.css` - program committee page layout.
 - `sponsors.html` - call for sponsorship.
 - `styles.css` - shared design system and responsive layout.
 - `svg-inline.js` - inlines decorative SVG assets so they inherit the site colors.

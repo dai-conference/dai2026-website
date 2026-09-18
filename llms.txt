@@ -20,6 +20,7 @@ Dates: 2026-11-29 to 2026-12-02.
 - [Keynote Speakers](https://www.adai.ai/dai/2026/keynotes.html): DAI 2026 keynote speakers.
 - [Venue](https://www.adai.ai/dai/2026/attending.html): Venue information for City University of Hong Kong.
 - [Organizing Committee](https://www.adai.ai/dai/2026/organizing.html): General co-chairs, program committee leadership, local arrangements, publicity, sponsorship, and contacts.
+- [Program Committee](https://www.adai.ai/dai/2026/program-committee.html): Area chairs and reviewers, listed alphabetically by role.
 
 ## Calls and Author Information
 
