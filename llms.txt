@@ -24,7 +24,7 @@ Dates: 2026-11-29 to 2026-12-02.
 
 ## Calls and Author Information
 
-- [Camera-Ready Guide](https://www.adai.ai/dai/2026/camera-ready-guide.html): Accepted Research, Industry, and AI Paper Track instructions, OpenReview submission, ACM template and metadata code, AI Paper Track non-archival settings, page limits, author rules, and track-specific requirements.
+- [Camera-Ready Guide](https://www.adai.ai/dai/2026/camera-ready-guide.html): Accepted Research, Industry, and AI Paper Track instructions, OpenReview submission, complete LaTeX main files to replace the original ACM template main file, AI Paper Track non-archival formatting, page limits, author rules, and track-specific requirements.
 - [Calls](https://www.adai.ai/dai/2026/authors.html): Entry point for all calls for contributions.
 - [Research Track CFP](https://www.adai.ai/dai/2026/research-track.html): Full research papers on distributed AI, autonomous agents, multi-agent systems, agentic AI, theory, methods, systems, evaluation, and applications.
 - [Industry Track CFP](https://www.adai.ai/dai/2026/industry-track.html): Industry papers on deployed distributed AI systems, case studies, benchmarks, demos, tools, and real-world agentic AI applications.

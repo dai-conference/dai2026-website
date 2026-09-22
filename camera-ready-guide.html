@@ -92,7 +92,7 @@
           <ul class="quick-links">
             <li><a href="#submit">Submit on OpenReview</a></li>
             <li><a href="#format">Template and Page Limits</a></li>
-            <li><a href="#metadata">Research / Industry: LaTeX Metadata</a></li>
+            <li><a href="#metadata">Research / Industry: LaTeX Template</a></li>
             <li><a href="#ai-paper-track">AI Paper Track: Non-Archival Format</a></li>
             <li><a href="#checklist">Final-Paper Checklist</a></li>
             <li><a href="#publication">ACM Publication Process</a></li>
@@ -125,7 +125,7 @@
           </div>
           <p>Prepare your paper in English using the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">official ACM LaTeX template</a> in the <strong>two-column sigconf format</strong>. Research and Industry Track papers use:</p>
           <pre><code>\documentclass[sigconf]{acmart}</code></pre>
-          <p>AI Paper Track papers must also use the <code>nonacm</code> option and the <a href="#ai-paper-track">non-archival formatting settings below</a>.</p>
+          <p>AI Paper Track papers must also use the <code>nonacm</code> option and the <a href="#ai-paper-track">non-archival template below</a>.</p>
           <p>The camera-ready allowance includes one additional page compared with the original submission limit:</p>
           <table class="review-dimensions">
             <thead><tr><th scope="col">Track</th><th scope="col">Camera-Ready Page Limit</th></tr></thead>
@@ -143,39 +143,14 @@
         <section id="metadata">
           <div class="section-head">
             <p class="kicker">Camera-Ready · 03</p>
-            <h2>Research and Industry Tracks: LaTeX Metadata</h2>
+            <h2>Research and Industry Tracks: LaTeX Template</h2>
           </div>
-          <p><strong>This section applies to the Research and Industry Tracks only.</strong> AI Paper Track authors should use the <a href="#ai-paper-track">non-archival settings below</a>.</p>
-          <p>For the current OpenReview version, replace the template's sample conference and rights-management block with the code below. Place it after <code>\documentclass[sigconf]{acmart}</code> and before <code>\begin{document}</code>. Ensure that no later duplicate metadata commands override these settings.</p>
-          <p><a href="assets/templates/dai2026-camera-ready-metadata.tex" download>Download the LaTeX replacement code (.tex)</a></p>
-          <pre><code>% DAI 2026 - provisional metadata for the OpenReview camera-ready version.
-% Use with \documentclass[sigconf]{acmart}.
-% Replace the template&#x27;s sample conference and rights-management block
-% with this block, after \documentclass and before \begin{document}.
-% Do not leave later sample commands that override these values.
-% For the final ACM submission, replace provisional publication settings
-% with the exact metadata and rights commands supplied by ACM.
-
-\acmYear{2026}
-\acmConference[DAI &#x27;26]
-  {The Eighth International Conference on Distributed Artificial Intelligence}
-  {November 29--December 2, 2026}
-  {Hong Kong, China}
-\acmBooktitle{The Eighth International Conference on Distributed Artificial
-  Intelligence (DAI &#x27;26), November 29--December 2, 2026, Hong Kong, China}
-
-% Publication identifiers and the ACM rights notice are pending.
-% Suppress the notice for this OpenReview version; this is not a choice
-% of the final ACM publication license.
-\setcopyright{none}
-\copyrightyear{}
-\acmDOI{}
-\acmISBN{}
-
-% Keep the ACM Reference Format; authors, title, and page count are automatic.
-\settopmatter{printacmref=true}</code></pre>
-          <p>This code sets the DAI 2026 conference heading and ACM Reference Format. The template automatically inserts your paper's author names, title, and page count. Unassigned publication details are left blank, and the ACM rights notice is temporarily suppressed.</p>
-          <p><strong>These settings are for the current OpenReview version only.</strong> Replace the temporary publication settings with the exact metadata and rights commands supplied by ACM when preparing the final publication submission.</p>
+          <p><strong>This section applies to the Research and Industry Tracks only.</strong> AI Paper Track authors should use the <a href="#ai-paper-track">non-archival template below</a>.</p>
+          <p><a href="assets/templates/dai2026-camera-ready-metadata.tex" download="dai2026-research-industry.tex">Download the complete Research / Industry LaTeX template (.tex)</a></p>
+          <p>In your ACM template project, <strong>replace the original main <code>.tex</code> file (for example, <code>sample-sigconf.tex</code> or <code>main.tex</code>) with this downloaded file</strong>. Rename it to the original main filename, or select it as the main document in Overleaf.</p>
+          <p>Copy your paper's title, author information, abstract, keywords, CCS concepts where applicable, body, acknowledgments, references, and optional appendices into the corresponding sections, replacing all example content. Keep <code>acmart.cls</code>, <code>ACM-Reference-Format.bst</code>, and your existing bibliography, figure, and section files in the project. The downloaded file includes instructions for using your own BibTeX bibliography.</p>
+          <p>This is a complete main document that compiles as supplied in the ACM template project. It already includes the DAI 2026 conference information and ACM Reference Format. The template automatically inserts your paper's author names, title, and page count. Unassigned publication details are left blank, and the ACM rights notice is temporarily suppressed.</p>
+          <p><strong>This template is for the current OpenReview version only.</strong> Replace the temporary publication settings with the exact metadata and rights commands supplied by ACM when preparing the final publication submission.</p>
         </section>
 
         <section id="ai-paper-track">
@@ -184,39 +159,14 @@
             <h2>AI Paper Track: Non-Archival Format</h2>
           </div>
           <p>AI Paper Track papers are <strong>non-archival</strong> and will not be included in the DAI 2026 ACM proceedings. The final paper will be retained on OpenReview as part of the track's public record. The ACM publication and APC instructions on this page apply to the Research and Industry Tracks only.</p>
-          <p>The <a href="#format">9-page limit, appendix policy, and author rules</a> above also apply to this track. Follow the <a href="#submit">OpenReview submission instructions</a> and <a href="#checklist">final-paper checklist</a>, together with the settings below.</p>
+          <p>The <a href="#format">9-page limit, appendix policy, and author rules</a> above also apply to this track. Follow the <a href="#submit">OpenReview submission instructions</a> and <a href="#checklist">final-paper checklist</a>, together with the template below.</p>
 
-          <h3>LaTeX settings</h3>
-          <p>Replace the document class declaration with:</p>
-          <pre><code>\documentclass[sigconf,nonacm]{acmart}</code></pre>
-          <p>Replace the template's existing rights and conference-metadata block, from <code>\setcopyright{...}</code> through <code>\acmISBN{...}</code>, including the intervening copyright, DOI, conference, and book-title settings, with the code below. Place it <strong>before <code>\begin{document}</code></strong> and ensure that no later duplicate commands override these settings.</p>
-          <p><a href="assets/templates/dai2026-ai-paper-settings.tex" download>Download the AI Paper Track LaTeX settings (.tex)</a></p>
-          <pre><code>% DAI 2026 AI Paper Track only.
-% Use \documentclass[sigconf,nonacm]{acmart}.
-% Replace the template&#x27;s rights/conference metadata block with these settings.
-% Place them before \begin{document}.
-
-\setcopyright{none}
-\settopmatter{printacmref=false}
-\acmDOI{}
-\acmISBN{}
-
-\fancypagestyle{dai2026nonarchival}{%
-  \fancyhf{}%
-  \renewcommand{\headrulewidth}{0pt}%
-  \renewcommand{\footrulewidth}{0pt}%
-  \fancyfoot[L]{\normalfont\footnotesize
-    DAI~&#x27;26, November~29--December~2, 2026, Hong Kong, China\quad
-    \textit{Non-archival paper}}%
-  \fancyfoot[R]{\normalfont\footnotesize\thepage}%
-}
-
-% Apply after acmart initializes its page styles, including the title page.
-\AtBeginDocument{%
-  \fancypagestyle{firstpagestyle}[dai2026nonarchival]{}%
-  \pagestyle{dai2026nonarchival}%
-}</code></pre>
-          <p>These settings remove the ACM Reference Format block, copyright/licensing notice, DOI, and ISBN. Every page, including the first, displays the conference information, <strong>Non-archival paper</strong>, and the page number in the footer, without running headers.</p>
+          <h3>Complete LaTeX template</h3>
+          <p><a href="assets/templates/dai2026-ai-paper-settings.tex" download="dai2026-ai-paper.tex">Download the complete AI Paper Track LaTeX template (.tex)</a></p>
+          <p>In your ACM template project, <strong>replace the original main <code>.tex</code> file (for example, <code>sample-sigconf.tex</code> or <code>main.tex</code>) with this downloaded file</strong>. Rename it to the original main filename, or select it as the main document in Overleaf.</p>
+          <p>Copy your paper's title, author information, abstract, keywords, CCS concepts where applicable, body, acknowledgments, references, and optional appendices into the corresponding sections, replacing all example content. Keep <code>acmart.cls</code>, <code>ACM-Reference-Format.bst</code>, and your existing bibliography, figure, and section files in the project. The downloaded file includes instructions for using your own BibTeX bibliography.</p>
+          <p>This is a complete main document that compiles as supplied in the ACM template project. The <code>sigconf,nonacm</code> class options and non-archival footer are already configured.</p>
+          <p>The template suppresses the ACM Reference Format block, copyright/licensing notice, DOI, and ISBN. Every page, including the first, displays the conference information, <strong>Non-archival paper</strong>, and the page number in the footer, without running headers.</p>
           <p><strong>Keep the paper's normal citations and References section.</strong> The ACM Reference Format block being removed is the publisher's suggested citation block near the beginning of the paper.</p>
 
           <h3>ARM Bundle and public materials</h3>

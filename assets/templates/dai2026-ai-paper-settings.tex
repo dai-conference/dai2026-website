@@ -1,7 +1,12 @@
-% DAI 2026 AI Paper Track only.
-% Use \documentclass[sigconf,nonacm]{acmart}.
-% Replace the template's rights/conference metadata block with these settings.
-% Place them before \begin{document}.
+% DAI 2026 AI Paper Track - complete non-archival camera-ready main file.
+% Replace the main .tex file in your ACM template project with this file
+% (for example, sample-sigconf.tex or main.tex), then copy in your paper.
+% Keep acmart.cls, ACM-Reference-Format.bst, and your .bib/figure/section files.
+% Up to 9 main-paper pages, excluding references and optional appendices.
+% Appendices follow references and have no page limit.
+% AI Paper Track papers are retained on OpenReview, not in the ACM proceedings.
+
+\documentclass[sigconf,nonacm]{acmart}
 
 \setcopyright{none}
 \settopmatter{printacmref=false}
@@ -23,3 +28,80 @@
   \fancypagestyle{firstpagestyle}[dai2026nonarchival]{}%
   \pagestyle{dai2026nonarchival}%
 }
+
+\begin{document}
+
+% Replace all example content with your accepted paper's content.
+\title{Your Paper Title}
+
+% Copy all author blocks from your accepted manuscript here.
+% Do not add new authors; the order of existing authors may be changed.
+% Preserve the AI-system and human-author information from the accepted paper.
+\author{Author Name}
+\affiliation{%
+  \institution{Institution Name}
+  \city{City}
+  \country{Country}}
+\email{author@example.org}
+% Repeat the author/affiliation/email block for the other existing authors.
+% For a long author list, supply a short running author list if needed:
+% \renewcommand{\shortauthors}{First Author et al.}
+
+\begin{abstract}
+Replace this paragraph with your paper's abstract. This file is a complete
+camera-ready main document for the DAI 2026 AI Paper Track. The example
+text, title, author details, keywords, and reference must be replaced with
+your own manuscript content before submission.
+\end{abstract}
+
+% Paste your paper's own CCSXML and \ccsdesc commands here, if applicable.
+% Replace the example keywords with your paper's actual keywords.
+\keywords{Your first keyword, your second keyword}
+
+\maketitle
+
+\section{Introduction}
+Replace this section with your introduction and citations. This example
+cites the ACM template~\cite{acm-template} only to demonstrate a working
+citation; replace it with your paper's references.
+
+\section{Method}
+Replace this section with your methods, definitions, figures, and tables.
+Keep your existing figure files and any section files used with
+\texttt{\string\input} in the project.
+
+\section{Evaluation}
+Replace this section with your experimental setup, results, and discussion.
+Use the section structure appropriate for your paper.
+
+\section{Conclusion}
+Replace this section with your conclusions and limitations.
+
+% Optional: replace this text with your acknowledgments, or remove this block.
+\begin{acks}
+Replace this text with acknowledgments and funding information, if applicable.
+\end{acks}
+
+% REFERENCES
+% This small bibliography lets the downloaded file compile as supplied.
+% For your actual paper, replace the entire thebibliography environment below
+% with your own references. If using BibTeX, use these two commands instead
+% (replace "references" with your .bib filename, without the extension):
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{references}
+\begin{thebibliography}{1}
+\bibitem{acm-template}
+Association for Computing Machinery.
+\newblock \emph{ACM SIG Proceedings Template}.
+\newblock \href{https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty}{Official template on Overleaf}.
+\end{thebibliography}
+
+% OPTIONAL APPENDICES: after references, with no page limit.
+% Remove this whole block, including \clearpage, if there are no appendices.
+\clearpage
+\appendix
+\section{Additional Details}
+Replace this section with optional supporting material. References and
+appendices are excluded from the main-paper page limit.
+
+\end{document}

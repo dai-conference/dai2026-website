@@ -1,10 +1,14 @@
-% DAI 2026 - provisional metadata for the OpenReview camera-ready version.
-% Use with \documentclass[sigconf]{acmart}.
-% Replace the template's sample conference and rights-management block
-% with this block, after \documentclass and before \begin{document}.
-% Do not leave later sample commands that override these values.
-% For the final ACM submission, replace provisional publication settings
-% with the exact metadata and rights commands supplied by ACM.
+% DAI 2026 Research / Industry Tracks - complete camera-ready main file.
+% Replace the main .tex file in your ACM template project with this file
+% (for example, sample-sigconf.tex or main.tex), then copy in your paper.
+% Keep acmart.cls, ACM-Reference-Format.bst, and your .bib/figure/section files.
+% Research: up to 9 main-paper pages. Industry: up to 7 main-paper pages.
+% References and optional appendices are excluded; appendices follow references.
+% This version is for OpenReview. After ACM integrity clearance, replace the
+% provisional publication settings with the metadata and rights commands
+% supplied through the ACM publication process.
+
+\documentclass[sigconf]{acmart}
 
 \acmYear{2026}
 \acmConference[DAI '26]
@@ -24,3 +28,79 @@
 
 % Keep the ACM Reference Format; authors, title, and page count are automatic.
 \settopmatter{printacmref=true}
+
+\begin{document}
+
+% Replace all example content with your accepted paper's content.
+\title{Your Paper Title}
+
+% Copy all author blocks from your accepted manuscript here.
+% Do not add new authors; the order of existing authors may be changed.
+\author{Author Name}
+\affiliation{%
+  \institution{Institution Name}
+  \city{City}
+  \country{Country}}
+\email{author@example.org}
+% Repeat the author/affiliation/email block for the other existing authors.
+% For a long author list, supply a short running author list if needed:
+% \renewcommand{\shortauthors}{First Author et al.}
+
+\begin{abstract}
+Replace this paragraph with your paper's abstract. This file is a complete
+camera-ready main document for the DAI 2026 Research or Industry Track. The example
+text, title, author details, keywords, and reference must be replaced with
+your own manuscript content before submission.
+\end{abstract}
+
+% Paste your paper's own CCSXML and \ccsdesc commands here, if applicable.
+% Replace the example keywords with your paper's actual keywords.
+\keywords{Your first keyword, your second keyword}
+
+\maketitle
+
+\section{Introduction}
+Replace this section with your introduction and citations. This example
+cites the ACM template~\cite{acm-template} only to demonstrate a working
+citation; replace it with your paper's references.
+
+\section{Method}
+Replace this section with your methods, definitions, figures, and tables.
+Keep your existing figure files and any section files used with
+\texttt{\string\input} in the project.
+
+\section{Evaluation}
+Replace this section with your experimental setup, results, and discussion.
+Use the section structure appropriate for your paper.
+
+\section{Conclusion}
+Replace this section with your conclusions and limitations.
+
+% Optional: replace this text with your acknowledgments, or remove this block.
+\begin{acks}
+Replace this text with acknowledgments and funding information, if applicable.
+\end{acks}
+
+% REFERENCES
+% This small bibliography lets the downloaded file compile as supplied.
+% For your actual paper, replace the entire thebibliography environment below
+% with your own references. If using BibTeX, use these two commands instead
+% (replace "references" with your .bib filename, without the extension):
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{references}
+\begin{thebibliography}{1}
+\bibitem{acm-template}
+Association for Computing Machinery.
+\newblock \emph{ACM SIG Proceedings Template}.
+\newblock \href{https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty}{Official template on Overleaf}.
+\end{thebibliography}
+
+% OPTIONAL APPENDICES: after references, with no page limit.
+% Remove this whole block, including \clearpage, if there are no appendices.
+\clearpage
+\appendix
+\section{Additional Details}
+Replace this section with optional supporting material. References and
+appendices are excluded from the main-paper page limit.
+
+\end{document}
