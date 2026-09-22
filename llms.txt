@@ -24,6 +24,7 @@ Dates: 2026-11-29 to 2026-12-02.
 
 ## Calls and Author Information
 
+- [Camera-Ready Guide](https://www.adai.ai/dai/2026/camera-ready-guide.html): Accepted Research and Industry paper instructions, OpenReview submission, ACM template and metadata code, page limits, author rules, and publication requirements.
 - [Calls](https://www.adai.ai/dai/2026/authors.html): Entry point for all calls for contributions.
 - [Research Track CFP](https://www.adai.ai/dai/2026/research-track.html): Full research papers on distributed AI, autonomous agents, multi-agent systems, agentic AI, theory, methods, systems, evaluation, and applications.
 - [Industry Track CFP](https://www.adai.ai/dai/2026/industry-track.html): Industry papers on deployed distributed AI systems, case studies, benchmarks, demos, tools, and real-world agentic AI applications.
@@ -42,7 +43,8 @@ Dates: 2026-11-29 to 2026-12-02.
 - Research Track and Industry Track submission deadline: August 3, 2026.
 - AI Paper Track submission deadline: August 10, 2026.
 - Notification date: September 16, 2026.
-- Camera-ready deadline: October 16, 2026.
+- Camera-ready deadline: October 16, 2026, 23:59 AoE (UTC-12).
+- Research and Industry camera-ready page limits: 9 and 7 pages, respectively, excluding references and appendices. Appendices follow the references and have no page limit.
 - General co-chairs: Minming Li, Francesca Rossi, and Michael Wellman.
 - Program committee co-chairs: Ian Gemp, Mengchen Zhao, and Ying Wen.
 
