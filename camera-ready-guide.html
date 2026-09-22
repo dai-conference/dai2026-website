@@ -91,7 +91,7 @@
           <h3>On This Page</h3>
           <ul class="quick-links">
             <li><a href="#submit">Submit on OpenReview</a></li>
-            <li><a href="#format">Template and Page Limits</a></li>
+            <li><a href="#format">Page Limits and General Requirements</a></li>
             <li><a href="#metadata">Research / Industry: LaTeX Template</a></li>
             <li><a href="#ai-paper-track">AI Paper Track: Non-Archival Format</a></li>
             <li><a href="#checklist">Final-Paper Checklist</a></li>
@@ -121,11 +121,8 @@
         <section id="format">
           <div class="section-head">
             <p class="kicker">Camera-Ready · 02</p>
-            <h2>Template and Page Limits</h2>
+            <h2>Page Limits and General Requirements</h2>
           </div>
-          <p>Prepare your paper in English using the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">official ACM LaTeX template</a> in the <strong>two-column sigconf format</strong>. Research and Industry Track papers use:</p>
-          <pre><code>\documentclass[sigconf]{acmart}</code></pre>
-          <p>AI Paper Track papers must also use the <code>nonacm</code> option and the <a href="#ai-paper-track">non-archival template below</a>.</p>
           <p>The camera-ready allowance includes one additional page compared with the original submission limit:</p>
           <table class="review-dimensions">
             <thead><tr><th scope="col">Track</th><th scope="col">Camera-Ready Page Limit</th></tr></thead>
@@ -136,7 +133,7 @@
             </tbody>
           </table>
           <p><strong>For all three tracks, references and appendices do not count toward these limits. Optional appendices may be included after the references, with no page limit.</strong></p>
-          <p>Remove the <code>anonymous</code> and <code>review</code> options. Include complete author names, affiliations, and acknowledgments where applicable. Preserve the template's prescribed fonts, font sizes, margins, column layout, and spacing.</p>
+          <p>Prepare your paper in English and include complete author names, affiliations, and acknowledgments where applicable. Preserve the template's prescribed fonts, font sizes, margins, two-column layout, and spacing.</p>
           <p class="call-note"><strong>No new authors may be added.</strong> The order of existing authors may be changed.</p>
         </section>
 
@@ -146,6 +143,7 @@
             <h2>Research and Industry Tracks: LaTeX Template</h2>
           </div>
           <p><strong>This section applies to the Research and Industry Tracks only.</strong> AI Paper Track authors should use the <a href="#ai-paper-track">non-archival template below</a>.</p>
+          <p>Start from the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">official ACM LaTeX template</a> and use the complete main file below.</p>
           <p><a href="assets/templates/dai2026-camera-ready-metadata.tex" download="dai2026-research-industry.tex">Download the complete Research / Industry LaTeX template (.tex)</a></p>
           <p>In your ACM template project, <strong>replace the original main <code>.tex</code> file (for example, <code>sample-sigconf.tex</code> or <code>main.tex</code>) with this downloaded file</strong>. Rename it to the original main filename, or select it as the main document in Overleaf.</p>
           <p>Copy your paper's title, author information, abstract, keywords, CCS concepts where applicable, body, acknowledgments, references, and optional appendices into the corresponding sections, replacing all example content. Keep <code>acmart.cls</code>, <code>ACM-Reference-Format.bst</code>, and your existing bibliography, figure, and section files in the project. The downloaded file includes instructions for using your own BibTeX bibliography.</p>
@@ -162,6 +160,7 @@
           <p>The <a href="#format">9-page limit, appendix policy, and author rules</a> above also apply to this track. Follow the <a href="#submit">OpenReview submission instructions</a> and <a href="#checklist">final-paper checklist</a>, together with the template below.</p>
 
           <h3>Complete LaTeX template</h3>
+          <p>Start from the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">official ACM LaTeX template</a> and use the complete main file below.</p>
           <p><a href="assets/templates/dai2026-ai-paper-settings.tex" download="dai2026-ai-paper.tex">Download the complete AI Paper Track LaTeX template (.tex)</a></p>
           <p>In your ACM template project, <strong>replace the original main <code>.tex</code> file (for example, <code>sample-sigconf.tex</code> or <code>main.tex</code>) with this downloaded file</strong>. Rename it to the original main filename, or select it as the main document in Overleaf.</p>
           <p>Copy your paper's title, author information, abstract, keywords, CCS concepts where applicable, body, acknowledgments, references, and optional appendices into the corresponding sections, replacing all example content. Keep <code>acmart.cls</code>, <code>ACM-Reference-Format.bst</code>, and your existing bibliography, figure, and section files in the project. The downloaded file includes instructions for using your own BibTeX bibliography.</p>
