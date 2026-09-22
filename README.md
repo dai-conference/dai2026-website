@@ -9,7 +9,7 @@ The site is intentionally plain HTML, CSS, and a small amount of JavaScript. The
 - `index.html` - home page and conference overview.
 - `authors.html` - call for papers landing page. Currently marked `TBD`.
 - `research-track.html`, `industry-track.html`, `ai-paper-track.html`, `sister-conference-track.html` - author subpages.
-- `camera-ready-guide.html` - camera-ready instructions for accepted Research and Industry papers; downloadable LaTeX metadata in `assets/templates/`.
+- `camera-ready-guide.html` - camera-ready instructions for accepted Research, Industry, and AI Paper Track papers; downloadable LaTeX metadata and non-archival settings in `assets/templates/`.
 - `dates.html` - important dates.
 - `program.html` - program overview and navigation hub.
 - `keynotes.html` - keynote speakers.

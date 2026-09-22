@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Camera-ready instructions for accepted DAI 2026 Research and Industry papers: deadline, OpenReview submission, ACM template, page limits, and publication requirements.">
+  <meta name="description" content="Camera-ready instructions for accepted DAI 2026 Research, Industry, and AI Paper Track papers: deadline, OpenReview submission, templates, page limits, and track-specific requirements.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.adai.ai/dai/2026/camera-ready-guide.html">
   <meta property="og:site_name" content="DAI 2026">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Camera-Ready Guide · DAI 2026">
-  <meta property="og:description" content="Camera-ready instructions for accepted DAI 2026 Research and Industry papers: deadline, OpenReview submission, ACM template, page limits, and publication requirements.">
+  <meta property="og:description" content="Camera-ready instructions for accepted DAI 2026 Research, Industry, and AI Paper Track papers: deadline, OpenReview submission, templates, page limits, and track-specific requirements.">
   <meta property="og:url" content="https://www.adai.ai/dai/2026/camera-ready-guide.html">
   <meta property="og:image" content="https://www.adai.ai/dai/2026/assets/logo.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Camera-Ready Guide · DAI 2026">
-  <meta name="twitter:description" content="Camera-ready instructions for accepted DAI 2026 Research and Industry papers: deadline, OpenReview submission, ACM template, page limits, and publication requirements.">
+  <meta name="twitter:description" content="Camera-ready instructions for accepted DAI 2026 Research, Industry, and AI Paper Track papers: deadline, OpenReview submission, templates, page limits, and track-specific requirements.">
   <meta name="twitter:image" content="https://www.adai.ai/dai/2026/assets/logo.jpg">
   <title>Camera-Ready Guide · DAI 2026</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -69,7 +69,7 @@
     <div class="container">
       <div class="crumb"><a href="index.html">DAI 2026</a><span>/</span><a href="authors.html">Calls</a><span>/</span><span>Camera-Ready Guide</span></div>
       <h1>Camera-Ready Guide</h1>
-      <p class="lede">Instructions for accepted papers in the Research and Industry Tracks.</p>
+      <p class="lede">Instructions for accepted papers in the Research Track, Industry Track, and AI Paper Track.</p>
       <div class="header-meta">
         <span>Deadline <span>16 Oct 2026 · 23:59 AoE</span></span>
         <span>Submission <span>OpenReview</span></span>
@@ -85,14 +85,15 @@
           <span class="label">Camera-Ready Deadline</span>
           <strong><time datetime="2026-10-16">16 October 2026</time></strong>
           <span class="date">23:59 AoE (UTC-12)</span>
-          <span class="countdown">Research and Industry Tracks</span>
+          <span class="countdown">Research, Industry, and AI Paper Tracks</span>
         </div>
         <nav class="side-section" aria-label="On This Page">
           <h3>On This Page</h3>
           <ul class="quick-links">
             <li><a href="#submit">Submit on OpenReview</a></li>
             <li><a href="#format">Template and Page Limits</a></li>
-            <li><a href="#metadata">LaTeX Conference Metadata</a></li>
+            <li><a href="#ai-paper-track">AI Paper Track: Non-Archival Format</a></li>
+            <li><a href="#metadata">Research / Industry: LaTeX Metadata</a></li>
             <li><a href="#checklist">Final-Paper Checklist</a></li>
             <li><a href="#publication">ACM Publication Process</a></li>
             <li><a href="#open-access">Open Access and APCs</a></li>
@@ -112,6 +113,7 @@
           <div class="call-actions">
             <a class="btn btn-primary" href="https://openreview.net/group?id=adai.ai/DAI/2026/Research_Track" rel="noopener">Research Track on OpenReview</a>
             <a class="btn btn-ghost" href="https://openreview.net/group?id=adai.ai/DAI/2026/Industry_Track" rel="noopener">Industry Track on OpenReview</a>
+            <a class="btn btn-ghost" href="https://openreview.net/group?id=adai.ai/DAI/2026/AI_Paper_Track" rel="noopener">AI Paper Track on OpenReview</a>
           </div>
           <p class="call-note">Before the deadline, verify that the uploaded PDF opens correctly and that the saved revision contains the intended final version.</p>
         </section>
@@ -121,26 +123,79 @@
             <p class="kicker">Camera-Ready · 02</p>
             <h2>Template and Page Limits</h2>
           </div>
-          <p>Prepare your paper in English using the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">official ACM LaTeX template</a> in the <strong>two-column sigconf format</strong>:</p>
+          <p>Prepare your paper in English using the <a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty" rel="noopener">official ACM LaTeX template</a> in the <strong>two-column sigconf format</strong>. Research and Industry Track papers use:</p>
           <pre><code>\documentclass[sigconf]{acmart}</code></pre>
+          <p>AI Paper Track papers must also use the <code>nonacm</code> option and the <a href="#ai-paper-track">non-archival formatting settings below</a>.</p>
           <p>The camera-ready allowance includes one additional page compared with the original submission limit:</p>
           <table class="review-dimensions">
             <thead><tr><th scope="col">Track</th><th scope="col">Camera-Ready Page Limit</th></tr></thead>
             <tbody>
               <tr><th scope="row">Research Track</th><td>Up to 9 pages</td></tr>
               <tr><th scope="row">Industry Track</th><td>Up to 7 pages</td></tr>
+              <tr><th scope="row">AI Paper Track</th><td>Up to 9 pages</td></tr>
             </tbody>
           </table>
-          <p><strong>For both tracks, references and appendices do not count toward these limits. Optional appendices may be included after the references, with no page limit.</strong></p>
+          <p><strong>For all three tracks, references and appendices do not count toward these limits. Optional appendices may be included after the references, with no page limit.</strong></p>
           <p>Remove the <code>anonymous</code> and <code>review</code> options. Include complete author names, affiliations, and acknowledgments where applicable. Preserve the template's prescribed fonts, font sizes, margins, column layout, and spacing.</p>
           <p class="call-note"><strong>No new authors may be added.</strong> The order of existing authors may be changed.</p>
         </section>
 
-        <section id="metadata">
+        <section id="ai-paper-track">
           <div class="section-head">
             <p class="kicker">Camera-Ready · 03</p>
-            <h2>LaTeX Conference Metadata</h2>
+            <h2>AI Paper Track: Non-Archival Format</h2>
           </div>
+          <p>AI Paper Track papers are <strong>non-archival</strong> and will not be included in the DAI 2026 ACM proceedings. The final paper will be retained on OpenReview as part of the track's public record. The ACM publication and APC instructions on this page apply to the Research and Industry Tracks only.</p>
+          <p>The <a href="#format">9-page limit, appendix policy, and author rules</a> above also apply to this track. Follow the <a href="#submit">OpenReview submission instructions</a> and <a href="#checklist">final-paper checklist</a>, together with the settings below.</p>
+
+          <h3>LaTeX settings</h3>
+          <p>Replace the document class declaration with:</p>
+          <pre><code>\documentclass[sigconf,nonacm]{acmart}</code></pre>
+          <p>Replace the template's existing rights and conference-metadata block, from <code>\setcopyright{...}</code> through <code>\acmISBN{...}</code>, including the intervening copyright, DOI, conference, and book-title settings, with the code below. Place it <strong>before <code>\begin{document}</code></strong> and ensure that no later duplicate commands override these settings.</p>
+          <p><a href="assets/templates/dai2026-ai-paper-settings.tex" download>Download the AI Paper Track LaTeX settings (.tex)</a></p>
+          <pre><code>% DAI 2026 AI Paper Track only.
+% Use \documentclass[sigconf,nonacm]{acmart}.
+% Replace the template&#x27;s rights/conference metadata block with these settings.
+% Place them before \begin{document}.
+
+\setcopyright{none}
+\settopmatter{printacmref=false}
+\acmDOI{}
+\acmISBN{}
+
+\fancypagestyle{dai2026nonarchival}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+  \fancyfoot[L]{\normalfont\footnotesize
+    DAI~&#x27;26, November~29--December~2, 2026, Hong Kong, China\quad
+    \textit{Non-archival paper}}%
+  \fancyfoot[R]{\normalfont\footnotesize\thepage}%
+}
+
+% Apply after acmart initializes its page styles, including the title page.
+\AtBeginDocument{%
+  \fancypagestyle{firstpagestyle}[dai2026nonarchival]{}%
+  \pagestyle{dai2026nonarchival}%
+}</code></pre>
+          <p>These settings remove the ACM Reference Format block, copyright/licensing notice, DOI, and ISBN. Every page, including the first, displays the conference information, <strong>Non-archival paper</strong>, and the page number in the footer, without running headers.</p>
+          <p><strong>Keep the paper's normal citations and References section.</strong> The ACM Reference Format block being removed is the publisher's suggested citation block near the beginning of the paper.</p>
+
+          <h3>ARM Bundle and public materials</h3>
+          <ul>
+            <li>Update your ARM Bundle, including the AI Research Autonomy Disclosure, to reflect the final paper.</li>
+            <li>Follow the <a href="ai-paper-track.html#review">track's public-release requirements</a> and document any necessary redactions.</li>
+            <li>Check that the paper title, abstract, and human-author information are accurate and consistent with the OpenReview record.</li>
+            <li>Verify that the uploaded PDF opens correctly, that the non-archival footer appears as intended, and that the saved revision contains the final paper and supporting materials.</li>
+          </ul>
+        </section>
+
+        <section id="metadata">
+          <div class="section-head">
+            <p class="kicker">Camera-Ready · 04</p>
+            <h2>Research and Industry Tracks: LaTeX Metadata</h2>
+          </div>
+          <p><strong>This section applies to the Research and Industry Tracks only.</strong> AI Paper Track authors should use the <a href="#ai-paper-track">non-archival settings above</a>.</p>
           <p>For the current OpenReview version, replace the template's sample conference and rights-management block with the code below. Place it after <code>\documentclass[sigconf]{acmart}</code> and before <code>\begin{document}</code>. Ensure that no later duplicate metadata commands override these settings.</p>
           <p><a href="assets/templates/dai2026-camera-ready-metadata.tex" download>Download the LaTeX replacement code (.tex)</a></p>
           <pre><code>% DAI 2026 - provisional metadata for the OpenReview camera-ready version.
@@ -175,7 +230,7 @@
 
         <section id="checklist">
           <div class="section-head">
-            <p class="kicker">Camera-Ready · 04</p>
+            <p class="kicker">Camera-Ready · 05</p>
             <h2>Final-Paper Checklist</h2>
           </div>
           <ul>
@@ -184,22 +239,24 @@
             <li>Update supplementary materials and disclosures where necessary, ensuring that they remain consistent with the final manuscript.</li>
             <li>Confirm that the PDF uses the required format and page limit, includes author information, and contains no sample conference or publication values from the template.</li>
           </ul>
+          <p>At least one author of each accepted paper must register for the conference and present the work. For AI Paper Track papers, this must be a human author. Further instructions on registration and presentation arrangements will be sent separately.</p>
         </section>
 
         <section id="publication">
           <div class="section-head">
-            <p class="kicker">Camera-Ready · 05</p>
+            <p class="kicker">Camera-Ready · 06</p>
             <h2>ACM Publication Process</h2>
           </div>
+          <p><strong>For Research and Industry Track papers.</strong></p>
           <p>The camera-ready version submitted at this stage will be archived on OpenReview and used to initiate the ACM publication workflow, including the mandatory research integrity checks for ACM International Conference Proceedings Series (ICPS) proceedings.</p>
           <p>Once these checks have been completed and the results cleared by ACM, we will follow up with authors about the final publication requirements, conference-specific publication metadata, and instructions for completing the ACM rights process.</p>
           <p>For the current OpenReview version, use the conference information provided above and leave unassigned publication details blank. Replace the temporary settings with the official information when preparing the final submission to ACM. Please use the information provided at that stage when preparing the publication version, rather than the sample values included in the template.</p>
-          <p>At least one author of each accepted paper must register for the conference and present the work. Further instructions on registration and presentation arrangements will be sent separately.</p>
         </section>
 
         <section class="callout publication-notice" id="open-access" aria-labelledby="open-access-title">
           <p class="kicker">Important Publication Information</p>
           <h2 id="open-access-title">ACM Open Access and Article Processing Charges</h2>
+          <p><strong>For Research and Industry Track papers.</strong> AI Paper Track papers are non-archival and are not part of the ACM proceedings.</p>
           <p><strong>Important note to authors about ACM's new open access publishing model</strong></p>
           <p>ACM has introduced a new open access publishing model for the International Conference Proceedings Series (ICPS). Authors based at institutions that are not yet part of the <a href="https://www.acm.org/publications/openaccess" rel="noopener">ACM Open program</a> and do not qualify for a full geographic waiver will be required to pay an article processing charge (APC) to publish their ICPS article in the ACM Digital Library. To determine whether or not an APC will be applicable to your article, please follow the detailed <a href="https://www.acm.org/publications/icps/author-guidance" rel="noopener">ACM author guidance</a>.</p>
           <p><strong>Any applicable APC is the responsibility of the authors.</strong></p>
