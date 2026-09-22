@@ -92,8 +92,8 @@
           <ul class="quick-links">
             <li><a href="#submit">Submit on OpenReview</a></li>
             <li><a href="#format">Template and Page Limits</a></li>
-            <li><a href="#ai-paper-track">AI Paper Track: Non-Archival Format</a></li>
             <li><a href="#metadata">Research / Industry: LaTeX Metadata</a></li>
+            <li><a href="#ai-paper-track">AI Paper Track: Non-Archival Format</a></li>
             <li><a href="#checklist">Final-Paper Checklist</a></li>
             <li><a href="#publication">ACM Publication Process</a></li>
             <li><a href="#open-access">Open Access and APCs</a></li>
@@ -140,9 +140,47 @@
           <p class="call-note"><strong>No new authors may be added.</strong> The order of existing authors may be changed.</p>
         </section>
 
-        <section id="ai-paper-track">
+        <section id="metadata">
           <div class="section-head">
             <p class="kicker">Camera-Ready · 03</p>
+            <h2>Research and Industry Tracks: LaTeX Metadata</h2>
+          </div>
+          <p><strong>This section applies to the Research and Industry Tracks only.</strong> AI Paper Track authors should use the <a href="#ai-paper-track">non-archival settings below</a>.</p>
+          <p>For the current OpenReview version, replace the template's sample conference and rights-management block with the code below. Place it after <code>\documentclass[sigconf]{acmart}</code> and before <code>\begin{document}</code>. Ensure that no later duplicate metadata commands override these settings.</p>
+          <p><a href="assets/templates/dai2026-camera-ready-metadata.tex" download>Download the LaTeX replacement code (.tex)</a></p>
+          <pre><code>% DAI 2026 - provisional metadata for the OpenReview camera-ready version.
+% Use with \documentclass[sigconf]{acmart}.
+% Replace the template&#x27;s sample conference and rights-management block
+% with this block, after \documentclass and before \begin{document}.
+% Do not leave later sample commands that override these values.
+% For the final ACM submission, replace provisional publication settings
+% with the exact metadata and rights commands supplied by ACM.
+
+\acmYear{2026}
+\acmConference[DAI &#x27;26]
+  {The Eighth International Conference on Distributed Artificial Intelligence}
+  {November 29--December 2, 2026}
+  {Hong Kong, China}
+\acmBooktitle{The Eighth International Conference on Distributed Artificial
+  Intelligence (DAI &#x27;26), November 29--December 2, 2026, Hong Kong, China}
+
+% Publication identifiers and the ACM rights notice are pending.
+% Suppress the notice for this OpenReview version; this is not a choice
+% of the final ACM publication license.
+\setcopyright{none}
+\copyrightyear{}
+\acmDOI{}
+\acmISBN{}
+
+% Keep the ACM Reference Format; authors, title, and page count are automatic.
+\settopmatter{printacmref=true}</code></pre>
+          <p>This code sets the DAI 2026 conference heading and ACM Reference Format. The template automatically inserts your paper's author names, title, and page count. Unassigned publication details are left blank, and the ACM rights notice is temporarily suppressed.</p>
+          <p><strong>These settings are for the current OpenReview version only.</strong> Replace the temporary publication settings with the exact metadata and rights commands supplied by ACM when preparing the final publication submission.</p>
+        </section>
+
+        <section id="ai-paper-track">
+          <div class="section-head">
+            <p class="kicker">Camera-Ready · 04</p>
             <h2>AI Paper Track: Non-Archival Format</h2>
           </div>
           <p>AI Paper Track papers are <strong>non-archival</strong> and will not be included in the DAI 2026 ACM proceedings. The final paper will be retained on OpenReview as part of the track's public record. The ACM publication and APC instructions on this page apply to the Research and Industry Tracks only.</p>
@@ -188,44 +226,6 @@
             <li>Check that the paper title, abstract, and human-author information are accurate and consistent with the OpenReview record.</li>
             <li>Verify that the uploaded PDF opens correctly, that the non-archival footer appears as intended, and that the saved revision contains the final paper and supporting materials.</li>
           </ul>
-        </section>
-
-        <section id="metadata">
-          <div class="section-head">
-            <p class="kicker">Camera-Ready · 04</p>
-            <h2>Research and Industry Tracks: LaTeX Metadata</h2>
-          </div>
-          <p><strong>This section applies to the Research and Industry Tracks only.</strong> AI Paper Track authors should use the <a href="#ai-paper-track">non-archival settings above</a>.</p>
-          <p>For the current OpenReview version, replace the template's sample conference and rights-management block with the code below. Place it after <code>\documentclass[sigconf]{acmart}</code> and before <code>\begin{document}</code>. Ensure that no later duplicate metadata commands override these settings.</p>
-          <p><a href="assets/templates/dai2026-camera-ready-metadata.tex" download>Download the LaTeX replacement code (.tex)</a></p>
-          <pre><code>% DAI 2026 - provisional metadata for the OpenReview camera-ready version.
-% Use with \documentclass[sigconf]{acmart}.
-% Replace the template&#x27;s sample conference and rights-management block
-% with this block, after \documentclass and before \begin{document}.
-% Do not leave later sample commands that override these values.
-% For the final ACM submission, replace provisional publication settings
-% with the exact metadata and rights commands supplied by ACM.
-
-\acmYear{2026}
-\acmConference[DAI &#x27;26]
-  {The Eighth International Conference on Distributed Artificial Intelligence}
-  {November 29--December 2, 2026}
-  {Hong Kong, China}
-\acmBooktitle{The Eighth International Conference on Distributed Artificial
-  Intelligence (DAI &#x27;26), November 29--December 2, 2026, Hong Kong, China}
-
-% Publication identifiers and the ACM rights notice are pending.
-% Suppress the notice for this OpenReview version; this is not a choice
-% of the final ACM publication license.
-\setcopyright{none}
-\copyrightyear{}
-\acmDOI{}
-\acmISBN{}
-
-% Keep the ACM Reference Format; authors, title, and page count are automatic.
-\settopmatter{printacmref=true}</code></pre>
-          <p>This code sets the DAI 2026 conference heading and ACM Reference Format. The template automatically inserts your paper's author names, title, and page count. Unassigned publication details are left blank, and the ACM rights notice is temporarily suppressed.</p>
-          <p><strong>These settings are for the current OpenReview version only.</strong> Replace the temporary publication settings with the exact metadata and rights commands supplied by ACM when preparing the final publication submission.</p>
         </section>
 
         <section id="checklist">
