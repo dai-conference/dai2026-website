@@ -2439,6 +2439,11 @@ a.program-directory-item:hover {
 /* --------------------------------------------------------------------------
    Utility / responsive nav
    -------------------------------------------------------------------------- */
+@media (min-width: 861px) and (max-width: 1400px) {
+  .topbar-brand .wm,
+  .topbar-brand .divider { display: none; }
+}
+
 @media (max-width: 1180px) {
   .topbar-brand .wm strong { max-width: 300px; overflow: hidden; text-overflow: ellipsis; }
   .topbar-brand .wm small { display: none; }

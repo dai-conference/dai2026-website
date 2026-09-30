@@ -23,7 +23,7 @@ jobs:
           source: "*.html,*.css,*.js,*.jsx,assets,robots.txt,sitemap.xml,llms.txt"
           target: "/www/wwwroot/www.adai.ai/dai/2026"
           strip_components: 0
-          rm: true
+          rm: false
 
       - name: Publish root indexing files
         uses: appleboy/scp-action@v0.1.7
