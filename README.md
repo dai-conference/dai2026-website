@@ -12,6 +12,7 @@ The site is intentionally plain HTML, CSS, and a small amount of JavaScript. The
 - `camera-ready-guide.html` - camera-ready instructions for accepted Research, Industry, and AI Paper Track papers; complete main LaTeX files for Research/Industry and non-archival AI Paper Track papers in `assets/templates/`.
 - `dates.html` - important dates.
 - `program.html` - program overview and navigation hub.
+- `accepted-papers.html`, `accepted-papers.css` - accepted paper titles and authors by track.
 - `keynotes.html` - keynote speakers.
 - `registration.html`, `registration.css` - registration fees, HKT deadlines, mainland China and outside-mainland Bagevent links, and ACM publication information.
 - `attending.html` - venue page.
