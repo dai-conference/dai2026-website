@@ -16,7 +16,7 @@ The site is intentionally plain HTML, CSS, and a small amount of JavaScript. The
 - `keynotes.html` - keynote speakers.
 - `tutorials.html`, `workshops.html`, `sessions.css` - tutorial titles and presenters, workshop titles and organizers.
 - `registration.html`, `registration.css` - registration fees, HKT deadlines, mainland China and outside-mainland Bagevent links, and ACM publication information.
-- `attending.html` - venue page.
+- `attending.html` - venue and recommended hotels, with official websites, approximate driving distances, and public transport routes and journey times.
 - `organizing.html` - organizing committee.
 - `program-committee.html` - area chairs and reviewers.
 - `committee.css` - program committee page layout.

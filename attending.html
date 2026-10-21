@@ -3,22 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DAI 2026 venue and travel information for City University of Hong Kong in Kowloon, Hong Kong.">
+  <meta name="description" content="DAI 2026 venue and recommended hotels, with official websites, approximate driving distances, and public transport to City University of Hong Kong.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.adai.ai/dai/2026/attending.html">
   <meta property="og:site_name" content="DAI 2026">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Venue · DAI 2026 · Hong Kong">
-  <meta property="og:description" content="DAI 2026 venue and travel information for City University of Hong Kong in Kowloon, Hong Kong.">
+  <meta property="og:title" content="Venue &amp; Hotels · DAI 2026 · Hong Kong">
+  <meta property="og:description" content="DAI 2026 venue and recommended hotels, with official websites, approximate driving distances, and public transport to City University of Hong Kong.">
   <meta property="og:url" content="https://www.adai.ai/dai/2026/attending.html">
   <meta property="og:image" content="https://www.adai.ai/dai/2026/assets/logo.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Venue · DAI 2026 · Hong Kong">
-  <meta name="twitter:description" content="DAI 2026 venue and travel information for City University of Hong Kong in Kowloon, Hong Kong.">
+  <meta name="twitter:title" content="Venue &amp; Hotels · DAI 2026 · Hong Kong">
+  <meta name="twitter:description" content="DAI 2026 venue and recommended hotels, with official websites, approximate driving distances, and public transport to City University of Hong Kong.">
   <meta name="twitter:image" content="https://www.adai.ai/dai/2026/assets/logo.jpg">
-  <title>Venue · DAI 2026 · Hong Kong</title>
+  <title>Venue &amp; Hotels · DAI 2026 · Hong Kong</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css?v=20260930-registration">
+  <style>
+    .hotel-table a { color: var(--heading); border-bottom: 1px solid currentColor; }
+    .hotel-table a:hover { color: var(--accent); }
+    @media (max-width: 720px) {
+      .hotel-table tr:last-child td { border-bottom: 0; }
+      .hotel-table td[data-label]::before {
+        content: attr(data-label);
+        display: inline-block;
+        min-width: 54px;
+        margin-right: 8px;
+        font-family: var(--font-mono);
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+      }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to main content</a>
@@ -68,7 +86,7 @@
     <div class="hero-contour page-header-contour"><div class="svg-inline" data-svg-inline="assets/contour.svg" data-svg-fit="fill"></div></div>
     <div class="container">
       <div class="crumb"><a href="index.html">DAI 2026</a><span>/</span><span>Attending</span></div>
-      <h1>Venue</h1>
+      <h1>Venue &amp; Hotels</h1>
       <p class="lede">DAI 2026 is hosted at City University of Hong Kong in Hong Kong.</p>
       <div class="header-meta">
         <span>Venue · <span>CityU · Hong Kong</span></span>
@@ -115,6 +133,40 @@
           <img src="assets/cityu-campus-photo.webp" alt="City University of Hong Kong campus in Kowloon Tong" loading="lazy" decoding="async">
           <figcaption>City University of Hong Kong · Kowloon Tong · Photo: City University of Hong Kong via <a href="https://commons.wikimedia.org/wiki/File:C01-086.jpg">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption>
         </figure>
+      </section>
+
+      <section id="hotels" aria-labelledby="hotels-heading">
+        <div class="section-head">
+          <p class="kicker">Accommodation · 02</p>
+          <h2 id="hotels-heading">Recommended Hotels</h2>
+          <p class="lede">Driving distances and public transport times to the City University of Hong Kong campus are approximate. Journey times include walking.</p>
+        </div>
+
+        <table class="datetable hotel-table" aria-labelledby="hotels-heading">
+          <thead>
+            <tr><th scope="col">Hotel</th><th scope="col">Official Website</th><th scope="col">Driving Distance</th><th scope="col">Public Transport to Venue</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Royal Plaza Hotel</td>
+              <td data-label="Website"><a href="https://www.royalplaza.com.hk/" aria-label="Royal Plaza Hotel official website">Official website</a></td>
+              <td data-label="Distance">Approx. 3 km</td>
+              <td data-label="Transit">MTR East Rail Line: Mong Kok East &rarr; Kowloon Tong, then walk to campus.<br>Approx. 20 min total.</td>
+            </tr>
+            <tr>
+              <td>Harbour Grand Kowloon</td>
+              <td data-label="Website"><a href="https://www.harbourgrand.com/kowloon/en/" aria-label="Harbour Grand Kowloon official website">Official website</a></td>
+              <td data-label="Distance">Approx. 7 km</td>
+              <td data-label="Transit">MTR Kwun Tong Line: Whampoa &rarr; Kowloon Tong, then walk to campus.<br>Approx. 30 min total.</td>
+            </tr>
+            <tr>
+              <td>Hyatt Regency Hong Kong, Sha Tin</td>
+              <td data-label="Website"><a href="https://www.hyatt.com/hyatt-regency/en-US/shahr-hyatt-regency-hong-kong-sha-tin" aria-label="Hyatt Regency Hong Kong, Sha Tin official website">Official website</a></td>
+              <td data-label="Distance">Approx. 13 km</td>
+              <td data-label="Transit">MTR East Rail Line: University &rarr; Kowloon Tong, then walk to campus.<br>Approx. 30 min total.</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
     </div>
