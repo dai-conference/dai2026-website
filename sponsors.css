@@ -1,0 +1,36 @@
+.sponsor-card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0;
+  padding: 20px;
+  background: var(--bg-surface);
+  text-align: center;
+}
+
+.sponsor-card img {
+  width: 100%;
+  height: auto;
+}
+
+.sponsor-card figcaption {
+  margin-top: 12px;
+}
+
+.sponsor-card h3 {
+  color: var(--text);
+}
+
+.sponsor-card p {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.sponsor-card .sponsor-tier {
+  margin: 0 0 12px;
+  color: var(--heading);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
