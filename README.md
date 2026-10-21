@@ -14,6 +14,7 @@ The site is intentionally plain HTML, CSS, and a small amount of JavaScript. The
 - `program.html` - program overview and navigation hub.
 - `accepted-papers.html`, `accepted-papers.css` - accepted paper titles and authors by track.
 - `keynotes.html` - keynote speakers.
+- `tutorials.html`, `workshops.html`, `sessions.css` - tutorial titles and presenters, workshop titles and organizers.
 - `registration.html`, `registration.css` - registration fees, HKT deadlines, mainland China and outside-mainland Bagevent links, and ACM publication information.
 - `attending.html` - venue page.
 - `organizing.html` - organizing committee.

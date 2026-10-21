@@ -19,6 +19,8 @@ Dates: 2026-11-29 to 2026-12-02.
 - [Program Overview](https://www.adai.ai/dai/2026/program.html): Navigation hub for published and forthcoming DAI 2026 program sections.
 - [Accepted Papers](https://www.adai.ai/dai/2026/accepted-papers.html): Accepted paper titles and authors, grouped by Research Track, Industry Track, and AI Paper Track. AI Paper Track papers are non-archival.
 - [Keynote Speakers](https://www.adai.ai/dai/2026/keynotes.html): DAI 2026 keynote speakers.
+- [Tutorials](https://www.adai.ai/dai/2026/tutorials.html): Three DAI 2026 tutorials with titles and presenters.
+- [Workshops](https://www.adai.ai/dai/2026/workshops.html): Five DAI 2026 workshops with titles and organizers.
 - [Registration](https://www.adai.ai/dai/2026/registration.html): Fees in USD and RMB, Hong Kong Time deadlines, and registration links by affiliation location. RMB rates are available only to attendees from Mainland China.
 - [Venue](https://www.adai.ai/dai/2026/attending.html): Venue information for City University of Hong Kong.
 - [Organizing Committee](https://www.adai.ai/dai/2026/organizing.html): General co-chairs, program committee leadership, local arrangements, publicity, sponsorship, and contacts.

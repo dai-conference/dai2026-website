@@ -1,0 +1,67 @@
+.session-list {
+  display: grid;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.program-session { min-width: 0; }
+.program-session .section-head { margin-bottom: 32px; }
+.program-session .session-title {
+  max-width: 52ch;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.2;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+.session-people-label {
+  margin: 0 0 12px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.committee.session-people {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 44px;
+  border-top: 0;
+}
+.session-people .committee-card {
+  min-width: 0;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  padding: 16px 0 19px;
+  border: 0;
+  border-top: 1px solid var(--border);
+  break-inside: avoid;
+}
+.session-people .role { display: none; }
+.session-people .name {
+  margin-bottom: 0;
+  color: var(--heading);
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+.session-people .affiliation {
+  margin-top: 6px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1050px) {
+  .committee.session-people {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 36px;
+  }
+}
+@media (max-width: 720px) {
+  .session-list { gap: 56px; }
+  .program-session .section-head { margin-bottom: 24px; }
+  .program-session .session-title { font-size: clamp(26px, 5.5vw, 32px); }
+}
+@media (max-width: 600px) {
+  .committee.session-people { grid-template-columns: minmax(0, 1fr); }
+  .session-people .committee-card { padding: 15px 0 18px; }
+}
