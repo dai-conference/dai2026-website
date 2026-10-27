@@ -26,6 +26,17 @@
   font-size: 16px;
 }
 
+.sponsor-card .sponsor-website {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.sponsor-website a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .sponsor-card .sponsor-tier {
   margin: 0 0 12px;
   color: var(--heading);
