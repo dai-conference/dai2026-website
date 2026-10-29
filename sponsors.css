@@ -1,4 +1,13 @@
+.sponsor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
 .sponsor-card {
+  flex: 0 1 320px;
+  min-width: 0;
   width: 100%;
   max-width: 320px;
   margin: 0;
@@ -10,6 +19,25 @@
 .sponsor-card img {
   width: 100%;
   height: auto;
+}
+
+.sponsor-logo {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.sponsor-logo .sponsor-logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .sponsor-logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .sponsor-logo-dark {
+  display: block;
 }
 
 .sponsor-card figcaption {
