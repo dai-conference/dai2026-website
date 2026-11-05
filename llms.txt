@@ -51,7 +51,7 @@ Dates: 2026-11-29 to 2026-12-02.
 - Camera-ready deadline: October 16, 2026, 23:59 AoE (UTC-12).
 - Research, Industry, and AI Paper Track camera-ready page limits: 9, 7, and 9 pages, respectively, excluding references and appendices. Appendices follow the references and have no page limit.
 - AI Paper Track papers are non-archival, retained on OpenReview, and not included in the ACM proceedings. ACM publication and APC requirements apply to the Research and Industry Tracks only.
-- General co-chairs: Minming Li, Francesca Rossi, and Michael Wellman.
+- General co-chairs: Minming Li and Francesca Rossi.
 - Program committee co-chairs: Ian Gemp, Mengchen Zhao, and Ying Wen.
 
 ## Machine-Readable Files

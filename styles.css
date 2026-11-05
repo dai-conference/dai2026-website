@@ -987,7 +987,7 @@ p { margin: 0; }
 }
 .keynote-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
   background: var(--border);
   border-block: 1px solid var(--border);
@@ -1064,11 +1064,6 @@ p { margin: 0; }
 .keynote-copy .honors span {
   display: block;
 }
-@container (max-width: 759px) {
-  .keynote-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 
 /* program directory */
 .program-directory {
@@ -1140,7 +1135,7 @@ a.program-directory-item:hover {
     grid-column: 2;
   }
 }
-@container (max-width: 459px) {
+@container (max-width: 659px) {
   .keynote-list {
     grid-template-columns: 1fr;
   }

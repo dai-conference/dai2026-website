@@ -36,7 +36,7 @@ window.DAI_PROGRAM = {
     {
       "id": "w3-am",
       "type": "workshop",
-      "title": "Workshop · Safe Agentic AI in the Physical World (Morning)",
+      "title": "Workshop · Safe Agentic AI in the Physical World",
       "day": "2026-11-29",
       "start": "09:00",
       "end": "12:00",
@@ -47,7 +47,7 @@ window.DAI_PROGRAM = {
     {
       "id": "w3-pm",
       "type": "workshop",
-      "title": "Workshop · Safe Agentic AI in the Physical World (Afternoon)",
+      "title": "Workshop · Safe Agentic AI in the Physical World",
       "day": "2026-11-29",
       "start": "13:30",
       "end": "16:30",
@@ -179,7 +179,7 @@ window.DAI_PROGRAM = {
     {
       "id": "k4",
       "type": "keynote",
-      "title": "Keynote · Francesca Rossi",
+      "title": "Keynote · Speaker TBD",
       "day": "2026-12-02",
       "start": "13:15",
       "end": "14:00",
