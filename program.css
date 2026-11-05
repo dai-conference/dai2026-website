@@ -81,6 +81,7 @@
   font: 600 11px/1.4 var(--font-mono); text-transform: uppercase; letter-spacing: .085em;
 }
 .tab-copy small { color: var(--text-secondary); font: 500 12px/1.35 var(--font-sans); }
+.tab-copy .tab-social { color: var(--heading); font-weight: 600; }
 .day-tabs [aria-selected="true"] small { color: inherit; }
 .day-panel, .paper-finder, .paper-row { scroll-margin-top: calc(var(--topbar-h) + 16px); }
 .day-panel:not([hidden]) { animation: agenda-in .18s ease-out; }
@@ -162,7 +163,7 @@
   .program-mast { grid-template-columns: minmax(0,1fr) 29%; gap: 16px; }
   .venue-print { aspect-ratio: 1.4; }
   .venue-print > span { font-size: 8px; letter-spacing: .025em; }
-  .tab-copy small { display: none; }
+  .tab-copy small:not(.tab-social) { display: none; }
   .tab-copy > span { font-size: 10px; }
   .event-grid { grid-auto-flow: row; grid-auto-columns: unset; gap: 13px; }
   .event-item { padding-block: 1px; }
@@ -184,6 +185,7 @@
   .day-tabs button { flex-direction: column; align-items: start; gap: 3px; padding: 10px 8px; }
   .tab-date { font-size: 33px; }
   .tab-copy > span { font-size: 9px; letter-spacing: .035em; white-space: nowrap; }
+  .tab-copy .tab-social { font-size: 10px; }
   .day-heading { align-items: start; flex-direction: column; gap: 6px; padding: 22px 0 12px; }
   .time-block { grid-template-columns: 79px minmax(0,1fr); }
   .time-rail { padding-top: 16px; }

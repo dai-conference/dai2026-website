@@ -84,6 +84,8 @@
     const items = events.filter(event => event.day === day).sort((a, b) =>
       a.start.localeCompare(b.start) || a.id.localeCompare(b.id));
     const phase = items.some(event => event.type === 'paper') ? 'Main conference' : 'Workshops & tutorials';
+    const socialLabels = items.filter(event => event.type === 'social').map(event =>
+      `<small class="tab-social">${esc(event.title.replace(/^(Welcome|Conference) /, ''))}</small>`).join('');
     const groups = new Map();
     for (const event of items) {
       if (!groups.has(event.start)) groups.set(event.start, []);
@@ -95,7 +97,7 @@
     $('day-tabs').insertAdjacentHTML('beforeend', `<button type="button" role="tab" id="tab-${day}"
       aria-controls="day-${day}" aria-selected="${index === 0}" tabindex="${index ? -1 : 0}" data-day="${day}">
       <span class="tab-date">${dayNumber}</span><span class="tab-copy"><span>${weekday.slice(0, 3)} · ${month}</span>
-      <small>${esc(phase)}</small></span></button>`);
+      <small>${esc(phase)}</small>${socialLabels}</span></button>`);
     $('agenda-days').insertAdjacentHTML('beforeend', `<section class="day-panel" role="tabpanel" id="day-${day}"
       aria-labelledby="tab-${day}" tabindex="0" ${index ? 'hidden' : ''}>
       <header class="day-heading"><div><p class="day-number">Day ${String(index + 1).padStart(2, '0')} <span>/</span> ${weekday}, ${dayNumber} ${month}</p>
