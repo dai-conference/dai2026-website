@@ -56,17 +56,6 @@ window.DAI_PROGRAM = {
       "talkTitle": ""
     },
     {
-      "id": "w4",
-      "type": "workshop",
-      "title": "Workshop · Agent Institutions: Designing Institutional Scaffolds for Society-Scale Human-Agent Coordination",
-      "day": "2026-11-29",
-      "start": "13:30",
-      "end": "16:30",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
-    },
-    {
       "id": "t2",
       "type": "tutorial",
       "title": "Tutorial · From Question Answering to Reliable Execution: Agent Harness Design, Evolution, and Evaluation",

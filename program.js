@@ -13,7 +13,7 @@
   const detailLinks = {
     w1: 'workshops.html#workshop-01', w2: 'workshops.html#workshop-02',
     'w3-am': 'workshops.html#workshop-03', 'w3-pm': 'workshops.html#workshop-03',
-    w4: 'workshops.html#workshop-04', w5: 'workshops.html#workshop-05',
+    w5: 'workshops.html#workshop-05',
     t1: 'tutorials.html#tutorial-02', t2: 'tutorials.html#tutorial-01',
     t3: 'tutorials.html#tutorial-03', k2: 'keynotes.html#weinan-e',
     k3: 'keynotes.html#michael-p-wellman'
