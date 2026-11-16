@@ -28,6 +28,12 @@
   place-items: center;
 }
 
+.sponsor-logo-pair {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  background: #fff;
+}
+
 .sponsor-logo .sponsor-logo-dark {
   display: none;
 }
