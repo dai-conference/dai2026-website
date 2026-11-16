@@ -70,9 +70,9 @@ window.DAI_PROGRAM = {
       "id": "w5",
       "type": "workshop",
       "title": "Workshop · Agentic Economics: AI Agents for Economic Decision-Making, Economic Simulation, and Mechanism Design",
-      "day": "2026-11-30",
-      "start": "09:00",
-      "end": "12:00",
+      "day": "2026-11-29",
+      "start": "13:30",
+      "end": "16:30",
       "location": "TBD",
       "host": "TBD",
       "talkTitle": ""
