@@ -3,23 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DAI 2026 venue and recommended hotels, with official websites, approximate driving distances, and public transport to City University of Hong Kong.">
+  <meta name="description" content="DAI 2026 venue, Victoria Harbour cruise reception, conference banquet at Harbour Grand Kowloon, and recommended hotels.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://www.adai.ai/dai/2026/attending.html">
   <meta property="og:site_name" content="DAI 2026">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Venue &amp; Hotels · DAI 2026 · Hong Kong">
-  <meta property="og:description" content="DAI 2026 venue and recommended hotels, with official websites, approximate driving distances, and public transport to City University of Hong Kong.">
+  <meta property="og:title" content="Attending · DAI 2026 · Hong Kong">
+  <meta property="og:description" content="DAI 2026 venue, Victoria Harbour cruise reception, conference banquet at Harbour Grand Kowloon, and recommended hotels.">
   <meta property="og:url" content="https://www.adai.ai/dai/2026/attending.html">
   <meta property="og:image" content="https://www.adai.ai/dai/2026/assets/logo.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Venue &amp; Hotels · DAI 2026 · Hong Kong">
-  <meta name="twitter:description" content="DAI 2026 venue and recommended hotels, with official websites, approximate driving distances, and public transport to City University of Hong Kong.">
+  <meta name="twitter:title" content="Attending · DAI 2026 · Hong Kong">
+  <meta name="twitter:description" content="DAI 2026 venue, Victoria Harbour cruise reception, conference banquet at Harbour Grand Kowloon, and recommended hotels.">
   <meta name="twitter:image" content="https://www.adai.ai/dai/2026/assets/logo.jpg">
-  <title>Venue &amp; Hotels · DAI 2026 · Hong Kong</title>
+  <title>Attending · DAI 2026 · Hong Kong</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css?v=20260930-registration">
   <style>
+    .attending-nav { display: flex; flex-wrap: wrap; gap: 12px 28px; padding-bottom: 20px; margin-bottom: 48px; border-bottom: 1px solid var(--border); color: var(--heading); font-size: 14px; font-weight: 600; }
+    #venue, #hotels, .social-event { scroll-margin-top: calc(var(--topbar-h) + 24px); }
+    .social-event .section-head { margin-bottom: 24px; }
+    .social-event-layout { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+    .social-event-copy > p { margin-top: 12px; color: var(--text-secondary); line-height: 1.65; }
+    .social-event-facts { margin: 24px 0 20px; font-size: 14px; }
+    .social-event-facts > div { display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-top: 1px solid var(--border); }
+    .social-event-facts dt { color: var(--text-muted); }
+    .social-event-facts dd { margin: 0; color: var(--text); }
+    .social-event-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+    .social-event-link { color: var(--heading); font-size: 14px; font-weight: 600; }
+    .social-event-photo { margin: 0; }
+    .social-event-photo img { width: 100%; height: auto; display: block; }
+    .social-event-photo figcaption { margin-top: 10px; font-size: 12px; line-height: 1.5; color: var(--text-muted); }
+    .social-event-photo figcaption a { text-decoration: underline; text-underline-offset: 2px; }
+    .attending-nav a:hover, .social-event-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 760px) {
+      .social-event-layout { grid-template-columns: 1fr; }
+      .attending-nav { gap: 12px 20px; margin-bottom: 36px; }
+    }
     .hotel-table a { color: var(--heading); border-bottom: 1px solid currentColor; }
     .hotel-table a:hover { color: var(--accent); }
     @media (max-width: 720px) {
@@ -38,7 +58,7 @@
     }
   </style>
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#content">Skip to main content</a>
 
   <header class="topbar">
@@ -86,8 +106,8 @@
     <div class="hero-contour page-header-contour"><div class="svg-inline" data-svg-inline="assets/contour.svg" data-svg-fit="fill"></div></div>
     <div class="container">
       <div class="crumb"><a href="index.html">DAI 2026</a><span>/</span><span>Attending</span></div>
-      <h1>Venue &amp; Hotels</h1>
-      <p class="lede">DAI 2026 is hosted at City University of Hong Kong in Hong Kong.</p>
+      <h1>Attending DAI 2026</h1>
+      <p class="lede">Conference venue, social events, and recommended hotels in Hong Kong.</p>
       <div class="header-meta">
         <span>Venue · <span>CityU · Hong Kong</span></span>
         <span>Nearest MTR · <span>Kowloon Tong</span></span>
@@ -97,6 +117,14 @@
   </section>
 
   <main class="page-body" id="content">
+    <div class="container">
+      <nav class="attending-nav" aria-label="Attending sections">
+        <a href="#venue">Conference venue</a>
+        <a href="#reception">Reception</a>
+        <a href="#banquet">Banquet</a>
+        <a href="#hotels">Hotels</a>
+      </nav>
+    </div>
     <div class="container" style="display:flex;flex-direction:column;gap:96px;">
 
       <!-- Venue + Map -->
@@ -135,9 +163,58 @@
         </figure>
       </section>
 
+      <section class="social-event" id="reception" aria-labelledby="reception-heading">
+        <div class="section-head">
+          <p class="kicker">Social Events &middot; 02</p>
+          <h2 id="reception-heading">Welcome Reception</h2>
+        </div>
+        <div class="social-event-layout">
+          <div class="social-event-copy">
+            <h3>Victoria Harbour Cruise</h3>
+            <p>Join us for an evening cruise on Victoria Harbour, with a buffet and drinks on board. The cruise departs from Hung Hom Pier.</p>
+            <dl class="social-event-facts">
+              <div><dt>Date</dt><dd>Monday, 30 November 2026</dd></div>
+              <div><dt>Departure</dt><dd>Hung Hom Pier</dd></div>
+              <div><dt>Time</dt><dd>TBD</dd></div>
+            </dl>
+            <a class="social-event-link" href="program.html#rec">View in program <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <figure class="social-event-photo">
+            <img src="assets/victoria-harbour-night-cruise-wide.webp" width="1600" height="1067" alt="A complete red-sailed junk boat on Victoria Harbour, with open water and Hong Kong's illuminated skyline at night" loading="lazy" decoding="async">
+            <figcaption>Victoria Harbour night cruise, illustrative photo. Photo by <a href="https://www.pexels.com/photo/night-view-of-hong-kong-skyline-with-traditional-junk-boat-35851143/">Boj&aacute;na No&eacute;mi Moln&aacute;r / Pexels</a>, <a href="https://www.pexels.com/license/">Pexels License</a>.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="social-event" id="banquet" aria-labelledby="banquet-heading">
+        <div class="section-head">
+          <p class="kicker">Social Events &middot; 03</p>
+          <h2 id="banquet-heading">Conference Banquet</h2>
+        </div>
+        <div class="social-event-layout">
+          <div class="social-event-copy">
+            <h3>Harbour Grand Kowloon</h3>
+            <p>The conference banquet will be held at Harbour Grand Kowloon.</p>
+            <dl class="social-event-facts">
+              <div><dt>Date</dt><dd>Tuesday, 1 December 2026</dd></div>
+              <div><dt>Venue</dt><dd>Harbour Grand Kowloon</dd></div>
+              <div><dt>Time</dt><dd>TBD</dd></div>
+            </dl>
+            <div class="social-event-links">
+              <a class="social-event-link" href="program.html#banquet">View in program <span aria-hidden="true">&rarr;</span></a>
+              <a class="social-event-link" href="https://www.harbourgrand.com/kowloon/en/">Hotel website <span aria-hidden="true">&nearr;</span></a>
+            </div>
+          </div>
+          <figure class="social-event-photo">
+            <img src="assets/harbour-grand-kowloon-ballroom.webp" width="1500" height="1000" alt="Grand Ballroom at Harbour Grand Kowloon with chandeliers and round banquet tables" loading="lazy" decoding="async">
+            <figcaption>Grand Ballroom, hotel example setup. Photo &copy; Harbour Plaza Hotel Management Limited. <a href="https://www.harbourgrand.com/kowloon/en/weddings/wedding-venue-298.html">Image source</a>.</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section id="hotels" aria-labelledby="hotels-heading">
         <div class="section-head">
-          <p class="kicker">Accommodation · 02</p>
+          <p class="kicker">Accommodation · 04</p>
           <h2 id="hotels-heading">Recommended Hotels</h2>
           <p class="lede">Driving distances and public transport times to the City University of Hong Kong campus are approximate. Journey times include walking.</p>
         </div>
@@ -186,7 +263,7 @@
         <div><h4>Attending</h4><ul><li><a href="registration.html">Registration</a></li><li><a href="attending.html">Venue</a></li></ul></div>
         <div><h4>About</h4><ul><li><a href="organizing.html">Organizing Committee</a></li><li><a href="program-committee.html">Program Committee</a></li><li><a href="sponsors.html">Sponsorship</a></li><li><a href="organizing.html">Contact</a></li><li><a href="#top">Back to Top ↑</a></li></ul></div>
       </div>
-      <div class="legal"><span>© 2026 DAI Steering Committee</span><span>Hosted by City University of Hong Kong</span><span>Updated 20 May 2026</span></div>
+      <div class="legal"><span>© 2026 DAI Steering Committee</span><span>Hosted by City University of Hong Kong</span><span>Updated 18 Nov 2026</span></div>
     </div>
   </footer>
 

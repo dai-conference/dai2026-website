@@ -16,7 +16,8 @@
     w5: 'https://econworlds.org/activities/dai26-workshop/',
     t1: 'tutorials.html#tutorial-02', t2: 'tutorials.html#tutorial-01',
     t3: 'tutorials.html#tutorial-03', k2: 'keynotes.html#weinan-e',
-    k3: 'keynotes.html#michael-p-wellman'
+    k3: 'keynotes.html#michael-p-wellman',
+    rec: 'attending.html#reception', banquet: 'attending.html#banquet'
   };
 
   const $ = id => document.getElementById(id);
