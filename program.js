@@ -13,7 +13,7 @@
   const detailLinks = {
     w1: 'workshops.html#workshop-01', w2: 'workshops.html#workshop-02',
     'w3-am': 'workshops.html#workshop-03', 'w3-pm': 'workshops.html#workshop-03',
-    w5: 'workshops.html#workshop-05',
+    w5: 'https://econworlds.org/activities/dai26-workshop/',
     t1: 'tutorials.html#tutorial-02', t2: 'tutorials.html#tutorial-01',
     t3: 'tutorials.html#tutorial-03', k2: 'keynotes.html#weinan-e',
     k3: 'keynotes.html#michael-p-wellman'
@@ -55,7 +55,8 @@
     const labels = {other: 'Plenary', poster: 'Posters', social: 'Social event'};
     const label = kind || labels[event.type] || '';
     const link = detailLinks[event.id];
-    const name = link ? `<a href="${link}">${esc(title)} <span aria-hidden="true">↗</span></a>` : esc(title);
+    const linkTarget = link?.startsWith('https://') ? ' target="_blank" rel="noopener noreferrer"' : '';
+    const name = link ? `<a href="${link}"${linkTarget}>${esc(title)} <span aria-hidden="true">↗</span></a>` : esc(title);
     const info = [];
     if (event.talkTitle) info.push(event.talkTitle === 'TBD' ? 'Talk title TBD.' : event.talkTitle);
     if (event.type === 'poster') info.push('Participation is optional. Registration, location, and presenters are TBD.');
@@ -73,16 +74,19 @@
     const endLabel = sameEnd && !untimed ? '– ' + esc(items[0].end) : '';
     const concurrent = items.length > 1;
     const compact = items.length === 1 && items[0].type === 'break';
+    const alignedWorkshops = items.some(event => event.id === 'w3-am' || event.id === 'w3-pm');
     return `<div class="time-block${compact ? ' break-block' : ''}">
       <div class="time-rail"><span>${untimed ? 'Evening' : esc(start)}</span><small>${untimed ? 'Time TBD' : endLabel}</small>
       ${concurrent ? `<em>${items.length} in parallel</em>` : ''}</div>
-      <div class="${items[0].type === 'paper' ? 'oral-group' : 'event-grid'}">${items.map(event => eventItem(event, !sameEnd)).join('')}</div>
+      <div class="${items[0].type === 'paper' ? 'oral-group' : 'event-grid'}${alignedWorkshops ? ' aligned-workshops' : ''}">${items.map(event => eventItem(event, !sameEnd)).join('')}</div>
     </div>`;
   }
 
   function buildDay(day, index) {
+    const parallelOrder = {t1: 0, 'w3-am': 1, w2: 2};
     const items = events.filter(event => event.day === day).sort((a, b) =>
-      a.start.localeCompare(b.start) || a.id.localeCompare(b.id));
+      a.start.localeCompare(b.start) ||
+      (parallelOrder[a.id] ?? 0) - (parallelOrder[b.id] ?? 0) || a.id.localeCompare(b.id));
     const phase = items.some(event => event.type === 'paper') ? 'Main conference' : 'Workshops & tutorials';
     const socialLabels = items.filter(event => event.type === 'social').map(event =>
       `<small class="tab-social">${esc(event.title.replace(/^(Welcome|Conference) /, ''))}</small>`).join('');
