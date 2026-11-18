@@ -59,7 +59,6 @@
     const name = link ? `<a href="${link}"${linkTarget}>${esc(title)} <span aria-hidden="true">↗</span></a>` : esc(title);
     const info = [];
     if (event.talkTitle) info.push(event.talkTitle === 'TBD' ? 'Talk title TBD.' : event.talkTitle);
-    if (event.type === 'poster') info.push('Participation is optional. Registration, location, and presenters are TBD.');
     if (event.host !== 'TBD' && event.host) info.push('Chair: ' + event.host);
     if (event.location !== 'TBD' && event.location) info.push(event.location);
     if (showEnd) info.push('Until ' + event.end);

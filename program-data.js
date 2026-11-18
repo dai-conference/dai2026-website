@@ -227,7 +227,7 @@ window.DAI_PROGRAM = {
       "day": "2026-11-30",
       "start": "TBD",
       "end": "TBD",
-      "location": "TBD",
+      "location": "Victoria Harbour cruise, departing from Hung Hom Pier",
       "host": "TBD",
       "talkTitle": ""
     },
@@ -238,7 +238,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "TBD",
       "end": "TBD",
-      "location": "TBD",
+      "location": "Harbour Grand Kowloon",
       "host": "TBD",
       "talkTitle": ""
     },
