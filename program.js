@@ -83,7 +83,7 @@
   }
 
   function buildDay(day, index) {
-    const parallelOrder = {t1: 0, 'w3-am': 1, w2: 2};
+    const parallelOrder = {t1: 0, 'w3-am': 0, w1: 1, w2: 2};
     const items = events.filter(event => event.day === day).sort((a, b) =>
       a.start.localeCompare(b.start) ||
       (parallelOrder[a.id] ?? 0) - (parallelOrder[b.id] ?? 0) || a.id.localeCompare(b.id));
