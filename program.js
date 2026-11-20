@@ -108,7 +108,7 @@
     $('agenda-days').insertAdjacentHTML('beforeend', `<section class="day-panel" role="tabpanel" id="day-${day}"
       aria-labelledby="tab-${day}" tabindex="0" ${index ? 'hidden' : ''}>
       <header class="day-heading"><div><p class="day-number">Day ${String(index + 1).padStart(2, '0')} <span>/</span> ${weekday}, ${dayNumber} ${month}</p>
-      <h3>${esc(phase)}</h3></div><p class="zone">Hong Kong time <b>UTC+8</b></p></header>
+      <h3>${esc(phase)}</h3></div></header>
       ${Array.from(groups, ([start, group]) => timeBlock(start, group)).join('')}</section>`);
   }
 
@@ -168,7 +168,7 @@
       matches.length + (matches.length === 1 ? ' presentation found' : ' presentations found') :
       'No presentations found. Try a different title, author, topic, or track.';
     $('paper-results').innerHTML = matches.map(paper =>
-      `<article class="paper-result"><div><small>${shortDate(paper.day)} · ${clockRange(paper.start, paper.end)} HKT · ${trackLine(paper)}</small>
+      `<article class="paper-result"><div><small>${shortDate(paper.day)} · ${clockRange(paper.start, paper.end)} · ${trackLine(paper)}</small>
       <strong>${esc(paper.title)}</strong><p>${esc(paper.authors)}</p></div>
       <a href="#${esc(paper.id)}">View in schedule <span aria-hidden="true">↑</span></a></article>`
     ).join('');
