@@ -11,7 +11,7 @@
   }
 
   const detailLinks = {
-    w1: 'workshops.html#workshop-01', w2: 'workshops.html#workshop-02',
+    w1: 'workshops.html#workshop-01', w2: 'workshop-adm.html',
     'w3-am': 'workshops.html#workshop-03', 'w3-pm': 'workshops.html#workshop-03',
     w5: 'https://econworlds.org/activities/dai26-workshop/',
     t1: 'tutorials.html#tutorial-02', t2: 'tutorials.html#tutorial-01',
