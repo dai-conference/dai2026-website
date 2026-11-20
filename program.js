@@ -62,6 +62,7 @@
     if (event.talkTitle) info.push(event.talkTitle === 'TBD' ? 'Talk title TBD.' : event.talkTitle);
     if (event.host !== 'TBD' && event.host) info.push('Chair: ' + event.host);
     if (event.location !== 'TBD' && event.location) info.push(event.location);
+    if (event.notes) info.push(...event.notes);
     if (showEnd) info.push('Until ' + event.end);
     return `<div class="event-item event-${esc(event.type)}" id="${esc(event.id)}">
       ${label ? `<small class="event-kind">${esc(label)}</small>` : ''}
@@ -73,10 +74,12 @@
     const untimed = start === 'TBD';
     const endLabel = sameEnd && !untimed ? '– ' + esc(items[0].end) : '';
     const concurrent = items.length > 1;
+    const timeLabel = !concurrent && items[0].timeLabel;
     const compact = items.length === 1 && items[0].type === 'break';
     const alignedWorkshops = items.some(event => event.id === 'w3-am' || event.id === 'w3-pm');
     return `<div class="time-block${compact ? ' break-block' : ''}">
       <div class="time-rail"><span>${untimed ? 'Evening' : esc(start)}</span><small>${untimed ? 'Time TBD' : endLabel}</small>
+      ${timeLabel ? `<em>${esc(timeLabel)}</em>` : ''}
       ${concurrent ? `<em>${items.length} in parallel</em>` : ''}</div>
       <div class="${items[0].type === 'paper' ? 'oral-group' : 'event-grid'}${alignedWorkshops ? ' aligned-workshops' : ''}">${items.map(event => eventItem(event, !sameEnd)).join('')}</div>
     </div>`;
