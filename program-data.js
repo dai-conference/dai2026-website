@@ -124,13 +124,13 @@ window.DAI_PROGRAM = {
     {
       "id": "k1",
       "type": "keynote",
-      "title": "Keynote · Speaker TBD",
+      "title": "Keynote · Michael I. Jordan",
       "day": "2026-12-01",
       "start": "09:15",
       "end": "10:00",
       "location": "TBD",
       "host": "TBD",
-      "talkTitle": "TBD"
+      "talkTitle": "A Collectivist, Economic Perspective on AI"
     },
     {
       "id": "k2",
@@ -2131,12 +2131,5 @@ window.DAI_PROGRAM = {
       "status": "TBD"
     }
   ],
-  "unassignedKeynotes": [
-    {
-      "speaker": "Michael I. Jordan",
-      "date": "TBD",
-      "time": "TBD",
-      "title": "TBD"
-    }
-  ]
+  "unassignedKeynotes": []
 };

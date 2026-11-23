@@ -43,6 +43,7 @@ Dates: 2026-11-29 to 2026-12-02.
 - Location: Hong Kong.
 - Venue: City University of Hong Kong.
 - Conference dates: November 29 to December 2, 2026.
+- Michael I. Jordan (Inria Paris and the University of California, Berkeley) will deliver [A Collectivist, Economic Perspective on AI](https://www.adai.ai/dai/2026/keynotes.html#michael-i-jordan) on December 1, 2026, 09:15–10:00 HKT (UTC+8).
 - Conference registration dates are in Hong Kong Time (HKT, UTC+8): Early Bird through October 20, 2026; Regular from October 21 through November 14, 2026; Late / On-site from November 15, 2026. End dates are inclusive.
 - Workshop and tutorial proposal deadline: July 30, 2026.
 - Former abstract registration requirement and deadline: ~~July 27, 2026~~. The abstract-registration step has been removed; authors submit Research and Industry full papers directly.

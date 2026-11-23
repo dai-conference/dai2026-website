@@ -15,7 +15,8 @@
     'w3-am': 'workshops.html#workshop-03', 'w3-pm': 'workshops.html#workshop-03',
     w5: 'https://econworlds.org/activities/dai26-workshop/',
     t1: 'tutorials.html#tutorial-02', t2: 'tutorials.html#tutorial-01',
-    t3: 'tutorials.html#tutorial-03', k2: 'keynotes.html#weinan-e',
+    t3: 'tutorials.html#tutorial-03', k1: 'keynotes.html#michael-i-jordan',
+    k2: 'keynotes.html#weinan-e',
     k3: 'keynotes.html#michael-p-wellman',
     rec: 'attending.html#reception', banquet: 'attending.html#banquet'
   };
