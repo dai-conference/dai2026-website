@@ -304,11 +304,10 @@ window.DAI_PROGRAM = {
       "type": "social",
       "title": "Conference Banquet",
       "day": "2026-12-01",
-      "start": "19:30",
-      "end": "22:00",
+      "start": "18:30",
       "location": "Harbour Grand Kowloon",
       "notes": [
-        "Admission from 18:00. The banquet runs from 19:30 to 22:00.",
+        "Admission from 18:00.",
         "Coaches depart from the conference venue (City University of Hong Kong) at approximately 17:45."
       ],
       "talkTitle": ""

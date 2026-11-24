@@ -79,7 +79,7 @@
       ? roomLabel(event)
       : event.location && event.location !== 'TBD' ? `<p>${esc(event.location)}</p>` : '';
     if (event.notes) info.push(...event.notes);
-    if (showEnd) info.push('Until ' + event.end);
+    if (showEnd && event.end) info.push('Until ' + event.end);
     const poster = event.poster ? `<p><a href="${esc(event.poster)}" target="_blank" rel="noopener noreferrer">View workshop poster ↗</a></p>` : '';
     return `<div class="event-item event-${esc(event.type)}" id="${esc(event.id)}">
       ${label ? `<small class="event-kind">${esc(label)}</small>` : ''}
@@ -89,7 +89,7 @@
   function timeBlock(start, items) {
     const sameEnd = items.every(event => event.end === items[0].end);
     const untimed = start === 'TBD';
-    const endLabel = sameEnd && !untimed ? '– ' + esc(items[0].end) : '';
+    const endLabel = sameEnd && !untimed && items[0].end ? '– ' + esc(items[0].end) : '';
     const concurrent = items.length > 1;
     const timeLabel = !concurrent && items[0].timeLabel;
     const compact = items.length === 1 && items[0].type === 'break';
