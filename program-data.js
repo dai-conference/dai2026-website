@@ -6,10 +6,23 @@ window.DAI_PROGRAM = {
       "title": "Workshop · AI Scientists: From LLM Agents to Autonomous Research",
       "day": "2026-11-29",
       "start": "09:00",
-      "end": "12:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "end": "12:15",
+      "location": "LT1",
+      "host": "Linyi Yang",
+      "talkTitle": "",
+      "poster": "assets/ai-scientists-workshop-poster.jpg",
+      "notes": [
+        "Tea break (10:35–10:50): Herman Hu Concourse."
+      ],
+      "participantsLabel": "Workshop chairs",
+      "participants": [
+        "Ningyu Zhang",
+        "Linyi Yang",
+        "Jianbiao He",
+        "Shuofei Qiao",
+        "Mengru Wang",
+        "Junfeng Fang"
+      ]
     },
     {
       "id": "w2",
@@ -18,9 +31,15 @@ window.DAI_PROGRAM = {
       "day": "2026-11-29",
       "start": "09:00",
       "end": "12:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT4",
+      "host": "Fang Kong",
+      "talkTitle": "",
+      "participantsLabel": "Workshop organizers",
+      "participants": [
+        "Fang Kong",
+        "Zhiheng Zhang",
+        "Jinhang Zuo"
+      ]
     },
     {
       "id": "t1",
@@ -29,31 +48,50 @@ window.DAI_PROGRAM = {
       "day": "2026-11-30",
       "start": "13:30",
       "end": "16:30",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT1",
+      "host": "Yang Chen",
+      "talkTitle": "",
+      "participantsLabel": "Tutorial presenters",
+      "participants": [
+        "Yang Chen",
+        "Chen Zhang"
+      ]
     },
     {
       "id": "w3-am",
       "type": "workshop",
       "title": "Workshop · Safe Agentic AI in the Physical World",
       "day": "2026-11-29",
-      "start": "09:00",
-      "end": "12:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "start": "09:30",
+      "end": "12:10",
+      "location": "LT3",
+      "host": "Jingwei Yi",
+      "talkTitle": "",
+      "participantsLabel": "Workshop organizers",
+      "participants": [
+        "Yaodong Yang",
+        "Jingwei Yi",
+        "Huanran Wang",
+        "Mengjia Li"
+      ]
     },
     {
       "id": "w3-pm",
       "type": "workshop",
       "title": "Workshop · Safe Agentic AI in the Physical World",
       "day": "2026-11-29",
-      "start": "13:30",
-      "end": "16:30",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "start": "13:40",
+      "end": "16:10",
+      "location": "LT3",
+      "host": "Jingwei Yi",
+      "talkTitle": "",
+      "participantsLabel": "Workshop organizers",
+      "participants": [
+        "Yaodong Yang",
+        "Jingwei Yi",
+        "Huanran Wang",
+        "Mengjia Li"
+      ]
     },
     {
       "id": "t2",
@@ -62,9 +100,14 @@ window.DAI_PROGRAM = {
       "day": "2026-11-30",
       "start": "09:00",
       "end": "12:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT1",
+      "host": "Shuyue Hu",
+      "talkTitle": "",
+      "participantsLabel": "Tutorial presenters",
+      "participants": [
+        "Shuyue Hu",
+        "Hangfan Zhang"
+      ]
     },
     {
       "id": "w5",
@@ -73,9 +116,20 @@ window.DAI_PROGRAM = {
       "day": "2026-11-29",
       "start": "13:30",
       "end": "16:30",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT1",
+      "host": "Qirui Mi",
+      "talkTitle": "",
+      "participantsLabel": "Workshop organizers",
+      "participants": [
+        "Qirui Mi",
+        "Renzhe Xu",
+        "Haifeng Zhang",
+        "Bo Li",
+        "Pinyan Lu"
+      ],
+      "notes": [
+        "Tea break (15:00–15:30): Herman Hu Concourse."
+      ]
     },
     {
       "id": "t3",
@@ -84,20 +138,29 @@ window.DAI_PROGRAM = {
       "day": "2026-11-30",
       "start": "09:00",
       "end": "12:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT3",
+      "host": "Shuang Qiu",
+      "talkTitle": "",
+      "participantsLabel": "Tutorial presenters",
+      "participants": [
+        "Shuang Qiu",
+        "Zhongxiang Dai"
+      ]
     },
     {
       "id": "w6",
       "type": "workshop",
-      "title": "Workshop · GCC — Title TBD",
+      "title": "Workshop · GCC — zkAPI: private usage credits for any API & ETH AI Challenge",
       "day": "2026-11-30",
       "start": "13:30",
       "end": "16:30",
-      "location": "TBD",
+      "location": "LT3",
       "host": "TBD",
-      "talkTitle": ""
+      "talkTitle": "",
+      "participantsLabel": "Workshop organizers",
+      "participants": [
+        "TBD"
+      ]
     },
     {
       "id": "open1",
@@ -106,9 +169,9 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "09:00",
       "end": "09:15",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT1",
+      "talkTitle": "",
+      "host": "TBD"
     },
     {
       "id": "open2",
@@ -117,9 +180,9 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "09:00",
       "end": "09:15",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT1",
+      "talkTitle": "",
+      "host": "TBD"
     },
     {
       "id": "k1",
@@ -128,9 +191,9 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "09:15",
       "end": "10:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": "A Collectivist, Economic Perspective on AI"
+      "location": "LT1",
+      "talkTitle": "A Collectivist, Economic Perspective on AI",
+      "host": "TBD"
     },
     {
       "id": "k2",
@@ -139,9 +202,9 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "13:15",
       "end": "14:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": "TBD"
+      "location": "LT1",
+      "talkTitle": "TBD",
+      "host": "TBD"
     },
     {
       "id": "k3",
@@ -150,9 +213,9 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "09:15",
       "end": "10:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": "Competition and Cooperation in LLM Bargaining: An Empirical Meta-Game Analysis"
+      "location": "LT1",
+      "talkTitle": "Competition and Cooperation in LLM Bargaining: An Empirical Meta-Game Analysis",
+      "host": "TBD"
     },
     {
       "id": "k4",
@@ -161,20 +224,20 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "13:15",
       "end": "14:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": "TBD"
+      "location": "LT1",
+      "talkTitle": "TBD",
+      "host": "TBD"
     },
     {
       "id": "p1a",
       "type": "poster",
-      "title": "Poster Session 1A",
+      "title": "Poster Session 1A and Morning Break",
       "day": "2026-12-01",
-      "start": "11:35",
-      "end": "12:05",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "start": "10:00",
+      "end": "10:30",
+      "location": "Herman Hu Concourse",
+      "talkTitle": "",
+      "host": "TBD"
     },
     {
       "id": "p1b",
@@ -183,20 +246,20 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "15:30",
       "end": "16:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "Herman Hu Concourse",
+      "talkTitle": "",
+      "host": "TBD"
     },
     {
       "id": "p2a",
       "type": "poster",
-      "title": "Poster Session 2A",
+      "title": "Poster Session 2A and Morning Break",
       "day": "2026-12-02",
-      "start": "11:35",
-      "end": "12:05",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "start": "10:00",
+      "end": "10:30",
+      "location": "Herman Hu Concourse",
+      "talkTitle": "",
+      "host": "TBD"
     },
     {
       "id": "p2b",
@@ -205,9 +268,9 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "15:30",
       "end": "16:00",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "Herman Hu Concourse",
+      "talkTitle": "",
+      "host": "TBD"
     },
     {
       "id": "end",
@@ -216,9 +279,9 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "17:20",
       "end": "17:29",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
+      "location": "LT1",
+      "talkTitle": "",
+      "host": "TBD"
     },
     {
       "id": "rec",
@@ -229,7 +292,10 @@ window.DAI_PROGRAM = {
       "end": "21:00",
       "timeLabel": "Cruise",
       "location": "Victoria Harbour cruise, departing from Hung Hom Pier",
-      "notes": ["Boarding at Hung Hom Pier: 17:40–17:55. Buffet and drinks included.", "Coaches depart from the conference venue (City University of Hong Kong) at approximately 17:00."],
+      "notes": [
+        "Boarding at Hung Hom Pier: 17:40–17:55. Buffet and drinks included.",
+        "Coaches depart from the conference venue (City University of Hong Kong) at approximately 17:00."
+      ],
       "host": "TBD",
       "talkTitle": ""
     },
@@ -241,74 +307,52 @@ window.DAI_PROGRAM = {
       "start": "19:30",
       "end": "22:00",
       "location": "Harbour Grand Kowloon",
-      "notes": ["Admission from 18:00. The banquet runs from 19:30 to 22:00.", "Coaches depart from the conference venue (City University of Hong Kong) at approximately 17:45."],
-      "host": "TBD",
+      "notes": [
+        "Admission from 18:00. The banquet runs from 19:30 to 22:00.",
+        "Coaches depart from the conference venue (City University of Hong Kong) at approximately 17:45."
+      ],
       "talkTitle": ""
     },
     {
       "id": "lunch2026-11-29",
       "type": "break",
-      "title": "Lunch (independent)",
+      "title": "Lunch",
       "day": "2026-11-29",
       "start": "12:00",
       "end": "13:30",
-      "location": "TBD",
+      "location": "",
       "host": "TBD",
       "talkTitle": ""
     },
     {
       "id": "lunch2026-11-30",
       "type": "break",
-      "title": "Lunch (independent)",
+      "title": "Lunch",
       "day": "2026-11-30",
       "start": "12:00",
       "end": "13:30",
-      "location": "TBD",
+      "location": "",
       "host": "TBD",
       "talkTitle": ""
     },
     {
       "id": "lunch2026-12-01",
       "type": "break",
-      "title": "Lunch (independent)",
+      "title": "Lunch",
       "day": "2026-12-01",
-      "start": "12:05",
+      "start": "12:00",
       "end": "13:15",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
-    },
-    {
-      "id": "coffee2026-12-01",
-      "type": "break",
-      "title": "Coffee break",
-      "day": "2026-12-01",
-      "start": "10:00",
-      "end": "10:10",
-      "location": "TBD",
-      "host": "TBD",
+      "location": "",
       "talkTitle": ""
     },
     {
       "id": "lunch2026-12-02",
       "type": "break",
-      "title": "Lunch (independent)",
+      "title": "Lunch",
       "day": "2026-12-02",
-      "start": "12:05",
+      "start": "12:00",
       "end": "13:15",
-      "location": "TBD",
-      "host": "TBD",
-      "talkTitle": ""
-    },
-    {
-      "id": "coffee2026-12-02",
-      "type": "break",
-      "title": "Coffee break",
-      "day": "2026-12-02",
-      "start": "10:00",
-      "end": "10:10",
-      "location": "TBD",
-      "host": "TBD",
+      "location": "",
       "talkTitle": ""
     },
     {
@@ -316,9 +360,9 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Agent Systems, Tools and Workflows / Agent Memory and Continual Learning",
       "day": "2026-12-01",
-      "start": "10:10",
-      "end": "11:30",
-      "location": "TBD",
+      "start": "10:35",
+      "end": "11:55",
+      "location": "LT3",
       "host": "TBD"
     },
     {
@@ -326,9 +370,9 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Agentic Applications and Discovery",
       "day": "2026-12-01",
-      "start": "10:10",
-      "end": "11:30",
-      "location": "TBD",
+      "start": "10:35",
+      "end": "11:55",
+      "location": "LT4",
       "host": "TBD"
     },
     {
@@ -338,7 +382,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "16:05",
       "end": "17:15",
-      "location": "TBD",
+      "location": "LT3",
       "host": "TBD"
     },
     {
@@ -348,7 +392,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "14:05",
       "end": "15:25",
-      "location": "TBD",
+      "location": "LT1",
       "host": "TBD"
     },
     {
@@ -358,7 +402,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "14:05",
       "end": "15:25",
-      "location": "TBD",
+      "location": "LT3",
       "host": "TBD"
     },
     {
@@ -368,7 +412,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "14:05",
       "end": "15:25",
-      "location": "TBD",
+      "location": "LT4",
       "host": "TBD"
     },
     {
@@ -378,7 +422,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "16:05",
       "end": "17:15",
-      "location": "TBD",
+      "location": "LT1",
       "host": "TBD"
     },
     {
@@ -386,9 +430,9 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Evaluation, Trust and Safety of Agents",
       "day": "2026-12-01",
-      "start": "10:10",
-      "end": "11:10",
-      "location": "TBD",
+      "start": "10:35",
+      "end": "11:35",
+      "location": "LT1",
       "host": "TBD"
     },
     {
@@ -398,7 +442,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "16:05",
       "end": "17:05",
-      "location": "TBD",
+      "location": "LT4",
       "host": "TBD"
     },
     {
@@ -408,7 +452,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-01",
       "start": "16:05",
       "end": "17:15",
-      "location": "TBD",
+      "location": "Y4302",
       "host": "TBD"
     },
     {
@@ -416,9 +460,9 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Evaluation, Trust and Safety of Agents",
       "day": "2026-12-02",
-      "start": "10:10",
-      "end": "11:30",
-      "location": "TBD",
+      "start": "10:35",
+      "end": "11:55",
+      "location": "LT3",
       "host": "TBD"
     },
     {
@@ -426,9 +470,9 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Robotics, Embodied Agents and Control",
       "day": "2026-12-02",
-      "start": "10:10",
-      "end": "11:30",
-      "location": "TBD",
+      "start": "10:35",
+      "end": "11:55",
+      "location": "LT1",
       "host": "TBD"
     },
     {
@@ -436,9 +480,9 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Auctions, Games and Incentives",
       "day": "2026-12-02",
-      "start": "10:10",
-      "end": "11:30",
-      "location": "TBD",
+      "start": "10:35",
+      "end": "11:55",
+      "location": "LT4",
       "host": "TBD"
     },
     {
@@ -448,7 +492,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "14:05",
       "end": "15:25",
-      "location": "TBD",
+      "location": "LT3",
       "host": "TBD"
     },
     {
@@ -458,7 +502,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "14:05",
       "end": "15:25",
-      "location": "TBD",
+      "location": "LT1",
       "host": "TBD"
     },
     {
@@ -468,7 +512,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "14:05",
       "end": "15:25",
-      "location": "TBD",
+      "location": "LT4",
       "host": "TBD"
     },
     {
@@ -478,7 +522,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "16:05",
       "end": "17:15",
-      "location": "TBD",
+      "location": "LT4",
       "host": "TBD"
     },
     {
@@ -488,7 +532,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "16:05",
       "end": "17:05",
-      "location": "TBD",
+      "location": "Y4302",
       "host": "TBD"
     },
     {
@@ -498,7 +542,7 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "16:05",
       "end": "17:05",
-      "location": "TBD",
+      "location": "LT3",
       "host": "TBD"
     },
     {
@@ -508,8 +552,50 @@ window.DAI_PROGRAM = {
       "day": "2026-12-02",
       "start": "16:05",
       "end": "17:15",
-      "location": "TBD",
+      "location": "LT1",
       "host": "TBD"
+    },
+    {
+      "id": "sponsor-01",
+      "type": "sponsor",
+      "title": "Sponsor Session",
+      "day": "2026-12-01",
+      "start": "14:05",
+      "end": "15:05",
+      "location": "Y4302",
+      "talkTitle": "",
+      "talks": [
+        {
+          "start": "14:05",
+          "end": "14:30",
+          "speaker": "Huawei",
+          "title": "openJiuwen Agent Platform",
+          "qaStart": "14:30",
+          "qaEnd": "14:35"
+        },
+        {
+          "start": "14:35",
+          "end": "15:00",
+          "speaker": "SingularityX Evolution",
+          "title": "The Cheaper the Intelligence, the More Expensive the Organization: A Verification-First Design for AI Collaborative Ecosystems",
+          "qaStart": "15:00",
+          "qaEnd": "15:05"
+        }
+      ],
+      "host": "TBD"
+    },
+    {
+      "id": "registration-2026-11-28",
+      "type": "registration",
+      "title": "Registration opens",
+      "day": "2026-11-28",
+      "start": "TBD",
+      "end": "TBD",
+      "period": "Afternoon",
+      "location": "Herman Hu Concourse",
+      "notes": [
+        "Registration opens in the afternoon; exact hours TBD."
+      ]
     }
   ],
   "papers": [
@@ -553,8 +639,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "11:00",
-      "end": "11:10",
+      "start": "11:25",
+      "end": "11:35",
       "status": "listed"
     },
     {
@@ -597,8 +683,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "10:50",
-      "end": "11:00",
+      "start": "11:15",
+      "end": "11:25",
       "status": "listed"
     },
     {
@@ -652,8 +738,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "10:20",
-      "end": "10:30",
+      "start": "10:45",
+      "end": "10:55",
       "status": "listed"
     },
     {
@@ -685,8 +771,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "11:10",
-      "end": "11:20",
+      "start": "11:35",
+      "end": "11:45",
       "status": "listed"
     },
     {
@@ -696,8 +782,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "11:20",
-      "end": "11:30",
+      "start": "11:45",
+      "end": "11:55",
       "status": "listed"
     },
     {
@@ -707,8 +793,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "10:30",
-      "end": "10:40",
+      "start": "10:55",
+      "end": "11:05",
       "status": "listed"
     },
     {
@@ -718,8 +804,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "11:20",
-      "end": "11:30",
+      "start": "11:45",
+      "end": "11:55",
       "status": "listed"
     },
     {
@@ -729,8 +815,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "10:10",
-      "end": "10:20",
+      "start": "10:35",
+      "end": "10:45",
       "status": "listed"
     },
     {
@@ -740,8 +826,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-08",
       "day": "2026-12-01",
-      "start": "10:50",
-      "end": "11:00",
+      "start": "11:15",
+      "end": "11:25",
       "status": "listed"
     },
     {
@@ -751,8 +837,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-08",
       "day": "2026-12-01",
-      "start": "10:20",
-      "end": "10:30",
+      "start": "10:45",
+      "end": "10:55",
       "status": "listed"
     },
     {
@@ -762,8 +848,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-08",
       "day": "2026-12-01",
-      "start": "10:40",
-      "end": "10:50",
+      "start": "11:05",
+      "end": "11:15",
       "status": "listed"
     },
     {
@@ -795,8 +881,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "10:40",
-      "end": "10:50",
+      "start": "11:05",
+      "end": "11:15",
       "status": "listed"
     },
     {
@@ -806,8 +892,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "10:50",
-      "end": "11:00",
+      "start": "11:15",
+      "end": "11:25",
       "status": "listed"
     },
     {
@@ -817,8 +903,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "10:40",
-      "end": "10:50",
+      "start": "11:05",
+      "end": "11:15",
       "status": "listed"
     },
     {
@@ -850,8 +936,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "10:50",
-      "end": "11:00",
+      "start": "11:15",
+      "end": "11:25",
       "status": "listed"
     },
     {
@@ -861,8 +947,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "11:10",
-      "end": "11:20",
+      "start": "11:35",
+      "end": "11:45",
       "status": "listed"
     },
     {
@@ -905,8 +991,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "10:30",
-      "end": "10:40",
+      "start": "10:55",
+      "end": "11:05",
       "status": "listed"
     },
     {
@@ -960,8 +1046,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "10:40",
-      "end": "10:50",
+      "start": "11:05",
+      "end": "11:15",
       "status": "listed"
     },
     {
@@ -971,8 +1057,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-01",
       "day": "2026-12-01",
-      "start": "10:10",
-      "end": "10:20",
+      "start": "10:35",
+      "end": "10:45",
       "status": "listed"
     },
     {
@@ -1004,8 +1090,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "10:30",
-      "end": "10:40",
+      "start": "10:55",
+      "end": "11:05",
       "status": "listed"
     },
     {
@@ -1059,8 +1145,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "11:10",
-      "end": "11:20",
+      "start": "11:35",
+      "end": "11:45",
       "status": "listed"
     },
     {
@@ -1136,8 +1222,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-08",
       "day": "2026-12-01",
-      "start": "10:10",
-      "end": "10:20",
+      "start": "10:35",
+      "end": "10:45",
       "status": "listed"
     },
     {
@@ -1147,8 +1233,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "11:10",
-      "end": "11:20",
+      "start": "11:35",
+      "end": "11:45",
       "status": "listed"
     },
     {
@@ -1191,8 +1277,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "11:00",
-      "end": "11:10",
+      "start": "11:25",
+      "end": "11:35",
       "status": "listed"
     },
     {
@@ -1268,8 +1354,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "10:20",
-      "end": "10:30",
+      "start": "10:45",
+      "end": "10:55",
       "status": "listed"
     },
     {
@@ -1323,8 +1409,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "10:10",
-      "end": "10:20",
+      "start": "10:35",
+      "end": "10:45",
       "status": "listed"
     },
     {
@@ -1389,8 +1475,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "10:40",
-      "end": "10:50",
+      "start": "11:05",
+      "end": "11:15",
       "status": "listed"
     },
     {
@@ -1422,8 +1508,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "10:10",
-      "end": "10:20",
+      "start": "10:35",
+      "end": "10:45",
       "status": "listed"
     },
     {
@@ -1444,8 +1530,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "10:40",
-      "end": "10:50",
+      "start": "11:05",
+      "end": "11:15",
       "status": "listed"
     },
     {
@@ -1532,8 +1618,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "10:20",
-      "end": "10:30",
+      "start": "10:45",
+      "end": "10:55",
       "status": "listed"
     },
     {
@@ -1554,8 +1640,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "11:20",
-      "end": "11:30",
+      "start": "11:45",
+      "end": "11:55",
       "status": "listed"
     },
     {
@@ -1598,8 +1684,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "10:20",
-      "end": "10:30",
+      "start": "10:45",
+      "end": "10:55",
       "status": "listed"
     },
     {
@@ -1631,8 +1717,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "10:30",
-      "end": "10:40",
+      "start": "10:55",
+      "end": "11:05",
       "status": "listed"
     },
     {
@@ -1664,8 +1750,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "11:00",
-      "end": "11:10",
+      "start": "11:25",
+      "end": "11:35",
       "status": "listed"
     },
     {
@@ -1686,8 +1772,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "10:10",
-      "end": "10:20",
+      "start": "10:35",
+      "end": "10:45",
       "status": "listed"
     },
     {
@@ -1697,8 +1783,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "10:50",
-      "end": "11:00",
+      "start": "11:15",
+      "end": "11:25",
       "status": "listed"
     },
     {
@@ -1708,8 +1794,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "10:30",
-      "end": "10:40",
+      "start": "10:55",
+      "end": "11:05",
       "status": "listed"
     },
     {
@@ -1741,8 +1827,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-08",
       "day": "2026-12-01",
-      "start": "11:00",
-      "end": "11:10",
+      "start": "11:25",
+      "end": "11:35",
       "status": "listed"
     },
     {
@@ -1752,8 +1838,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "10:20",
-      "end": "10:30",
+      "start": "10:45",
+      "end": "10:55",
       "status": "listed"
     },
     {
@@ -1763,8 +1849,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-08",
       "day": "2026-12-01",
-      "start": "10:30",
-      "end": "10:40",
+      "start": "10:55",
+      "end": "11:05",
       "status": "listed"
     },
     {
@@ -1774,8 +1860,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-13",
       "day": "2026-12-02",
-      "start": "10:50",
-      "end": "11:00",
+      "start": "11:15",
+      "end": "11:25",
       "status": "listed"
     },
     {
@@ -1829,8 +1915,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-12",
       "day": "2026-12-02",
-      "start": "11:00",
-      "end": "11:10",
+      "start": "11:25",
+      "end": "11:35",
       "status": "listed"
     },
     {
@@ -1928,8 +2014,8 @@ window.DAI_PROGRAM = {
       "track": "Industry",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "11:00",
-      "end": "11:10",
+      "start": "11:25",
+      "end": "11:35",
       "status": "listed"
     },
     {
@@ -1950,8 +2036,8 @@ window.DAI_PROGRAM = {
       "track": "Industry",
       "session": "session-11",
       "day": "2026-12-02",
-      "start": "11:20",
-      "end": "11:30",
+      "start": "11:45",
+      "end": "11:55",
       "status": "listed"
     },
     {
@@ -1972,8 +2058,8 @@ window.DAI_PROGRAM = {
       "track": "Industry",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "11:10",
-      "end": "11:20",
+      "start": "11:35",
+      "end": "11:45",
       "status": "listed"
     },
     {
@@ -1983,8 +2069,8 @@ window.DAI_PROGRAM = {
       "track": "Industry",
       "session": "session-02",
       "day": "2026-12-01",
-      "start": "11:20",
-      "end": "11:30",
+      "start": "11:45",
+      "end": "11:55",
       "status": "listed"
     },
     {

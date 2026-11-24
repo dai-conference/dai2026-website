@@ -61,7 +61,7 @@
 }
 .agenda-actions :is(a,button):hover, .program-links a:hover, .paper-result a:hover { text-decoration: underline; }
 .agenda-actions svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.5; }
-.day-tabs { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); border: 1px solid var(--rule); }
+.day-tabs { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); border: 1px solid var(--rule); }
 .day-tabs button {
   background: var(--bg); color: var(--heading); padding: 17px clamp(10px,1.65vw,26px);
   text-align: left; border: 0; border-right: 1px solid var(--rule);
@@ -119,6 +119,7 @@
 .event-item strong a span { color: var(--accent); font-size: .78em; white-space: nowrap; }
 .event-item a:hover { text-decoration: underline; text-underline-offset: 3px; color: var(--accent); }
 .event-item p, .paper-row p, .paper-result p { font-size: 13px; color: var(--text-secondary); line-height: 1.55; margin-top: 4px; }
+.program-page .event-room { display: block; margin: 6px 0; font-size: 14px; font-weight: 650; line-height: 1.35; color: var(--text-secondary); }
 .event-workshop .event-kind::before, .event-tutorial .event-kind::before {
   content: ''; display: inline-block; margin-right: 7px; width: 7px; height: 7px; background: currentColor;
 }
@@ -200,6 +201,7 @@
   .event-grid { padding: 15px 0; }
   .break-block .time-rail { flex-direction: column; gap: 0; padding-left: 4px; }
   .event-item strong, .oral-session summary strong { font-size: 14px; }
+  .program-page .event-room { font-size: 13px; }
   .oral-session summary { align-items: start; flex-direction: column; gap: 5px; }
   .paper-count { font-size: 11px; }
   .paper-row { grid-template-columns: 1fr; gap: 3px; }

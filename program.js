@@ -11,12 +11,11 @@
   }
 
   const detailLinks = {
-    w1: 'workshops.html#workshop-01', w2: 'workshop-adm.html',
-    'w3-am': 'workshops.html#workshop-03', 'w3-pm': 'workshops.html#workshop-03',
+    w1: 'ai-scientists-workshop.html', w2: 'workshop-adm.html',
+    'w3-am': 'safe-agentic-ai-workshop.html', 'w3-pm': 'safe-agentic-ai-workshop.html',
     w5: 'https://econworlds.org/activities/dai26-workshop/',
     t1: 'tutorials.html#tutorial-02', t2: 'tutorials.html#tutorial-01',
-    t3: 'tutorials.html#tutorial-03', k1: 'keynotes.html#michael-i-jordan',
-    k2: 'keynotes.html#weinan-e',
+    t3: 'tutorials.html#tutorial-03', k1: 'keynotes.html#michael-i-jordan', k2: 'keynotes.html#weinan-e',
     k3: 'keynotes.html#michael-p-wellman',
     rec: 'attending.html#reception', banquet: 'attending.html#banquet'
   };
@@ -28,7 +27,7 @@
   const formatDate = (day, options) =>
     new Intl.DateTimeFormat('en-GB', {timeZone: 'UTC', ...options}).format(new Date(day + 'T00:00:00Z'));
   const shortDate = day => formatDate(day, {day: 'numeric', month: 'short'});
-  const trackLine = paper => esc(paper.track) + (paper.status === 'TBD' ? ' · Presentation TBD' : '');
+  const trackLine = paper => esc(paper.track) + (paper.status === 'TBD' && paper.track !== 'Sister Conference' ? ' · Presentation TBD' : '');
   const clockRange = (start, end) => esc(start) + '–' + esc(end);
 
   function paperRow(paper) {
@@ -38,36 +37,53 @@
     </li>`;
   }
 
+  function sponsorTalkRow(talk) {
+    return `<li class="paper-row"><span class="paper-time">${clockRange(talk.start, talk.end)}</span>
+      <div><strong>${esc(talk.title)}</strong><p>${esc(talk.speaker)} · Presenter: TBD</p>
+      <p>Q&amp;A: ${clockRange(talk.qaStart, talk.qaEnd)}</p></div></li>`;
+  }
+
+  const chairLabel = event => {
+    if (!event || ['workshop', 'tutorial', 'poster'].includes(event.type)) return '';
+    return event.host && event.host !== 'TBD' ? 'Proposed chair: ' + event.host : 'Chair: TBD';
+  };
+
+  const roomLabel = event => `<strong class="event-room">Room: ${esc(event.location || 'TBD')}</strong>`;
+
   function sessionItem(event, showEnd) {
-    const list = paperLists.get(event.id);
-    const number = event.id.split('-')[1];
+    const isPaper = event.type === 'paper';
+    const list = isPaper ? paperLists.get(event.id) : event.talks;
+    const label = isPaper ? 'Paper session ' + event.id.split('-')[1] : 'Sponsor';
     return `<details class="oral-session" id="${esc(event.id)}">
-      <summary><span><small class="event-kind">Paper session ${esc(number)}${showEnd ? ' · Until ' + esc(event.end) : ''}</small>
-      <strong>${esc(event.title)}</strong></span>
-      <span class="paper-count">${list.length} papers <i aria-hidden="true"></i></span></summary>
-      <ol class="paper-list">${list.map(paperRow).join('')}</ol></details>`;
+      <summary><span><small class="event-kind">${esc(label)}${showEnd ? ' · Until ' + esc(event.end) : ''}</small>
+      <strong>${esc(event.title)}</strong>${roomLabel(event)}${chairLabel(event) ? `<small class="event-kind">${esc(chairLabel(event))}</small>` : ''}</span>
+      <span class="paper-count">${list.length} ${isPaper ? 'papers' : 'talks'} <i aria-hidden="true"></i></span></summary>
+      <ol class="paper-list">${list.map(isPaper ? paperRow : sponsorTalkRow).join('')}</ol></details>`;
   }
 
   function eventItem(event, showEnd) {
-    if (event.type === 'paper') return sessionItem(event, showEnd);
+    if (event.type === 'paper' || event.type === 'sponsor') return sessionItem(event, showEnd);
 
     const prefix = event.title.match(/^(Workshop|Tutorial|Keynote) · /);
     const kind = prefix?.[1];
     const title = prefix ? event.title.slice(prefix[0].length) : event.title;
-    const labels = {other: 'Plenary', poster: 'Posters', social: 'Social event'};
+    const labels = {other: 'Plenary', poster: 'Posters', social: 'Social event', sponsor: 'Sponsor', registration: 'Registration'};
     const label = kind || labels[event.type] || '';
     const link = detailLinks[event.id];
     const linkTarget = link?.startsWith('https://') ? ' target="_blank" rel="noopener noreferrer"' : '';
     const name = link ? `<a href="${link}"${linkTarget}>${esc(title)} <span aria-hidden="true">↗</span></a>` : esc(title);
     const info = [];
     if (event.talkTitle) info.push(event.talkTitle === 'TBD' ? 'Talk title TBD.' : event.talkTitle);
-    if (event.host !== 'TBD' && event.host) info.push('Chair: ' + event.host);
-    if (event.location !== 'TBD' && event.location) info.push(event.location);
+    if ((['workshop','tutorial','keynote','poster','sponsor','other'].includes(event.type) || (event.host && event.host !== 'TBD')) && chairLabel(event)) info.push(chairLabel(event));
+    const location = ['workshop', 'tutorial', 'keynote', 'sponsor', 'other'].includes(event.type)
+      ? roomLabel(event)
+      : event.location && event.location !== 'TBD' ? `<p>${esc(event.location)}</p>` : '';
     if (event.notes) info.push(...event.notes);
     if (showEnd) info.push('Until ' + event.end);
+    const poster = event.poster ? `<p><a href="${esc(event.poster)}" target="_blank" rel="noopener noreferrer">View workshop poster ↗</a></p>` : '';
     return `<div class="event-item event-${esc(event.type)}" id="${esc(event.id)}">
       ${label ? `<small class="event-kind">${esc(label)}</small>` : ''}
-      <strong>${name}</strong>${info.map(line => `<p>${esc(line)}</p>`).join('')}</div>`;
+      <strong>${name}</strong>${location}${info.map(line => `<p>${esc(line)}</p>`).join('')}${poster}</div>`;
   }
 
   function timeBlock(start, items) {
@@ -79,7 +95,7 @@
     const compact = items.length === 1 && items[0].type === 'break';
     const alignedWorkshops = items.some(event => event.id === 'w3-am' || event.id === 'w3-pm');
     return `<div class="time-block${compact ? ' break-block' : ''}">
-      <div class="time-rail"><span>${untimed ? 'Evening' : esc(start)}</span><small>${untimed ? 'Time TBD' : endLabel}</small>
+      <div class="time-rail"><span>${untimed ? esc(items[0].period || 'Evening') : esc(start)}</span><small>${untimed ? 'Time TBD' : endLabel}</small>
       ${timeLabel ? `<em>${esc(timeLabel)}</em>` : ''}
       ${concurrent ? `<em>${items.length} in parallel</em>` : ''}</div>
       <div class="${items[0].type === 'paper' ? 'oral-group' : 'event-grid'}${alignedWorkshops ? ' aligned-workshops' : ''}">${items.map(event => eventItem(event, !sameEnd)).join('')}</div>
@@ -91,7 +107,7 @@
     const items = events.filter(event => event.day === day).sort((a, b) =>
       a.start.localeCompare(b.start) ||
       (parallelOrder[a.id] ?? 0) - (parallelOrder[b.id] ?? 0) || a.id.localeCompare(b.id));
-    const phase = items.some(event => event.type === 'paper') ? 'Main conference' : 'Workshops & tutorials';
+    const phase = items.every(event => event.type === 'registration') ? 'Registration' : items.some(event => event.type === 'paper') ? 'Main conference' : 'Workshops & tutorials';
     const socialLabels = items.filter(event => event.type === 'social').map(event =>
       `<small class="tab-social">${esc(event.title.replace(/^(Welcome|Conference) /, ''))}</small>`).join('');
     const groups = new Map();
@@ -108,7 +124,7 @@
       <small>${esc(phase)}</small>${socialLabels}</span></button>`);
     $('agenda-days').insertAdjacentHTML('beforeend', `<section class="day-panel" role="tabpanel" id="day-${day}"
       aria-labelledby="tab-${day}" tabindex="0" ${index ? 'hidden' : ''}>
-      <header class="day-heading"><div><p class="day-number">Day ${String(index + 1).padStart(2, '0')} <span>/</span> ${weekday}, ${dayNumber} ${month}</p>
+      <header class="day-heading"><div><p class="day-number">${phase === 'Registration' ? 'Registration' : 'Day ' + String(index).padStart(2, '0')} <span>/</span> ${weekday}, ${dayNumber} ${month}</p>
       <h3>${esc(phase)}</h3></div></header>
       ${Array.from(groups, ([start, group]) => timeBlock(start, group)).join('')}</section>`);
   }
@@ -169,8 +185,8 @@
       matches.length + (matches.length === 1 ? ' presentation found' : ' presentations found') :
       'No presentations found. Try a different title, author, topic, or track.';
     $('paper-results').innerHTML = matches.map(paper =>
-      `<article class="paper-result"><div><small>${shortDate(paper.day)} · ${clockRange(paper.start, paper.end)} · ${trackLine(paper)}</small>
-      <strong>${esc(paper.title)}</strong><p>${esc(paper.authors)}</p></div>
+      `<article class="paper-result"><div><small>${shortDate(paper.day)} · ${clockRange(paper.start, paper.end)} · ${trackLine(paper)}${chairLabel(sessions.get(paper.session)) ? ' · ' + esc(chairLabel(sessions.get(paper.session))) : ''}</small>
+      <strong>${esc(paper.title)}</strong>${roomLabel(sessions.get(paper.session))}<p>${esc(paper.authors)}</p></div>
       <a href="#${esc(paper.id)}">View in schedule <span aria-hidden="true">↑</span></a></article>`
     ).join('');
   });
