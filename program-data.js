@@ -187,12 +187,12 @@ window.DAI_PROGRAM = {
     {
       "id": "k2",
       "type": "keynote",
-      "title": "Keynote · Weinan E",
+      "title": "Keynote",
       "day": "2026-12-01",
       "start": "13:15",
       "end": "14:00",
       "location": "LT1",
-      "talkTitle": "TBD",
+      "talkTitle": "",
       "host": "TBD"
     },
     {
@@ -209,10 +209,10 @@ window.DAI_PROGRAM = {
     {
       "id": "k4",
       "type": "keynote",
-      "title": "Keynote · Speaker TBD",
+      "title": "Keynote · Weinan E",
       "day": "2026-12-02",
-      "start": "13:15",
-      "end": "14:00",
+      "start": "14:45",
+      "end": "15:30",
       "location": "LT1",
       "talkTitle": "TBD",
       "host": "TBD"
@@ -478,8 +478,8 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Evaluation, Trust and Safety of Agents",
       "day": "2026-12-02",
-      "start": "14:05",
-      "end": "15:25",
+      "start": "13:15",
+      "end": "14:35",
       "location": "LT3",
       "host": "TBD"
     },
@@ -488,8 +488,8 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Robotics, Embodied Agents and Control",
       "day": "2026-12-02",
-      "start": "14:05",
-      "end": "15:25",
+      "start": "13:15",
+      "end": "14:35",
       "location": "LT1",
       "host": "TBD"
     },
@@ -498,8 +498,8 @@ window.DAI_PROGRAM = {
       "type": "paper",
       "title": "Federated and Distributed Learning / Agent Memory and Continual Learning",
       "day": "2026-12-02",
-      "start": "14:05",
-      "end": "15:25",
+      "start": "13:15",
+      "end": "14:35",
       "location": "LT4",
       "host": "TBD"
     },
@@ -638,8 +638,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "15:15",
-      "end": "15:25",
+      "start": "14:25",
+      "end": "14:35",
       "status": "listed"
     },
     {
@@ -704,8 +704,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "14:15",
-      "end": "14:25",
+      "start": "13:25",
+      "end": "13:35",
       "status": "listed"
     },
     {
@@ -715,8 +715,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "14:35",
-      "end": "14:45",
+      "start": "13:45",
+      "end": "13:55",
       "status": "listed"
     },
     {
@@ -748,8 +748,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "14:45",
-      "end": "14:55",
+      "start": "13:55",
+      "end": "14:05",
       "status": "listed"
     },
     {
@@ -847,8 +847,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "14:25",
-      "end": "14:35",
+      "start": "13:35",
+      "end": "13:45",
       "status": "listed"
     },
     {
@@ -913,8 +913,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "15:05",
-      "end": "15:15",
+      "start": "14:15",
+      "end": "14:25",
       "status": "listed"
     },
     {
@@ -968,8 +968,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "14:55",
-      "end": "15:05",
+      "start": "14:05",
+      "end": "14:15",
       "status": "listed"
     },
     {
@@ -1023,8 +1023,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "15:05",
-      "end": "15:15",
+      "start": "14:15",
+      "end": "14:25",
       "status": "listed"
     },
     {
@@ -1067,8 +1067,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "14:55",
-      "end": "15:05",
+      "start": "14:05",
+      "end": "14:15",
       "status": "listed"
     },
     {
@@ -1089,8 +1089,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "14:15",
-      "end": "14:25",
+      "start": "13:25",
+      "end": "13:35",
       "status": "listed"
     },
     {
@@ -1177,8 +1177,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "14:05",
-      "end": "14:15",
+      "start": "13:15",
+      "end": "13:25",
       "status": "listed"
     },
     {
@@ -1243,8 +1243,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "15:15",
-      "end": "15:25",
+      "start": "14:25",
+      "end": "14:35",
       "status": "listed"
     },
     {
@@ -1309,8 +1309,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "14:05",
-      "end": "14:15",
+      "start": "13:15",
+      "end": "13:25",
       "status": "listed"
     },
     {
@@ -1441,8 +1441,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "15:15",
-      "end": "15:25",
+      "start": "14:25",
+      "end": "14:35",
       "status": "listed"
     },
     {
@@ -1452,8 +1452,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "14:05",
-      "end": "14:15",
+      "start": "13:15",
+      "end": "13:25",
       "status": "listed"
     },
     {
@@ -1562,8 +1562,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "14:25",
-      "end": "14:35",
+      "start": "13:35",
+      "end": "13:45",
       "status": "listed"
     },
     {
@@ -1716,8 +1716,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "14:25",
-      "end": "14:35",
+      "start": "13:35",
+      "end": "13:45",
       "status": "listed"
     },
     {
@@ -1793,8 +1793,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "14:45",
-      "end": "14:55",
+      "start": "13:55",
+      "end": "14:05",
       "status": "listed"
     },
     {
@@ -1804,8 +1804,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "15:05",
-      "end": "15:15",
+      "start": "14:15",
+      "end": "14:25",
       "status": "listed"
     },
     {
@@ -1859,8 +1859,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-15",
       "day": "2026-12-02",
-      "start": "14:35",
-      "end": "14:45",
+      "start": "13:45",
+      "end": "13:55",
       "status": "listed"
     },
     {
@@ -1892,8 +1892,8 @@ window.DAI_PROGRAM = {
       "track": "Research",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "14:45",
-      "end": "14:55",
+      "start": "13:55",
+      "end": "14:05",
       "status": "listed"
     },
     {
@@ -2079,8 +2079,8 @@ window.DAI_PROGRAM = {
       "track": "Industry",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "14:35",
-      "end": "14:45",
+      "start": "13:45",
+      "end": "13:55",
       "status": "listed"
     },
     {
@@ -2090,8 +2090,8 @@ window.DAI_PROGRAM = {
       "track": "Industry",
       "session": "session-16",
       "day": "2026-12-02",
-      "start": "14:55",
-      "end": "15:05",
+      "start": "14:05",
+      "end": "14:15",
       "status": "listed"
     },
     {
@@ -2134,8 +2134,8 @@ window.DAI_PROGRAM = {
       "track": "AI Paper",
       "session": "session-14",
       "day": "2026-12-02",
-      "start": "14:15",
-      "end": "14:25",
+      "start": "13:25",
+      "end": "13:35",
       "status": "listed"
     },
     {
