@@ -174,17 +174,6 @@ window.DAI_PROGRAM = {
       "host": "TBD"
     },
     {
-      "id": "open2",
-      "type": "other",
-      "title": "Welcome",
-      "day": "2026-12-02",
-      "start": "09:00",
-      "end": "09:15",
-      "location": "LT1",
-      "talkTitle": "",
-      "host": "TBD"
-    },
-    {
       "id": "k1",
       "type": "keynote",
       "title": "Keynote · Michael I. Jordan",
@@ -211,7 +200,7 @@ window.DAI_PROGRAM = {
       "type": "keynote",
       "title": "Keynote · Michael P. Wellman",
       "day": "2026-12-02",
-      "start": "09:15",
+      "start": "09:00",
       "end": "10:00",
       "location": "LT1",
       "talkTitle": "Competition and Cooperation in LLM Bargaining: An Empirical Meta-Game Analysis",
