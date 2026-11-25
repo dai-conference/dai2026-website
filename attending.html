@@ -21,7 +21,23 @@
   <link rel="stylesheet" href="styles.css?v=20260930-registration">
   <style>
     .attending-nav { display: flex; flex-wrap: wrap; gap: 12px 28px; padding-bottom: 20px; margin-bottom: 48px; border-bottom: 1px solid var(--border); color: var(--heading); font-size: 14px; font-weight: 600; }
-    #venue, #hotels, .social-event { scroll-margin-top: calc(var(--topbar-h) + 24px); }
+    #venue, #floor-plan, #hotels, .social-event { scroll-margin-top: calc(var(--topbar-h) + 24px); }
+    .floor-plan { margin-top: clamp(36px, 5vw, 68px); padding-top: 28px; border-top: 1px solid var(--border); }
+    .floor-plan-layout { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 1.55fr); gap: clamp(20px, 4vw, 52px); align-items: start; }
+    .floor-plan-copy > p { margin-top: 10px; color: var(--text-secondary); line-height: 1.6; }
+    .floor-plan-rooms { margin: 20px 0; font-size: 14px; }
+    .floor-plan-rooms > div { padding: 9px 0; border-top: 1px solid var(--border); }
+    .floor-plan-rooms dt { color: var(--text-muted); }
+    .floor-plan-rooms dd { margin: 3px 0 0; font-weight: 600; }
+    .floor-plan-map { margin: 0; min-width: 0; }
+    .floor-plan-map img { display: block; width: 100%; height: auto; }
+    .floor-plan-map figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; margin-top: 10px; font-size: 12px; color: var(--text-secondary); }
+    .floor-plan-copy a, .floor-plan-map figcaption a { color: var(--heading); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 760px) {
+      .floor-plan-layout { grid-template-columns: minmax(0, 1fr); }
+      .floor-plan-rooms { display: flex; flex-wrap: wrap; gap: 0 16px; }
+      .floor-plan-rooms > div { flex: 1 1 132px; }
+    }
     .social-event .section-head { margin-bottom: 24px; }
     .social-event-layout { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
     .social-event-copy > p { margin-top: 12px; color: var(--text-secondary); line-height: 1.65; }
@@ -120,6 +136,7 @@
     <div class="container">
       <nav class="attending-nav" aria-label="Attending sections">
         <a href="#venue">Conference venue</a>
+        <a href="#floor-plan">Floor plan</a>
         <a href="#reception">Reception</a>
         <a href="#banquet">Banquet</a>
         <a href="#hotels">Hotels</a>
@@ -132,7 +149,7 @@
         <div class="section-head">
           <p class="kicker">Venue · 01</p>
           <h2>City University of Hong Kong</h2>
-          <p class="lede">Sessions are held at the Yeung Kin Man Academic Building on the university campus, with workshops and posters in adjacent buildings.</p>
+          <p class="lede">Find the conference rooms on 4/F of the Yeung Kin Man Academic Building, along Herman Hu Concourse (<span lang="zh-Hant">曉明大道</span>).</p>
         </div>
 
         <div class="venue">
@@ -156,6 +173,28 @@
             </div>
           </figure>
         </div>
+
+        <section class="floor-plan" id="floor-plan" aria-labelledby="floor-plan-title">
+          <div class="floor-plan-layout">
+            <div class="floor-plan-copy">
+              <h3 id="floor-plan-title">Conference floor plan</h3>
+              <p>Herman Hu Concourse <span lang="zh-Hant">曉明大道</span><br>Yeung Kin Man Academic Building &middot; 4/F</p>
+              <dl class="floor-plan-rooms">
+                <div><dt>Orange Zone</dt><dd>LT1</dd></div>
+                <div><dt>Yellow Zone</dt><dd>LT3 &middot; LT4 &middot; Y4302 &middot; Y4702</dd></div>
+                <div><dt>Blue Zone</dt><dd>B4302 &middot; B4702</dd></div>
+              </dl>
+              <p>See the <a href="program.html">Program</a> for session rooms and times.</p>
+            </div>
+            <figure class="floor-plan-map">
+              <img src="assets/venue-floor-plan.svg" width="660" height="542" alt="Herman Hu Concourse floor plan. Y4702 is beside LT4, Y4302 beside LT3, B4702 beside LT8, and B4302 beside LT7. LT1 is opposite LT2." loading="lazy" decoding="async">
+              <figcaption>
+                <span>Blue outlines mark conference rooms.</span>
+                <a href="assets/venue-floor-plan.svg">Open full-size floor plan</a>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
 
         <figure class="venue-photo">
           <img src="assets/cityu-campus-photo.webp" alt="City University of Hong Kong campus in Kowloon Tong" loading="lazy" decoding="async">

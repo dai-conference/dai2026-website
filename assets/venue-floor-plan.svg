@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 542" width="660" height="542" role="img" aria-labelledby="floor-title floor-desc">
+  <title id="floor-title">Herman Hu Concourse, Yeung Kin Man Academic Building, 4/F</title>
+  <desc id="floor-desc">LT1 is opposite LT2. The doors to LT1, LT3 and LT4 face Herman Hu Concourse. In the Yellow Zone, Y4702 is beside LT4 and Y4302 is beside LT3. In the Blue Zone, B4702 is beside LT8 and B4302 is beside LT7. The shaded conference area runs from the lower edge of LT2 to the lower edges of LT5 and LT6. The shared Poster Session and Coffee Break space is above the Registration Desk on the central concourse. Dashed arrows lead from the concourse to the entrances on the lower edges of the four classrooms.</desc>
+  <style>
+    .zone { font: 11px 'JetBrains Mono', Menlo, monospace; letter-spacing: .45px; fill: #4b5569; }
+    .room { fill: #fafbfd; stroke: #c7cfde; stroke-width: 1.2; }
+    .conference-room { fill: #eaf0fa; stroke: #3c4990; stroke-width: 1.5; }
+    .room-label, .conference-label, .classroom-label, .concourse-name, .registration-label, .activity-label { font-family: Inter, Arial, sans-serif; text-anchor: middle; }
+    .room-label { font-size: 18px; fill: #626d85; font-weight: 600; }
+    .conference-label { font-size: 22px; fill: #2f3a78; font-weight: 700; }
+    .classroom-label { font-size: 19px; fill: #2f3a78; font-weight: 700; }
+    .concourse-name { font-size: 12px; fill: #53617b; font-weight: 600; }
+    .registration-label { font-size: 13px; fill: #2f3a78; font-weight: 600; }
+    .activity-label { font-size: 15px; fill: #2f3a78; font-weight: 700; }
+    .direction { font: 11px Inter, Arial, sans-serif; letter-spacing: .2px; fill: #53617b; text-anchor: middle; }
+    .entrance { fill: #ffffff; stroke: #33477c; stroke-width: 1.5; }
+    .access-route { fill: none; stroke: #4e62a4; stroke-width: 1.7; stroke-dasharray: 4 3; }
+    .access-arrow { fill: #4e62a4; }
+  </style>
+
+  <rect x=".6" y=".6" width="658.8" height="540.8" rx="6" fill="#ffffff" stroke="#d8dce8" stroke-width="1.2"/>
+
+  <!-- Zone markers and corridor. -->
+  <path d="M32 132h194M434 132h194M32 354h194M434 354h194" fill="none" stroke="#dfe4ef"/>
+  <rect x="32" y="33" width="4" height="14" rx="1" fill="#d79a62"/>
+  <rect x="32" y="140" width="4" height="14" rx="1" fill="#c6a244"/>
+  <rect x="32" y="362" width="4" height="14" rx="1" fill="#7891be"/>
+  <text class="zone" x="44" y="44">ORANGE ZONE</text>
+  <text class="zone" x="44" y="151">YELLOW ZONE</text>
+  <text class="zone" x="44" y="373">BLUE ZONE</text>
+
+  <path id="conference-area" d="M248 117h164v50h216v78H412v90H248v-90H32v-78h216z" fill="#edf2fa"/>
+  <path d="M248 31h164v86H248zM248 335h164v48h216v76H412v44H248v-44H32v-76h216z" fill="#fcfdff"/>
+  <path d="M248 31h164v136h216v78H412v138h216v76H412v44H248v-44H32v-76h216V245H32v-78h216z" fill="none" stroke="#c5cfdf" stroke-width="1.2"/>
+  <path d="M248 126v135M412 126v135M248 345v128M412 345v128" fill="none" stroke="#e1e7f1"/>
+  <text class="concourse-name" x="330" y="84">Herman Hu Concourse</text>
+  <rect x="267" y="162" width="126" height="62" rx="4" fill="#e8eef8" stroke="#9caccd" stroke-width="1.1"/>
+  <text class="activity-label" x="330" y="188">Poster Session</text>
+  <text class="activity-label" x="330" y="208">Coffee Break</text>
+  <rect x="269" y="254" width="122" height="36" rx="4" fill="#ffffff" stroke="#9caccd" stroke-width="1.1"/>
+  <text class="registration-label" x="330" y="277">Registration Desk</text>
+
+  <!-- Orange Zone. -->
+  <path class="room" d="M144 54h104v63H144l-21-12V66z"/>
+  <path class="conference-room" d="M516 54H412v63h104l21-12V66z"/>
+  <text class="room-label" x="188" y="92">LT2</text>
+  <text class="conference-label" x="472" y="93">LT1</text>
+
+  <!-- Yellow Zone. -->
+  <path class="conference-room" d="M156 178h92v53h-92l-15-12v-29zM504 178h-92v53h92l15-12v-29z"/>
+  <rect class="conference-room" x="42" y="182" width="89" height="45" rx="3"/>
+  <rect class="conference-room" x="529" y="182" width="89" height="45" rx="3"/>
+  <text class="classroom-label" x="86.5" y="211">Y4702</text>
+  <text class="conference-label" x="197" y="212">LT4</text>
+  <text class="conference-label" x="463" y="212">LT3</text>
+  <text class="classroom-label" x="573.5" y="211">Y4302</text>
+
+  <path class="room" d="M158 280h90v55h-90l-15-13v-29zM502 280h-90v55h90l15-13v-29z"/>
+  <text class="room-label" x="196" y="314">LT6</text>
+  <text class="room-label" x="464" y="314">LT5</text>
+
+  <path id="conference-area-boundary" d="M248 335H412" fill="none" stroke="#7b8cb2" stroke-width="1.2" stroke-dasharray="5 3"/>
+
+  <!-- Blue Zone. -->
+  <path class="room" d="M156 390h92v55h-92l-15-12v-31zM504 390h-92v55h92l15-12v-31z"/>
+  <rect class="conference-room" x="42" y="395" width="89" height="45" rx="3"/>
+  <rect class="conference-room" x="529" y="395" width="89" height="45" rx="3"/>
+  <text class="classroom-label" x="86.5" y="424">B4702</text>
+  <text class="room-label" x="197" y="424">LT8</text>
+  <text class="room-label" x="463" y="424">LT7</text>
+  <text class="classroom-label" x="573.5" y="424">B4302</text>
+
+  <path class="room" d="M157 462h91v30h-91l-12-8v-14zM503 462h-91v30h91l12-8v-14z"/>
+  <text class="room-label" x="195" y="483">LT10</text>
+  <text class="room-label" x="465" y="483">LT9</text>
+
+  <!-- Classroom routes run along the lower side of each wing. -->
+  <path class="access-route" d="M262 238H121L116 233M398 238H537L542 233M262 452H115L110 447M398 452H545L550 447"/>
+  <path class="access-arrow" d="M116 230.5l-3 4.5h6zM542 230.5l-3 4.5h6zM110 443.5l-3 4.5h6zM550 443.5l-3 4.5h6z"/>
+
+  <!-- Door markers are centred on the room thresholds. -->
+  <rect id="door-lt1" class="entrance" x="409.5" y="97" width="5" height="13" rx="1"/>
+  <rect id="door-lt4" class="entrance" x="245.5" y="197.5" width="5" height="13" rx="1"/>
+  <rect id="door-lt3" class="entrance" x="409.5" y="197.5" width="5" height="13" rx="1"/>
+  <rect id="door-y4702" class="entrance" x="109.5" y="224.5" width="13" height="5" rx="1"/>
+  <rect id="door-y4302" class="entrance" x="535.5" y="224.5" width="13" height="5" rx="1"/>
+  <rect id="door-b4702" class="entrance" x="103.5" y="437.5" width="13" height="5" rx="1"/>
+  <rect id="door-b4302" class="entrance" x="543.5" y="437.5" width="13" height="5" rx="1"/>
+
+  <path d="M330 503v12m-4-4l4 4l4-4" fill="none" stroke="#6878ae" stroke-width="1.3"/>
+  <text class="direction" x="330" y="532">Toward the Green and Purple Zones</text>
+</svg>
