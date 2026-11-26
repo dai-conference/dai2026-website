@@ -575,15 +575,11 @@ window.DAI_PROGRAM = {
     {
       "id": "registration-2026-11-28",
       "type": "registration",
-      "title": "Registration opens",
+      "title": "Early Check-in",
       "day": "2026-11-28",
-      "start": "TBD",
-      "end": "TBD",
-      "period": "Afternoon",
-      "location": "Herman Hu Concourse",
-      "notes": [
-        "Registration opens in the afternoon; exact hours TBD."
-      ]
+      "start": "16:00",
+      "end": "18:00",
+      "location": "Herman Hu Concourse"
     }
   ],
   "papers": [

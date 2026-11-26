@@ -67,7 +67,7 @@
     const prefix = event.title.match(/^(Workshop|Tutorial|Keynote) · /);
     const kind = prefix?.[1];
     const title = prefix ? event.title.slice(prefix[0].length) : event.title;
-    const labels = {other: 'Plenary', poster: 'Posters', social: 'Social event', sponsor: 'Sponsor', registration: 'Registration'};
+    const labels = {other: 'Plenary', poster: 'Posters', social: 'Social event', sponsor: 'Sponsor', registration: 'Check-in'};
     const label = kind || labels[event.type] || '';
     const link = detailLinks[event.id];
     const linkTarget = link?.startsWith('https://') ? ' target="_blank" rel="noopener noreferrer"' : '';
@@ -107,7 +107,7 @@
     const items = events.filter(event => event.day === day).sort((a, b) =>
       a.start.localeCompare(b.start) ||
       (parallelOrder[a.id] ?? 0) - (parallelOrder[b.id] ?? 0) || a.id.localeCompare(b.id));
-    const phase = items.every(event => event.type === 'registration') ? 'Registration' : items.some(event => event.type === 'paper') ? 'Main conference' : 'Workshops & tutorials';
+    const phase = items.every(event => event.type === 'registration') ? 'Early Check-in' : items.some(event => event.type === 'paper') ? 'Main conference' : 'Workshops & tutorials';
     const socialLabels = items.filter(event => event.type === 'social').map(event =>
       `<small class="tab-social">${esc(event.title.replace(/^(Welcome|Conference) /, ''))}</small>`).join('');
     const groups = new Map();
@@ -124,7 +124,7 @@
       <small>${esc(phase)}</small>${socialLabels}</span></button>`);
     $('agenda-days').insertAdjacentHTML('beforeend', `<section class="day-panel" role="tabpanel" id="day-${day}"
       aria-labelledby="tab-${day}" tabindex="0" ${index ? 'hidden' : ''}>
-      <header class="day-heading"><div><p class="day-number">${phase === 'Registration' ? 'Registration' : 'Day ' + String(index).padStart(2, '0')} <span>/</span> ${weekday}, ${dayNumber} ${month}</p>
+      <header class="day-heading"><div><p class="day-number">${phase === 'Early Check-in' ? phase : 'Day ' + String(index).padStart(2, '0')} <span>/</span> ${weekday}, ${dayNumber} ${month}</p>
       <h3>${esc(phase)}</h3></div></header>
       ${Array.from(groups, ([start, group]) => timeBlock(start, group)).join('')}</section>`);
   }

@@ -16,7 +16,7 @@ Dates: 2026-11-29 to 2026-12-02.
 
 - [DAI 2026 homepage](https://www.adai.ai/dai/2026/): Official overview of the 8th International Conference on Distributed Artificial Intelligence, including dates, venue, calls, program overview, and sponsorship information.
 - [Important Dates](https://www.adai.ai/dai/2026/dates.html): Submission, notification, camera-ready, registration, and conference dates.
-- [Program Overview](https://www.adai.ai/dai/2026/program.html): Daily conference schedule with rooms, workshops, tutorials, keynote talks, sponsor talks, and searchable paper presentations. Registration opens on the afternoon of November 28 at Herman Hu Concourse; exact hours are TBD.
+- [Program Overview](https://www.adai.ai/dai/2026/program.html): Daily conference schedule with rooms, workshops, tutorials, keynote talks, sponsor talks, and searchable paper presentations. Early Check-in takes place on November 28, 16:00-18:00, at Herman Hu Concourse.
 - [Accepted Papers](https://www.adai.ai/dai/2026/accepted-papers.html): Accepted paper titles and authors, grouped by Research Track, Industry Track, and AI Paper Track. AI Paper Track papers are non-archival.
 - [Keynote Speakers](https://www.adai.ai/dai/2026/keynotes.html): DAI 2026 keynote speakers.
 - [Tutorials](https://www.adai.ai/dai/2026/tutorials.html): Three DAI 2026 tutorials with titles and presenters.
