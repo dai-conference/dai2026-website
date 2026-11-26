@@ -185,17 +185,6 @@ window.DAI_PROGRAM = {
       "host": "TBD"
     },
     {
-      "id": "k2",
-      "type": "keynote",
-      "title": "Keynote",
-      "day": "2026-12-01",
-      "start": "13:15",
-      "end": "14:00",
-      "location": "LT1",
-      "talkTitle": "",
-      "host": "TBD"
-    },
-    {
       "id": "k3",
       "type": "keynote",
       "title": "Keynote · Michael P. Wellman",
@@ -329,7 +318,7 @@ window.DAI_PROGRAM = {
       "title": "Lunch",
       "day": "2026-12-01",
       "start": "12:00",
-      "end": "13:15",
+      "end": "14:00",
       "location": "",
       "talkTitle": ""
     },
