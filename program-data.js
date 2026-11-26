@@ -101,7 +101,7 @@ window.DAI_PROGRAM = {
       "start": "09:00",
       "end": "12:00",
       "location": "LT1",
-      "host": "Shuyue Hu",
+      "host": "Hangfan Zhang",
       "talkTitle": "",
       "participantsLabel": "Tutorial presenters",
       "participants": [
@@ -171,7 +171,7 @@ window.DAI_PROGRAM = {
       "end": "09:15",
       "location": "LT1",
       "talkTitle": "",
-      "host": "TBD"
+      "host": "Minming Li and Ying Wen"
     },
     {
       "id": "k1",
@@ -182,7 +182,7 @@ window.DAI_PROGRAM = {
       "end": "10:00",
       "location": "LT1",
       "talkTitle": "A Collectivist, Economic Perspective on AI",
-      "host": "TBD"
+      "host": "Bo An"
     },
     {
       "id": "k3",
@@ -193,7 +193,7 @@ window.DAI_PROGRAM = {
       "end": "10:00",
       "location": "LT1",
       "talkTitle": "Competition and Cooperation in LLM Bargaining: An Empirical Meta-Game Analysis",
-      "host": "TBD"
+      "host": "Minming Li"
     },
     {
       "id": "k4",
@@ -204,7 +204,7 @@ window.DAI_PROGRAM = {
       "end": "15:30",
       "location": "LT1",
       "talkTitle": "TBD",
-      "host": "TBD"
+      "host": "Ying Wen"
     },
     {
       "id": "p1a",
@@ -259,7 +259,7 @@ window.DAI_PROGRAM = {
       "end": "17:29",
       "location": "LT1",
       "talkTitle": "",
-      "host": "TBD"
+      "host": "Minming Li"
     },
     {
       "id": "rec",
@@ -340,7 +340,7 @@ window.DAI_PROGRAM = {
       "start": "10:35",
       "end": "11:55",
       "location": "LT3",
-      "host": "TBD"
+      "host": "Shuang Qiu"
     },
     {
       "id": "session-02",
@@ -350,7 +350,7 @@ window.DAI_PROGRAM = {
       "start": "10:35",
       "end": "11:55",
       "location": "LT4",
-      "host": "TBD"
+      "host": "Weinan Zhang"
     },
     {
       "id": "session-03",
@@ -360,7 +360,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:15",
       "location": "LT3",
-      "host": "TBD"
+      "host": "Wenhao Zhang"
     },
     {
       "id": "session-04",
@@ -370,7 +370,7 @@ window.DAI_PROGRAM = {
       "start": "14:05",
       "end": "15:25",
       "location": "LT1",
-      "host": "TBD"
+      "host": "Junwei Liao"
     },
     {
       "id": "session-05",
@@ -380,7 +380,7 @@ window.DAI_PROGRAM = {
       "start": "14:05",
       "end": "15:25",
       "location": "LT3",
-      "host": "TBD"
+      "host": "Wenhao Zhang"
     },
     {
       "id": "session-06",
@@ -390,7 +390,7 @@ window.DAI_PROGRAM = {
       "start": "14:05",
       "end": "15:25",
       "location": "LT4",
-      "host": "TBD"
+      "host": "Qirui Mi"
     },
     {
       "id": "session-07",
@@ -400,7 +400,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:15",
       "location": "LT1",
-      "host": "TBD"
+      "host": "Zhongxiang Dai"
     },
     {
       "id": "session-08",
@@ -410,7 +410,7 @@ window.DAI_PROGRAM = {
       "start": "10:35",
       "end": "11:35",
       "location": "LT1",
-      "host": "TBD"
+      "host": "Fengshuo Bai"
     },
     {
       "id": "session-09",
@@ -420,7 +420,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:05",
       "location": "LT4",
-      "host": "TBD"
+      "host": "Junwei Liao"
     },
     {
       "id": "session-10",
@@ -430,7 +430,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:15",
       "location": "Y4302",
-      "host": "TBD"
+      "host": "Qirui Mi"
     },
     {
       "id": "session-11",
@@ -440,7 +440,7 @@ window.DAI_PROGRAM = {
       "start": "10:35",
       "end": "11:55",
       "location": "LT3",
-      "host": "TBD"
+      "host": "Mengchen Zhao"
     },
     {
       "id": "session-12",
@@ -450,7 +450,7 @@ window.DAI_PROGRAM = {
       "start": "10:35",
       "end": "11:55",
       "location": "LT1",
-      "host": "TBD"
+      "host": "Shao Zhang"
     },
     {
       "id": "session-13",
@@ -460,7 +460,7 @@ window.DAI_PROGRAM = {
       "start": "10:35",
       "end": "11:55",
       "location": "LT4",
-      "host": "TBD"
+      "host": "Yang Li"
     },
     {
       "id": "session-14",
@@ -470,7 +470,7 @@ window.DAI_PROGRAM = {
       "start": "13:15",
       "end": "14:35",
       "location": "LT3",
-      "host": "TBD"
+      "host": "Fang Kong"
     },
     {
       "id": "session-15",
@@ -480,7 +480,7 @@ window.DAI_PROGRAM = {
       "start": "13:15",
       "end": "14:35",
       "location": "LT1",
-      "host": "TBD"
+      "host": "Chaoran Li"
     },
     {
       "id": "session-16",
@@ -490,7 +490,7 @@ window.DAI_PROGRAM = {
       "start": "13:15",
       "end": "14:35",
       "location": "LT4",
-      "host": "TBD"
+      "host": "Weiwen Liu"
     },
     {
       "id": "session-17",
@@ -500,7 +500,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:15",
       "location": "LT4",
-      "host": "TBD"
+      "host": "Weiwen Liu"
     },
     {
       "id": "session-18",
@@ -510,7 +510,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:05",
       "location": "Y4302",
-      "host": "TBD"
+      "host": "Youzhi Zhang"
     },
     {
       "id": "session-19",
@@ -520,7 +520,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:05",
       "location": "LT3",
-      "host": "TBD"
+      "host": "Chaoran Li"
     },
     {
       "id": "session-20",
@@ -530,7 +530,7 @@ window.DAI_PROGRAM = {
       "start": "16:05",
       "end": "17:15",
       "location": "LT1",
-      "host": "TBD"
+      "host": "Fang Kong"
     },
     {
       "id": "sponsor-01",
@@ -559,7 +559,7 @@ window.DAI_PROGRAM = {
           "qaEnd": "15:05"
         }
       ],
-      "host": "TBD"
+      "host": "Ying Wen"
     },
     {
       "id": "registration-2026-11-28",

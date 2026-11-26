@@ -77,7 +77,7 @@
   letter-spacing: -.055em; font-variant-numeric: lining-nums tabular-nums;
 }
 .tab-copy { display: grid; gap: 3px; }
-.tab-copy > span, .day-number, .event-kind {
+.tab-copy > span, .day-number, .event-kind, .event-host {
   font: 600 11px/1.4 var(--font-mono); text-transform: uppercase; letter-spacing: .085em;
 }
 .tab-copy small { color: var(--text-secondary); font: 500 12px/1.35 var(--font-sans); }
@@ -112,13 +112,16 @@
   .aligned-workshops #w2 { grid-column: 3; }
 }
 .event-item { padding-inline: clamp(12px,1.6vw,25px); border-left: 1px solid var(--rule); min-width: 0; }
-.event-kind { display: block; font-size: 10px; color: var(--heading); margin-bottom: 6px; letter-spacing: .1em; }
+.event-kind, .event-host { display: block; font-size: 10px; color: var(--heading); margin-bottom: 6px; letter-spacing: .1em; }
+.event-host { font-size: 12px; }
+.event-item .event-host { margin-top: 4px; }
 .event-item strong, .oral-session summary strong, .paper-result strong, .paper-row strong {
   display: block; font-size: 15px; font-weight: 620; line-height: 1.45; overflow-wrap: anywhere;
 }
 .event-item strong a span { color: var(--accent); font-size: .78em; white-space: nowrap; }
 .event-item a:hover { text-decoration: underline; text-underline-offset: 3px; color: var(--accent); }
 .event-item p, .paper-row p, .paper-result p { font-size: 13px; color: var(--text-secondary); line-height: 1.55; margin-top: 4px; }
+.event-keynote .event-talk-title { margin-top: 4px; }
 .program-page .event-room { display: block; margin: 6px 0; font-size: 14px; font-weight: 650; line-height: 1.35; color: var(--text-secondary); }
 .event-workshop .event-kind::before, .event-tutorial .event-kind::before {
   content: ''; display: inline-block; margin-right: 7px; width: 7px; height: 7px; background: currentColor;
@@ -137,13 +140,14 @@
 }
 .oral-session summary::-webkit-details-marker { display: none; }
 .oral-session summary:hover, .oral-session[open] summary { background: var(--accent-tint); }
-.oral-session summary .event-kind { margin-bottom: 2px; }
+.oral-session summary .event-kind, .oral-session summary .event-host { margin-bottom: 2px; }
 .paper-count { flex: none; display: inline-flex; align-items: center; gap: 10px; font-size: 12px; color: var(--accent); }
 .paper-count i { width: 8px; height: 8px; border-right: 1.5px solid; border-bottom: 1.5px solid; transform: rotate(45deg); }
 .oral-session[open] .paper-count i { transform: rotate(225deg); }
 .paper-list { list-style: none; margin: 0; padding: 0 clamp(12px,1.6vw,25px); }
 .paper-row { padding: 13px 0; border-top: 1px solid var(--rule); display: grid; grid-template-columns: 110px minmax(0,1fr); gap: 10px; }
 .paper-time, .paper-row small, .paper-result small { font: 500 11px/1.6 var(--font-mono); color: var(--heading); }
+.paper-result .event-host { display: inline; margin: 0; }
 .paper-row:target { background: var(--accent-soft); }
 .paper-finder { padding: clamp(32px,4.2vw,58px) 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0 36px; align-items: center; }
 .paper-finder .kicker { margin-bottom: 8px; }

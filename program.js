@@ -43,9 +43,9 @@
       <p>Q&amp;A: ${clockRange(talk.qaStart, talk.qaEnd)}</p></div></li>`;
   }
 
-  const chairLabel = event => {
-    if (!event || ['workshop', 'tutorial', 'poster'].includes(event.type)) return '';
-    return event.host && event.host !== 'TBD' ? 'Proposed chair: ' + event.host : 'Chair: TBD';
+  const hostLabel = event => {
+    if (!event || event.type === 'poster' || !event.host || event.host === 'TBD') return '';
+    return 'Host: ' + event.host;
   };
 
   const roomLabel = event => `<strong class="event-room">Room: ${esc(event.location || 'TBD')}</strong>`;
@@ -56,7 +56,7 @@
     const label = isPaper ? 'Paper session ' + event.id.split('-')[1] : 'Sponsor';
     return `<details class="oral-session" id="${esc(event.id)}">
       <summary><span><small class="event-kind">${esc(label)}${showEnd ? ' · Until ' + esc(event.end) : ''}</small>
-      <strong>${esc(event.title)}</strong>${roomLabel(event)}${chairLabel(event) ? `<small class="event-kind">${esc(chairLabel(event))}</small>` : ''}</span>
+      <strong>${esc(event.title)}</strong>${roomLabel(event)}${hostLabel(event) ? `<small class="event-host">${esc(hostLabel(event))}</small>` : ''}</span>
       <span class="paper-count">${list.length} ${isPaper ? 'papers' : 'talks'} <i aria-hidden="true"></i></span></summary>
       <ol class="paper-list">${list.map(isPaper ? paperRow : sponsorTalkRow).join('')}</ol></details>`;
   }
@@ -73,8 +73,10 @@
     const linkTarget = link?.startsWith('https://') ? ' target="_blank" rel="noopener noreferrer"' : '';
     const name = link ? `<a href="${link}"${linkTarget}>${esc(title)} <span aria-hidden="true">↗</span></a>` : esc(title);
     const info = [];
-    if (event.talkTitle) info.push(event.talkTitle === 'TBD' ? 'Talk title TBD.' : event.talkTitle);
-    if ((['workshop','tutorial','keynote','poster','sponsor','other'].includes(event.type) || (event.host && event.host !== 'TBD')) && chairLabel(event)) info.push(chairLabel(event));
+    const talkTag = event.type === 'keynote' && event.talkTitle !== 'TBD' ? 'strong' : 'p';
+    const talk = event.talkTitle ? `<${talkTag} class="event-talk-title">${esc(event.talkTitle === 'TBD' ? 'Talk title TBD.' : event.talkTitle)}</${talkTag}>` : '';
+    const host = (['workshop','tutorial','keynote','poster','sponsor','other'].includes(event.type) || (event.host && event.host !== 'TBD')) && hostLabel(event)
+      ? `<small class="event-host">${esc(hostLabel(event))}</small>` : '';
     const location = ['workshop', 'tutorial', 'keynote', 'sponsor', 'other'].includes(event.type)
       ? roomLabel(event)
       : event.location && event.location !== 'TBD' ? `<p>${esc(event.location)}</p>` : '';
@@ -83,7 +85,7 @@
     const poster = event.poster ? `<p><a href="${esc(event.poster)}" target="_blank" rel="noopener noreferrer">View workshop poster ↗</a></p>` : '';
     return `<div class="event-item event-${esc(event.type)}" id="${esc(event.id)}">
       ${label ? `<small class="event-kind">${esc(label)}</small>` : ''}
-      <strong>${name}</strong>${location}${info.map(line => `<p>${esc(line)}</p>`).join('')}${poster}</div>`;
+      <strong>${name}</strong>${talk}${location}${host}${info.map(line => `<p>${esc(line)}</p>`).join('')}${poster}</div>`;
   }
 
   function timeBlock(start, items) {
@@ -185,7 +187,7 @@
       matches.length + (matches.length === 1 ? ' presentation found' : ' presentations found') :
       'No presentations found. Try a different title, author, topic, or track.';
     $('paper-results').innerHTML = matches.map(paper =>
-      `<article class="paper-result"><div><small>${shortDate(paper.day)} · ${clockRange(paper.start, paper.end)} · ${trackLine(paper)}${chairLabel(sessions.get(paper.session)) ? ' · ' + esc(chairLabel(sessions.get(paper.session))) : ''}</small>
+      `<article class="paper-result"><div><small>${shortDate(paper.day)} · ${clockRange(paper.start, paper.end)} · ${trackLine(paper)}${hostLabel(sessions.get(paper.session)) ? ` · <span class="event-host">${esc(hostLabel(sessions.get(paper.session)))}</span>` : ''}</small>
       <strong>${esc(paper.title)}</strong>${roomLabel(sessions.get(paper.session))}<p>${esc(paper.authors)}</p></div>
       <a href="#${esc(paper.id)}">View in schedule <span aria-hidden="true">↑</span></a></article>`
     ).join('');
