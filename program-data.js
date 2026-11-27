@@ -1783,17 +1783,6 @@ window.DAI_PROGRAM = {
       "status": "listed"
     },
     {
-      "id": "paper-111",
-      "title": "Task as Gradient: Implicit Geometric Embedding for Differentiable World Models of Embodied Agents",
-      "authors": "Mingyu Jia, Junchi Yan, Haobin Zhu",
-      "track": "Research",
-      "session": "session-15",
-      "day": "2026-12-02",
-      "start": "14:15",
-      "end": "14:25",
-      "status": "listed"
-    },
-    {
       "id": "paper-112",
       "title": "Test Before You Trust: Falsification-Aware Agent Coalitions for Stock Movement Forecasting",
       "authors": "Yuanjian Zhang, Chuanchang Liu, Yifan Yuan, Xiang Xu, Bo Cheng",
