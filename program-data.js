@@ -203,7 +203,7 @@ window.DAI_PROGRAM = {
       "start": "14:45",
       "end": "15:30",
       "location": "LT1",
-      "talkTitle": "TBD",
+      "talkTitle": "AI for Science: The second half",
       "host": "Ying Wen"
     },
     {
