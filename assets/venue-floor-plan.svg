@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 542" width="660" height="542" role="img" aria-labelledby="floor-title floor-desc">
   <title id="floor-title">Herman Hu Concourse, Yeung Kin Man Academic Building, 4/F</title>
-  <desc id="floor-desc">LT1 is opposite LT2. The doors to LT1, LT3 and LT4 face Herman Hu Concourse. In the Yellow Zone, Y4702 is beside LT4 and Y4302 is beside LT3. In the Blue Zone, B4702 is beside LT8 and B4302 is beside LT7. The shaded conference area runs from the lower edge of LT2 to the lower edges of LT5 and LT6. The shared Poster Session and Coffee Break space is above the Registration Desk on the central concourse. Dashed arrows lead from the concourse to the entrances on the lower edges of the four classrooms.</desc>
+  <desc id="floor-desc">LT1 is opposite LT2. The doors to LT1, LT3 and LT4 face Herman Hu Concourse. In the Yellow Zone, Y4702 is beside LT4 and Y4302 is beside LT3. In the Blue Zone, B4702 is beside LT8 and B4302 is beside LT7. The shaded conference area lies between LT5 and LT6 and contains the Poster Session and Coffee Break space above the Registration Desk. Dashed arrows lead from the concourse to the entrances on the lower edges of the four classrooms.</desc>
   <style>
     .zone { font: 11px 'JetBrains Mono', Menlo, monospace; letter-spacing: .45px; fill: #4b5569; }
     .room { fill: #fafbfd; stroke: #c7cfde; stroke-width: 1.2; }
@@ -30,16 +30,16 @@
   <text class="zone" x="44" y="151">YELLOW ZONE</text>
   <text class="zone" x="44" y="373">BLUE ZONE</text>
 
-  <path id="conference-area" d="M248 117h164v50h216v78H412v90H248v-90H32v-78h216z" fill="#edf2fa"/>
   <path d="M248 31h164v86H248zM248 335h164v48h216v76H412v44H248v-44H32v-76h216z" fill="#fcfdff"/>
+  <path id="conference-area" d="M259 247H401V369H259z" fill="#edf2fa"/>
   <path d="M248 31h164v136h216v78H412v138h216v76H412v44H248v-44H32v-76h216V245H32v-78h216z" fill="none" stroke="#c5cfdf" stroke-width="1.2"/>
   <path d="M248 126v135M412 126v135M248 345v128M412 345v128" fill="none" stroke="#e1e7f1"/>
   <text class="concourse-name" x="330" y="84">Herman Hu Concourse</text>
-  <rect x="267" y="162" width="126" height="62" rx="4" fill="#e8eef8" stroke="#9caccd" stroke-width="1.1"/>
-  <text class="activity-label" x="330" y="188">Poster Session</text>
-  <text class="activity-label" x="330" y="208">Coffee Break</text>
-  <rect x="269" y="254" width="122" height="36" rx="4" fill="#ffffff" stroke="#9caccd" stroke-width="1.1"/>
-  <text class="registration-label" x="330" y="277">Registration Desk</text>
+  <rect x="267" y="254" width="126" height="62" rx="4" fill="#e8eef8" stroke="#9caccd" stroke-width="1.1"/>
+  <text class="activity-label" x="330" y="280">Poster Session</text>
+  <text class="activity-label" x="330" y="300">Coffee Break</text>
+  <rect x="269" y="324" width="122" height="36" rx="4" fill="#ffffff" stroke="#9caccd" stroke-width="1.1"/>
+  <text class="registration-label" x="330" y="347">Registration Desk</text>
 
   <!-- Orange Zone. -->
   <path class="room" d="M144 54h104v63H144l-21-12V66z"/>
@@ -60,7 +60,7 @@
   <text class="room-label" x="196" y="314">LT6</text>
   <text class="room-label" x="464" y="314">LT5</text>
 
-  <path id="conference-area-boundary" d="M248 335H412" fill="none" stroke="#7b8cb2" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <path id="conference-area-boundary" d="M259 369H401" fill="none" stroke="#7b8cb2" stroke-width="1.2" stroke-dasharray="5 3"/>
 
   <!-- Blue Zone. -->
   <path class="room" d="M156 390h92v55h-92l-15-12v-31zM504 390h-92v55h92l15-12v-31z"/>
